@@ -1,0 +1,44 @@
+Coloque aqui informações associadas ao desenvolvimento do seu trabalho.
+
+Note que alguns dados foram armazenados no diretório de revisão bibliográfica; copie para cá apenas os que forem efetivamente usados no seu trabalho.
+
+Trabalho Teórico
+================
+|-- 01t-DadosTeoricos
+    - Dados teóricos, gráficos e tabelas levantados em artigos ou livros.
+
+|-- 02t-ModelagemTeorica
+
+|-- 03t-ResultadosTeoricos
+
+Trabalho Experimental
+=====================
+|-- 01e-DadosAmostras
+    - Dados de amostras obtidas em campo; dados amostras fornecidas por terceiros; dados, gráficos e tabelas levantados em artigos; 
+
+|-- 02e-ModelagemExperimental
+    - Modelos experimentais; esboços e diagramas dos equipamentos desenvolvidos; detalhes sobre coleta e armazenamento das amostras; análises dimensionais; análises estatísticas 
+
+|-- 03e-ResultadosExperimentos
+    - Avaliação dos modelos experimentais; revisão dos esboços e diagramas dos equipamentos desenvolvidos; annálise dos processos de coleta e armazenamento das amostras; análises estatísticas dos resultados obtidos.
+
+
+Trabalho Numérico-Computacional
+===============================
+|-- 01n-DadosSimulacoes
+    - Dados de simulações levantados em artigos; dados de simuladores comerciais; dados fornecidos por terceiros (como CENPES).
+
+|-- 02n-ModelagemNumericaComputacional
+    - Desenvolvimento dos modelos numérico computacionais;
+    - Modelagem numérica; Engenharia de software; Desenvolvimento dos códigos; Análise de sensibilidade e estatística para definir número de simulações (e dados associados).
+
+|-- 03n-ResultadosSimulacoes
+    - Avaliação dos resultados; definição da necessidade de novas simulações
+
+
+
+Nota:
+- Se seu trabalho é teórico apague os diretórios e=experimental e n=numérico
+- Se seu trabalho é experimental apague os diretórios t=teórico e n=numérico
+- Se seu trabalho é numérico-computacional apague os diretórios  e=experimental e t=teórico 
+

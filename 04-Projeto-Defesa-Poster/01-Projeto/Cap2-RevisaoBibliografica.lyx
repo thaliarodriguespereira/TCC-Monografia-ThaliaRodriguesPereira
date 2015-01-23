@@ -1,0 +1,280 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass abnt
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options false
+\master Monografia-Dissertacao-Tese-master.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding latin1
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement ph
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Revisão Bibliográfica} 
+\backslash
+rhead{} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Revisão Bibliográfica
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Revisão Bibliográfica
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Revisão-Bibliográfica"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No escopo do problema, apresentou-se uma breve revisão dos trabalhos relacionado
+s a tese; Apresenta-se neste capítulo uma revisão bibliográfica detalhada
+ dos trabalhos, técnicos e científicos, que estão diretamente relacionados
+ ao trabalho.
+\end_layout
+
+\begin_layout Itemize
+Ou seja, entram citações de trabalhos tecnológicos e científicos desenvolvidos
+ por terceiros - os outros.
+ Principalmente artigos científicos.
+ 
+\end_layout
+
+\begin_layout Itemize
+É comum a gente ampliar ou melhorar uma metodologia existente, neste caso,
+ a metodologia existente precisa ser detalhada.
+ Faça uma citação curta da metodologia existente neste capítulo; e uma descrição
+ detalhada da metodologia que vai ser modificada no capítulo de "Revisão
+ de Modelos"; As melhorias/ampliações que você fizer, devem entrar no capítulo
+ de desenvolvimento.
+ Separando o que os outros fizeram do que você fez.
+\end_layout
+
+\begin_layout Itemize
+Lembre-se, cada capítulo deve iniciar com uma breve descrição do que vai
+ ser visto.
+ A ideia é ajudar o leitor a se situar.
+ Você deve copiar a breve descrição para seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Organizacao-do-Documento"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+A organização deste capítulo precisa ser exatamente como colocado abaixo,
+ mas você pode renomear os títulos das seções, usando um título mais adequado
+ ao seu trabalho.
+ O fundamental é não esquecer de citar alguns trabalhos tecnológicos, vários
+ trabalhos científicos e de fazer uma crítica ao que existe, justificando
+ seu trabalho.
+\end_layout
+
+\begin_layout Section
+Artigos Tecnológicos
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Artigos-Tecnologicos"
+
+\end_inset
+
+ (+gerais)
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Itemize
+Desenvolver cronológica e conceitualmente os trabalhos relacionados a sua
+ monografia/dissertação/tese.
+ 
+\end_layout
+
+\begin_layout Itemize
+Citar um a um os trabalhos lidos, descrevendo o que os outros autores fizeram
+ e como fizerem.
+ 
+\end_layout
+
+\begin_layout Itemize
+Pode incluir várias figuras e tabelas dos trabalhos citados, mas todos devem
+ ser claramente explicados, e devem ser diretamente relacionados ao problema
+ a ser resolvido.
+\end_layout
+
+\begin_layout Itemize
+Revisão dos métodos utilizados por outros autores, artigos tecnológicos.
+\end_layout
+
+\begin_layout Itemize
+Descrição do modelo...., citações, referências,.., vantagens/desvantagens...
+\end_layout
+
+\begin_layout Section
+Artigos Científicos
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Artigos-Cientificos"
+
+\end_inset
+
+ (+específicos)
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Itemize
+Desenvolver cronológica e conceitualmente os trabalhos relacionados a sua
+ monografia/dissertação/tese.
+ 
+\end_layout
+
+\begin_layout Itemize
+Citar um a um os trabalhos lidos, descrevendo o que os outros autores fizeram
+ e como fizerem.
+ 
+\end_layout
+
+\begin_layout Itemize
+Revisão dos métodos utilizados por outros autores, artigos científicos.
+\end_layout
+
+\begin_layout Itemize
+Descrição do modelo...., citações, referências,.., vantagens/desvantagens...
+\end_layout
+
+\begin_layout Section
+Crítica aos Trabalhos Existentes
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Critica-aos-Trabalhos-Existentes"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Itemize
+Coloque aqui uma crítica aos trabalhos existentes; esta crítica deve ajudar
+ a fundamentar/justificar seu trabalho.
+ A ideia é, os outros não viram o que estou vendo e eu vou fazer!
+\end_layout
+
+\begin_layout Itemize
+Ao final da revisão bibliográfica ressaltar a necessidade e importância
+ de seu trabalho.
+ Destacar as inovações de seu trabalho.
+\end_layout
+
+\begin_layout Itemize
+Ou seja, você precisa justificar - do ponto de vista tecnológico e científico
+ - a necessidade do seu trabalho!
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\end_body
+\end_document

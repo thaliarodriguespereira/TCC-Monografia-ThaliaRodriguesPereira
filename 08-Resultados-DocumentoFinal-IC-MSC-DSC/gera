@@ -1,0 +1,14 @@
+
+latex  Monografia-Dissertacao-Tese-master.tex
+bibtex Monografia-Dissertacao-Tese-master.tex
+latex  Monografia-Dissertacao-Tese-master.tex
+latex  Monografia-Dissertacao-Tese-master.tex
+
+dvips -o "Monografia-Dissertacao-Tese-master.ps" Monografia-Dissertacao-Tese-master.dvi
+
+ps2pdf Monografia-Dissertacao-Tese-master.ps
+
+acroread Monografia-Dissertacao-Tese-master.pdf &
+
+mv  Monografia-Dissertacao-Tese-master.ps /tmp
+

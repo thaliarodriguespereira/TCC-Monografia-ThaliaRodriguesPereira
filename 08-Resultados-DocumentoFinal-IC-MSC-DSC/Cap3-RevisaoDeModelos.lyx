@@ -1,0 +1,452 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass abnt
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options false
+\master Monografia-Dissertacao-Tese-master.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding latin1
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Revisão de Conceitos e Modelos
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Revisão de Conceitos e Modelos
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Revisao-de-Conceitos-e-Modelos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter-Revisão dos Modelos a Serem Utilizados} 
+\backslash
+rhead{
+\backslash
+thepage} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na revisão bibliográfica apresentou-se uma revisão dos trabalhos relacionados
+ a este trabalho.
+ Apresenta-se neste capítulo um conjunto de conceitos e modelos desenvolvidos
+ por outros autores mas que estão diretamente relacionados a este trabalho
+ e que serão amplamente utilizados.
+ Especialistas da área poderão pular a leitura deste capítulo.
+\end_layout
+
+\begin_layout Itemize
+É normal incluir, no início da tese, um capítulo onde são descritos os principai
+s conceitos, as principais metodologias que foram desenvolvidas por terceiros
+ e que serão utilizadas em seu trabalho.
+ Se estes conhecimentos já forem muito conhecidos, este capítulo deve ser
+ transformado em um apêndice.
+ Mas lembre-se, o objetivo deste capítulo é facilitar a leitura da tese
+ por pessoas que não são especialistas da área.
+\end_layout
+
+\begin_layout Itemize
+É comum a gente ampliar ou melhorar uma metodologia existente, neste caso,
+ a metodologia existente precisa ser detalhada.
+ Faça a descrição da metodologia existente neste capítulo; e apresente as
+ suas inovações no capítulo de desenvolvimento.
+ Separando claramente o que os outros fizeram do material desenvolvido por
+ você.
+\end_layout
+
+\begin_layout Itemize
+Você deve copiar a descrição acima para seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Organizacao-do-Documento"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Revisão de Conceitos
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Revisao-de-Conceitos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se nesta seção ...
+\end_layout
+
+\begin_layout Itemize
+Um título de seção não pode vir seguido de um título de sub-seção!
+\end_layout
+
+\begin_layout Itemize
+Entre os dois deve-se incluir algum texto, nem que seja o que vai ser visto
+ nas sub-seções.
+\end_layout
+
+\begin_layout Section
+Porosidade
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Porosidade
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A porosidade é definida por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\varepsilon=\left\langle FF(\mathbf{x})\right\rangle \label{eq_porosidade-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde 
+\begin_inset Formula $\left\langle \right\rangle $
+\end_inset
+
+ representa a média estatística.
+ 
+\end_layout
+
+\begin_layout Standard
+..exemplo de citação de equação numerada e com etiqueta....conforme equação da
+ porosidade 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq_porosidade-1"
+
+\end_inset
+
+....
+\end_layout
+
+\begin_layout Section
+Autocorrelação
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Autocorrelação
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A função autocorrelação é definida pela relação,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C(\mathbf{u})=\left\langle \left[FF(\mathbf{x})\right]\left[FF(\mathbf{x}+\mathbf{u})\right]\right\rangle \label{eq_correlacao-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde 
+\series bold
+u
+\series default
+ é o vetor deslocamento.
+ Observe que a função autocorrelação fornece a probabi\SpecialChar \-
+li\SpecialChar \-
+dade de intersecção
+ na direção 
+\series bold
+u
+\series default
+ de dois pontos na fase porosa separados pela distância 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $|\mathbf{u}|$
+\end_inset
+
+
+\emph on
+.
+
+\emph default
+ A função 
+\emph on
+autocovariância normalizada
+\emph default
+ é dada por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R(\mathbf{u})=\frac{\left\langle \left[FF(\mathbf{x})-\varepsilon\right]\left[FF(\mathbf{x}+\mathbf{u})-\varepsilon\right]\right\rangle }{\left(\varepsilon-\varepsilon^{2}\right)}\label{eq_autocovariancia-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Figure: Função autocorrelação normal e determinada usando FFT2"
+
+\end_inset
+
+ compara-se a função autocorrelação obtida com o uso da transformada de
+ Fourier e de método de interpolação, com aquela obtida pelo método tradicional
+ nas direções x e y.
+ Observa-se que com o uso da transformada de Fourier, as flutuações são
+ reduzidas.
+ Definições da transformada de Fourier aplicadas aos problemas da análise
+ de imagem são encontradas em Gonzalez e Woods (1992), Castleman (1979),
+ Parker (1997) e Liang 
+\emph on
+et al
+\emph default
+.(1998).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\paragraph_spacing single
+\align center
+\begin_inset Graphics
+	filename ../imagens/Correlacao-espacial_x_frequencial.jpg
+	scale 75
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Função autocorrelação nas direções x e y, e determinada usando FFT.
+\begin_inset CommandInset label
+LatexCommand label
+name "Figure: Função autocorrelação normal e determinada usando FFT2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Revisão de Modelos
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Revisao-de-Modelos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se nesta seção ...
+\end_layout
+
+\begin_layout Subsection
+Modelo 1: Nome do modelo
+\end_layout
+
+\begin_layout Itemize
+Revisão dos modelos desenvolvidos por outros autores
+\end_layout
+
+\begin_layout Itemize
+Descrição do modelo...., citações, referências,.., vantagens/desvantagens
+\end_layout
+
+\begin_layout Itemize
+Este é um exemplo de citação em linha: Segundo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{adb-tese}
+\end_layout
+
+\end_inset
+
+ a análise de imagens...
+\end_layout
+
+\begin_layout Itemize
+Este é outro exemplo de citação 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "adb-tese"
+
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Nota, para que a citação de trabalhos externos funcione; no documento mestre,
+ deve ter o box "bibliografia gerada pelo bibtex".
+ E o arquivo com a base de dados deve esta completo e no local indicado.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Modelo 2: Nome do modelo
+\end_layout
+
+\begin_layout Itemize
+Revisão dos modelos desenvolvidos por outros autores
+\end_layout
+
+\begin_layout Itemize
+Descrição do modelo...., citações, referências,.., vantagens/desvantagens
+\end_layout
+
+\end_body
+\end_document

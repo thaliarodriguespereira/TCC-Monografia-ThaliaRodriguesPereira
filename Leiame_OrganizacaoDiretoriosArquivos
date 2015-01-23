@@ -1,0 +1,72 @@
+Este arquivo mostra como esta organizado o diretório 
+ModeloDiretorio-Aluno-Bolsista-TCC-IC-MSC-DSC-Projeto.
+
+O objetivo é fornecer uma estrutura de diretório que facilite o desenvolvimento de seu IC, da sua dissertação ou do seu doutorado.
+A ideia é que o aluno não perca tempo com tarefas repetivivas e consiga focar mais no seu trabalho.
+
+Um modelo de projeto de tese e de documento de tese, no formato TeX/LaTeX, para uso com o editor LyX também é fornecido.
+
+Estrutura do diretório:
+=======================
+.
+|-- 00-DadosPessoais
+|   |-- Dados-pessoais.txt
+|-- 01-PlanoTrabalho
+|   `-- Exemplo-PlanoTrabalho.lyx
+|-- 02-RevisaoBibliografica 
+|   |-- 01-DadosTeoricos.........Dados teóricos de artigos/livros/terceiros
+|   |-- 02-DadosAmostras.........Dados de amostras/experimentais de artigos/livros/terceiros
+|   |-- 03-DadosSimulacoes.......Dados de simulações de artigos/livros/terceiros
+|   |-- Leiame
+|-- 03-MetodologiaCientifica
+|   `-- Leiame...................Informações associadas a metodologia científica (gestão, passo a passo da tese)
+|-- 04-Projeto-Defesa-Poster
+|   |-- 01-Projeto...............Projeto de tese
+|   |-- 02-DefesaProjeto.........Arquivo para apresentação do projeto
+|   |-- 03-PosterProjeto.........Poster para feiras acadêmico/científicas
+|-- 05-Qualificacao-Defesa-Poster
+|   |-- 01-Qualificacao..........Documento qualificação
+|   |-- 02-DefesaQualificacao....Apresentação da qualificação 
+|   `-- 03-PosterQualificacao....Poster para feiras acadêmico/científicas
+|-- 06-Desenvolvimento
+|   |-- 01t-DadosTeoricos.....................Tese teórica, dados levantados
+|   |-- 02t-ModelagemTeorica..................Modelos desenvolvidos
+|   |-- 03t-ResultadosTeoricos................Resultados obtidos
+
+|   |-- 01e-DadosAmostras.....................Tese experimental, dados levantados
+|   |-- 02e-ModelagemExperimental.............Modelos desenvolvidos
+|   |-- 03e-ResultadosExperimentos............Resultados obtidos
+
+|   |-- 01n-DadosSimulacoes...................Tese teórica, dados levantados
+|   |-- 02n-ModelagemNumericaComputacional....Modelos desenvolvidos
+|   |-- 03n-ResultadosSimulacoes..............Resultados obtidos
+|   |-- Leiame
+|-- 07-Resultados-Relatorios-Posters-Artigos
+|   |-- 01-Relatorios...........Relatórios técnicos
+|   |-- 02-Posters..............Posters do trabalho final
+|   |-- 03-Artigos..............Artigos e publicações científicas em revistas
+|   |-- Leiame
+|-- 08-Resultados-DocumentoFinal-IC-MSC-DSC
+|   |-- abnt.layout.............Modelo da abnt para TeX/LaTeX/LyX
+|   |-- bibliografia.bib........Arquivo com referências bibliográficas no formato .bib
+|   |-- Cap0-Capa.lyx...........Arquivos que compõem o documento final
+|   |-- Cap1-Introducao.lyx
+|   |-- Cap2-RevisaoBibliografica.lyx
+|   |-- Cap3-RevisaoDeModelos.lyx
+|   |-- Cap4-Metodologia.lyx
+|   |-- Cap5-Desenvolvimento.lyx
+|   |-- Cap6-Resultados.lyx
+|   |-- Cap7-Conclusoes.lyx
+|   |-- Cap-Apendice_A.lyx
+|   |-- Cap-Apendice_B.lyx......Instruções uso LyX e referências bibliográficas
+|   |-- Cap-Nomenclatura.lyx
+|   |-- Cap-ResumoAbstract.lyx
+|   |-- Monografia-Dissertacao-Tese-master.lyx..Arquivo Mestre/Master do LyX
+|-- 09-Bolsas-CordenacaoDocumentos
+|   `-- leiame..................Documentos encaminhados para coordenação do programa
+|-- imagens
+|   `-- xxx.jpg.................Coloque aqui, de forma estruturada e com nomes coerentes, todas as imagens utilizadas/desenvolvidas.
+|-- listagens
+|   |-- leiame.txt..............Coloque aqui, de forma estruturada e com nomes coerentes, todos os arquivos utilizados/desenvolvidos.
+
+

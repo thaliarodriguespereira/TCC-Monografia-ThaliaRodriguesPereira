@@ -1,0 +1,555 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options false
+\language brazilian
+\inputencoding latin1
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement hp
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 0
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 15mm
+\topmargin 25mm
+\rightmargin 15mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\size large
+Curso de Pós-Graduação em Engenharia de Reservatório e de Exploração de
+ Petróleo
+\begin_inset Newline newline
+\end_inset
+
+LENEP/CCT/UENF
+\end_layout
+
+\begin_layout Description
+Tema 
+\series bold
+para tese de doutorado.
+\end_layout
+
+\begin_layout Description
+Orientador: 
+\series bold
+Prof: André Duarte Bueno.
+\end_layout
+
+\begin_layout Description
+Co-orientador: 
+\series bold
+Nivaldo Silveira Ferreira.
+\end_layout
+
+\begin_layout Description
+Aluno: 
+\end_layout
+
+\begin_layout Description
+Proposta
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $N^{0}$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+1.
+\end_layout
+
+\begin_layout Subsection*
+
+\emph on
+Desenvolvimento de Modelos, Métodos e Algoritmos Computacionais para Determinaçã
+o da Permeabilidade Relativa de Rochas Reservatório com Uso de Métodos de
+ Análise de Imagem: Aplicação em Plataformas Computacionais com uso de Múltiplas
+-Threads e Múltiplos-Processos
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{UENF - Universidade Estadual do Norte Fluminense - Darcy Ribeiro 
+\backslash
+linebreak LENEP - Laboratório de Engenharia e Exploração de Petróleo} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rhead{
+\backslash
+thepage} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lfoot{
+\backslash
+tiny LENEP - Rod.
+ Amaral Peixoto, km 163- Av.
+ Brennand S/N - Imboacica - CEP 27.925.310- Macaé - RJ - Tel (22) 2773-6565
+ - Site http://www.lenep.uenf.br} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+cfoot{} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rfoot{} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+Vários modelos e algoritmos para a determinação da permeabilidade de rochas
+ são encontrados na bibliografia, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pm-Bear,pm-koplik-cond,pm-dullien92,pm-ioannidis-kwiecien-chatzis"
+
+\end_inset
+
+, entretanto, ainda são poucos os trabalhos que utilizam análise de imagens
+ de rochas reservatório, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pm-perm-santos-lg-jpse,pm-singh-moh,pm-BerrymanBlair"
+
+\end_inset
+
+, e um número ainda menor de trabalhos que enfoquem a determinação da permeabili
+dade relativa de rochas reservatório utilizando análise de imagens, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "adb-PermeabilidadeRelativa,adb-119-Propetro-kr"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Abstract
+Para determinação da permeabilidade relativa de rochas reservatório com
+ uso da análise de imagens são necessários modelos para
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+A medotologia global utilizada para determinação das propriedades petrofísicas
+ utilizando análise de imagens é descrita em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "adb-tese"
+
+\end_inset
+
+ e os conceitos da área de análise de imagem, são descritos em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "imgan-CcocquerezPhilippi,imgan-CosterChermant,imgan-faconj,imgan-gomes-velho,imgan-gonzales"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+: i) a simulação do fluxo bifásico dentro das estruturas tridimensionais
+ reconstruídas (obtendo as regiões ocupadas por cada fluido) e ii) determinação
+ da permeabilidade de cada fase, a cada valor de saturação.
+ 
+\end_layout
+
+\begin_layout Abstract
+O presente projeto objetiva dar continuidade a dissertação de mestrado do
+ Aluno Leandro Puerari, com o título "DETERMINAÇÃO DA PERMEABILIDADE RELATIVA
+ DE ROCHAS RESERVATÓRIO COM USO DE MÉTODOS DA ANÁLISE DE IMAGENS " defendida
+ no LENEP em fevereiro de 2010.
+\end_layout
+
+\begin_layout Abstract
+\begin_inset CommandInset citation
+LatexCommand cite
+key "adb-135-Leandro-COBEM-2009,mestrado-LeandroPuerari"
+
+\end_inset
+
+ desenvolveu uma metodologia, algoritmos e o programa LVP - Laboratório
+ Virtual de Petrofísica, para a determinação da permeabilidade relativa
+ de rochas reservatório, utilizando-se para tal o modelo de determinação
+ das configurações de equilíbrio de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "magnani-confeq,adb-twofase"
+
+\end_inset
+
+ e o modelo do grafo de conexão serial para determinação das permeabilidades
+ intrínsecas de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "adb-GrafoConexaoSerial"
+
+\end_inset
+
+.
+ A validação dos modelos e algoritmos desenvolvidos foi realizada comparando-se
+ os resultados simulados com dados experimentais (fornecidos pelo CENPES-PETROBR
+AS), ampliando-se os trabalhos apresentados em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "adb-PermeabilidadeRelativa,adb-119-Propetro-kr,adb-135-Leandro-COBEM-2009,mestrado-LeandroPuerari"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Abstract
+O presente projeto amplia o trabalho de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "adb-135-Leandro-COBEM-2009,mestrado-LeandroPuerari"
+
+\end_inset
+
+, incluindo, uma melhor organização das bibliotecas existentes, análise
+ com novas imagens, organização do LVP, otimização dos algoritmos e, principalme
+nte, o desenvolvimento de um conjunto de novos modelos, métodos e algoritmos
+ que façam uso de processamento paralelo e/ou distribuido.
+\end_layout
+
+\begin_layout Description
+Palavras
+\begin_inset space ~
+\end_inset
+
+Chaves: Petrofísica, Permeabilidade Relativa, Rocha Reservatório, Análise
+ de Imagens, Processamento Paralelo e Distribuido, Multiplas Threads e Múltiplos
+ Processos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Proposta
+\end_layout
+
+\begin_layout Standard
+Objetivos do presente tema:
+\end_layout
+
+\begin_layout Enumerate
+Identificar as modificações nos equipamentos de aquisição de imagens e impactos
+ sobre os algoritmos (incluindo microtomógrafos).
+ Analizar novos métodos de caracterização de imagens.
+ Fazer um levantamento bibliográfico atualizado, de bibliotecas e métodos
+ de processamento paralelo.
+\end_layout
+
+\begin_layout Enumerate
+Atualizar a base de dados de imagens do LENEP/UENF.
+\end_layout
+
+\begin_layout Enumerate
+Desenvolver novos modelos, métodos e algoritmos aplicados a determinação
+ da permeabilidade relativa de rochas reservatório com uso de técnicas de
+ processamento e análise de imagens.
+\end_layout
+
+\begin_layout Enumerate
+Pesquisar e atualizar bibliotecas científicas que utilizem processamento
+ paralelo e distribuído (atualizar a lib_ldsc).
+\end_layout
+
+\begin_layout Enumerate
+Desenvolver um conjunto de algoritmos, paralelizados, para solução de problemas
+ com análise de imagens; incluindo reconstrução 3D e determinação da permeabilid
+ade relativa.
+\end_layout
+
+\begin_layout Enumerate
+Desenvolver um conjunto de simulações e comparar os resultados obtidos com
+ dados experimentais.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Etapas do trabalho do aluno
+\end_layout
+
+\begin_layout Enumerate
+Revisão Bibliográfica:
+\begin_inset Newline newline
+\end_inset
+
+ Identificar as modificações nos equipamentos de aquisição de imagens e
+ impactos sobre os algoritmos (analizar por exemplo tipos de informações
+ obtidas com novos microtomógrafos e a viabilidade de seu uso).
+ Identificar e analizar novos métodos de caracterização de imagens de rochas
+ reservatório.
+ Fazer um levantamento bibliográfico atualizado, identificando e analizando
+ novos métodos de determinação da permeabilidade intrinseca e relativa de
+ rochas reservatório.
+ Estudar as recentes inovações de C++0x e das bibliotecas de processamento
+ paralelo e distribuído.
+ Pesquisar bibliotecas de processamento científico em C++.
+ Atualizar conhecimentos práticos de desenvolvimento de software, incluindo
+ novas versões do compilador C++ (gcc), do kdevelop e das bibliotecas Qt
+ e QWT.
+\end_layout
+
+\begin_layout Enumerate
+Dados: 
+\begin_inset Newline newline
+\end_inset
+
+Obter e cadastrar um conjunto novo de imagens de rochas reservatório localizadas
+ na bacia de campos (dados fornecidos pelo CENPES-PETROBRAS.).
+ Atualizar a base de dados de imagens do LENEP/UENF incluindo imagens que
+ possibilitem o estudo das rochas reservatório localizadas nas áreas do
+ Pré-Sal.
+ Além das imagens, serão necessários dados de porosidade e permeabilidade
+ intrinseca e relativa das rochas a serem estudadas.
+\end_layout
+
+\begin_layout Enumerate
+Metodologia: 
+\begin_inset Newline newline
+\end_inset
+
+Desenvolver novos modelos, métodos e algoritmos aplicados a determinação
+ da permeabilidade relativa de rochas reservatório com uso de técnicas de
+ processamento e análise de imagens.
+\begin_inset Newline newline
+\end_inset
+
+Desenvolver uma metodologia de trabalho que viabilize o uso prático dos
+ métodos para caracterização, reconstrução e simulação de propriedades petrofísi
+cas, incluindo a determinação das configurações de equilíbrio, a permeabilidade
+ intrínseca e a permeabilidade relativa em um software amigável, multiplataforma
+, e que utilize extensivamente novas tecnologias de processamento paralelo.
+ Isto inclui a remodelação do software LVP - 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Laboratório Virtual de Petrofísica
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Desenvolvimento:
+\begin_inset Newline newline
+\end_inset
+
+Revisão, detalhamento e documentação dos métodos existentes, principalmente
+ os relacionados a solução do sistema de equações.
+ Pesquisar e atualizar bibliotecas científicas em C++ que utilizem processamento
+ paralelo e distribuído, analizar sua inclusão na lib_dsc.
+\begin_inset Newline newline
+\end_inset
+
+Reescrever os algoritmos da lib_ldsc considerando a nova versão da linguagem
+ C++, conhecida como C++0x.
+ O objetivo é incorporar novas tecnologias como o uso das novas bibliotecas
+ computacionais de C++ (a serem incluidas no padrão C++) e técnicas de processam
+ento paralelo como o pacote para o desenvolvimento de programas com threads.
+\begin_inset Newline newline
+\end_inset
+
+Estudo e análise de bibliotecas de paralelização existentes, incluindo múltiplas
+-threads, múltiplos-processos, e MPI.
+\begin_inset Newline newline
+\end_inset
+
+Desenvolvimento de novos algoritmos para determinação da permeabilidade
+ relativa utilizando: i) múltiplas-threads (rodam numa mesma máquina com
+ memória compartilhada).
+ ii) múltiplos-processos (rodam em máquinas separadas) e iii) MPI.
+\begin_inset Newline newline
+\end_inset
+
+Desenvolver modelos de reconstrução para rochas do pré-sal.
+\begin_inset Newline newline
+\end_inset
+
+Desenvolver adaptações nos modelos existentes de forma a incluir parâmetros
+ dinâmicos.
+\end_layout
+
+\begin_layout Enumerate
+Testes e validações:
+\begin_inset Newline newline
+\end_inset
+
+Desenvolver um conjunto de simulações de permeabilidade relativa e comparar
+ os resultados obtidos com dados experimentais, avaliando-se desta forma
+ os métodos desenvolvidos, sua capacidade de resolver o problema proposto
+ e as alterações que se fazem necessárias para obtenção de melhores resultados
+ (valores simulados, tempos de processamento, capacidades do sistema computacion
+al).
+ Problemas específicos, como os efeitos de borda, o uso do método com meios
+ não isotrópicos, e a simulação de representações com grande dimensão, precisam
+ ser avaliados.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Análise dos resultados, conclusões.
+\end_layout
+
+\begin_layout Enumerate
+Desenvolvimento da tese, de pelo menos dois artigos nacionais e um artigo
+ em revista.
+\end_layout
+
+\begin_layout Standard
+Observação: A inovação e a maior dificuldade do trabalho estão na identificação
+ dos problemas dos métodos existentes e na definição dos limites em que
+ os mesmos podem ser utilizados.
+ No desenvolvimento de novos modelos conceituais para determinação da permeabili
+dade relativa, e no desenvolvimento de novos métodos de reconstrução 3D
+ aplicados a rochas do pré-sal.
+\end_layout
+
+\begin_layout Subsection*
+Dados
+\end_layout
+
+\begin_layout Standard
+Os dados a serem utilizados são imagens de rochas reservatório e curvas
+ de permeabilidade relativa a serem obtidos junto ao CENPES-PETROBRAS.
+\end_layout
+
+\begin_layout Subsection*
+Demandas instrumentais
+\end_layout
+
+\begin_layout Standard
+O trabalho com análise de imagens de rocha reservatório envolve a utilização
+ de equipamentos de impregnação e polimento de amostras de calha, microscópios
+ (ótico e/ou eletrônico) e estações de trabalho.
+ No presente trabalho, as dados serão fornecidos pelo CENPES-PETROBRAS,
+ sendo necessário apenas a disponibilização de uma estação de trabalho para
+ o aluno.
+ Também serão disponibilizadas duas workstations com 8 núcleos de processamento
+ e 64 GB para teste dos modelos paralelizados a serem desenvolvidos.
+\end_layout
+
+\begin_layout Subsection*
+Recursos financeiros
+\end_layout
+
+\begin_layout Standard
+Será elaborado um projeto de pesquisa com o objetivo de alavancar os recursos
+ necessários junto ao CNPQ/CTPETRO ou Petrobras ou FAPERJ ou outro meio
+ de financiamento.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "/home/andre/Andre/Artigos/andre"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
