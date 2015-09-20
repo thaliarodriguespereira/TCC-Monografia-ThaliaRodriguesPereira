@@ -139,7 +139,7 @@ thispagestyle{empty}
 \align center
 
 \size large
-TÍTULO DA DISSERTAÇÃO / TESE
+TÍTULO DO(A) TCC/DISSERTAÇÃO/TESE
 \begin_inset Note Note
 status open
 
@@ -215,7 +215,7 @@ MACAÉ - RJ
 \begin_inset Newline newline
 \end_inset
 
-FEVEREIRO - 2015
+DEZEMBRO - 2015
 \end_layout
 
 \begin_layout Standard
@@ -413,7 +413,7 @@ MACAÉ - RJ
 \begin_inset Newline newline
 \end_inset
 
-FEVEREIRO - 2014
+DEZEMBRO - 2015
 \begin_inset Newline newline
 \end_inset
 
@@ -654,7 +654,7 @@ Tese apresentada ao Centro de Ciências e Tecnologia da Universidade Estadual
 \begin_layout Standard
 \noindent
 \align left
-Aprovada em xx de xxxxxx de 2014.
+Aprovada em xx de xxxxxx de 2015.
 \begin_inset Newline newline
 \end_inset
 
@@ -1193,8 +1193,7 @@ lhead{Epígrafe}
 \align right
 
 \emph on
-"O temor do Senhor é o princípio da sabedoria..." (Prov.
- 9:10)
+"XXXXXXX"
 \end_layout
 
 \end_body

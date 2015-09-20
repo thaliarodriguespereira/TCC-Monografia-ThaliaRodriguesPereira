@@ -111,23 +111,35 @@
 Usando TeX/LaTeX/LyX
 \end_layout
 
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
-Pacotes a serem instalados 
+Pacotes a serem instalados
+\end_layout
+
+\begin_layout Subsection
+Windows
 \end_layout
 
 \begin_layout Standard
-Apresenta-se a seguir um conjunto de pacotes a serem instalados no GNU/Linux.
+Basta ir no site do LyX e baixar o instalador.
+\end_layout
+
+\begin_layout Subsection
+GNU/Linux
+\end_layout
+
+\begin_layout Standard
+Basta abrir um terminal e digitar:
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+yum install lyx abntex
+\end_layout
+
+\begin_layout Standard
+De forma mais detalhada apresenta-se a seguir um conjunto de pacotes a serem
+ instalados no GNU/Linux.
 \end_layout
 
 \begin_layout Itemize
@@ -152,16 +164,52 @@ yum install 'tex(esint10.pfb)'
 \end_layout
 
 \begin_layout Itemize
-yum -y install abnt abntex 
+yum -y install abnt abntex texlive-abntex2 abntex-lyx texlive-abntex2-doc
 \end_layout
 
 \begin_layout Itemize
 yum -y install gnuplot 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Description
+Nota: Versões mais recente do Fedora usam o gerenciador de pacotes 
+\family typewriter
+dnf
+\family default
+, basta trocar 
+\family typewriter
+yum
+\family default
+ por 
+\family typewriter
+dnf
+\family default
 .
 \end_layout
+
+\begin_layout Description
+Nota: em minha máquina estão instalados os seguintes pacotes abntex:
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+abntex-0.8-2.noarch 
+\end_layout
+
+\begin_layout Description
+texlive-abntex2-svn32794.1.9.2-1.1.fc21.noarch 
+\end_layout
+
+\begin_layout Description
+abntex-lyx-0.8-2.noarch 
+\end_layout
+
+\begin_layout Description
+texlive-abntex2-doc-svn32794.1.9.2-1.1.fc21.noarch
+\series bold
+
+\begin_inset Note Note
+status collapsed
 
 \begin_layout Section
 Configuração TeX/LaTeX
@@ -174,7 +222,7 @@ Ativando a hifenação de textos em português
 \begin_layout Itemize
 
 \color blue
-Rodar o programa
+Abrir um terminal e rodar o programa
 \color inherit
  
 \series bold
@@ -190,7 +238,7 @@ o ítem `HYPHEN' e a seguir 'LaTeX'.
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Plain Layout
 %! portuges pt8hyph.tex
 \end_layout
 
@@ -202,7 +250,7 @@ e retire o comentário %!, ficando
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Plain Layout
 %! portuges pt8hyph.t
 \end_layout
 
@@ -283,6 +331,12 @@ status open
 texhash.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Inclusão de Figuras
 \begin_inset Index idx
@@ -382,7 +436,7 @@ reference "Figure: sequencia"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -441,10 +495,10 @@ amento com o filtro passa baixa em (b).
 
 \begin_layout Standard
 \begin_inset Float figure
-placement hp
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -617,8 +671,8 @@ x
 \begin{equation}
 FF(\mathbf{x})=\left\{ \begin{array}{cc}
 \begin{array}{c}
-1\:\:\: se\:\:\mathbf{x}\:\: pertence\: ao\: espaco\: poroso\:\:\:\:\:\\
-0\:\: se\:\:\mathbf{x}\:\: n\tilde{a}o\: pertence\: ao\: espaco\: poroso
+1\:\:\:se\:\:\mathbf{x}\:\:pertence\:ao\:espaco\:poroso\:\:\:\:\:\\
+0\:\:se\:\:\mathbf{x}\:\:n\tilde{a}o\:pertence\:ao\:espaco\:poroso
 \end{array}\end{array}\right.\label{eq_ffx-1}
 \end{equation}
 
@@ -699,8 +753,8 @@ caixa a esquerda irá gerar entrada automática na nomenclatura
 \begin{equation}
 FF(\mathbf{x})=\left\{ \begin{array}{cc}
 \begin{array}{c}
-1\:\:\: se\:\:\mathbf{x}\:\: pertence\: ao\: espaco\: poroso\:\:\:\:\:\\
-0\:\: se\:\:\mathbf{x}\:\: n\tilde{a}o\: pertence\: ao\: espaco\: poroso
+1\:\:\:se\:\:\mathbf{x}\:\:pertence\:ao\:espaco\:poroso\:\:\:\:\:\\
+0\:\:se\:\:\mathbf{x}\:\:n\tilde{a}o\:pertence\:ao\:espaco\:poroso
 \end{array}\end{array}\right.\label{eq_ffx-1-1}
 \end{equation}
 
