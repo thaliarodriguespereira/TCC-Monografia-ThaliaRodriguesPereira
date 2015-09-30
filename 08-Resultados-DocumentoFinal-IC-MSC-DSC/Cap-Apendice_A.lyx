@@ -135,28 +135,6 @@ thepage}
 Descreve-se neste apêndice ...
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lhead{Apêndice 
-\backslash
-thechapter: Titulo do apêndice}
-\backslash
-rhead{
-\backslash
-thepage}
-\end_layout
-
-\end_inset
-
-Descreve-se neste apêndice ...
-\end_layout
-
 \begin_layout Itemize
 Tudo aquilo que for importante para a tese mas não essencial, deve ser colocado
  em apêndices.
