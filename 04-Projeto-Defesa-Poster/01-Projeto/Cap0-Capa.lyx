@@ -119,7 +119,8 @@ thispagestyle{empty}
 \align center
 
 \size large
-TÍTULO DA DISSERTAÇÃO / TESE
+TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃ
+O / TESE; TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃO / TESE
 \begin_inset Note Note
 status open
 
@@ -135,7 +136,7 @@ O título deve ser o mais claro possível, não deixando dúvidas sobre o assunt
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 6cm
+\begin_inset VSpace 5cm
 \end_inset
 
 
@@ -171,7 +172,7 @@ LABORATÓRIO DE ENGENHARIA E EXPLORAÇÃO DE PETRÓLEO
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 8cm
+\begin_inset VSpace 7cm
 \end_inset
 
 
@@ -185,7 +186,7 @@ MACAÉ - RJ
 \begin_inset Newline newline
 \end_inset
 
-Janeiro - 2015
+MARÇO - 2015
 \end_layout
 
 \begin_layout Standard
@@ -270,7 +271,8 @@ thispagestyle{empty}
 \align center
 
 \size large
-TÍTULO DA DISSERTAÇÃO / TESE
+TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃ
+O / TESE; TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃO / TESE
 \end_layout
 
 \begin_layout Standard
@@ -348,7 +350,7 @@ manter esta linha apenas nas monografias
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 4cm
+\begin_inset VSpace 3cm
 \end_inset
 
 
@@ -361,7 +363,7 @@ Orientador: Prof.
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 3.5cm
+\begin_inset VSpace 3cm
 \end_inset
 
 
@@ -375,7 +377,7 @@ MACAÉ - RJ
 \begin_inset Newline newline
 \end_inset
 
-NOVEMBRO - 2014
+MARÇO - 2015
 \end_layout
 
 \begin_layout Standard
@@ -425,7 +427,8 @@ pagenumbering{roman}
 \align center
 
 \size large
-TÍTULO DA DISSERTAÇÃO / TESE
+TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃ
+O / TESE; TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃO / TESE
 \end_layout
 
 \begin_layout Standard
@@ -567,7 +570,7 @@ baselineskip}
 \noindent
 \align left
 Prof.
- Fulano de Tal (Titulo, FormaçãoMaisElevada) - INSTITUIÇÃO/EMPRESA
+ Fulano de Tal (Título, FormaçãoMaisElevada) - INSTITUIÇÃO/EMPRESA
 \begin_inset Newline newline
 \end_inset
 
@@ -910,7 +913,7 @@ Reconhecer que teve ajuda e apoio é uma característica importante para todo
  Lembre-se dos amigos, dos professores, dos funcionários, dos colaboradores.
  Lembre-se de quem emprestou/cedeu material, dados, informações, amostras.
  Lembre-se de quem lhe ajudou nos algoritmos/programas, na preparação e
- realização de experimentos.
+ realização de experimentos e simulações.
  
 \end_layout
 

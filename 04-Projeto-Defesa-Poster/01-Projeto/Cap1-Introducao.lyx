@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass abnt
@@ -22,18 +22,18 @@
 \maintain_unincluded_children false
 \language brazilian
 \language_package default
-\inputencoding latin1
+\inputencoding iso8859-1
 \fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -57,15 +57,24 @@
 \pdf_pdfusetitle true
 \papersize a4paper
 \use_geometry true
-\use_amsmath 1
-\use_esint 0
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
 \index Índice
 \shortcut idx
@@ -298,6 +307,36 @@ name "sec:Organizacao-do-Documento"
 
 \end_layout
 
+\begin_layout Itemize
+Lembre-se, cada capítulo deve iniciar com uma descrição do que vai ser visto.
+ Você deve copiar para seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Organizacao-do-Documento"
+
+\end_inset
+
+ exatamente o mesmo texto do início de cada capítulo.
+ A ideia é ajudar o leitor: lembre-se, hoje em dia a maioria das pessoas
+ irá ler seu trabalho aos poucos, as vezes um capítulo por dia, assim, a
+ descrição no início do capítulo ajuda o leitor a se situar.
+ 
+\end_layout
+
+\begin_layout Itemize
+A descrição da organização do documento auxilia o leitor, além de ajudar
+ o autor a organizar seu trabalho.
+\end_layout
+
+\begin_layout Itemize
+Esta parte deve ser feita logo no início do trabalho e tem como objetivo
+ ajudar a organizar as ideias.
+\end_layout
+
+\begin_layout Itemize
+Veja exemplo a seguir.
+\end_layout
+
 \begin_layout Standard
 Apresenta-se nesta seção a organização do documento.
 \end_layout
@@ -439,28 +478,30 @@ XXX
 \end_layout
 
 \begin_layout Itemize
-A descrição da organização do documento auxilia o leitor, além de ajudar
- o autor a organizar seu trabalho.
-\end_layout
-
-\begin_layout Itemize
-Esta parte deve ser feita logo no início do trabalho e tem como objetivo
- ajudar a organizar as ideias.
-\end_layout
-
-\begin_layout Itemize
-Lembre-se, cada capítulo deve iniciar com uma descrição do que vai ser visto.
- Você deve copiar para seção 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Organizacao-do-Documento"
-
+Nota: Todo material auxiliar, não diretamente relacionado ao trabalho deve
+ estar nos apêndices! 
+\begin_inset Newline newline
 \end_inset
 
-cá exatamente o mesmo texto do início de cada capítulo.
- A ideia é ajudar o leitor: lembre-se, hoje em dia a maioria das pessoas
- irá ler seu trabalho aos poucos, as vezes um capítulo por dia, assim, a
- descrição no início do capítulo ajuda o leitor a se situar.
+Ou seja, nos capítulos COLOCAR SOMENTE MATERIAL DIRETAMENTE RELACIONADO
+ AO SEU TRABALHO! 
+\begin_inset Newline newline
+\end_inset
+
+Isto faz com a linha de raciocínio se desenvolva naturalmente, fazendo com
+ que a leitura do material fique gostosa.
+\begin_inset Newline newline
+\end_inset
+
+Um documento que tem layout e formatação adequada (como este modelo - não
+ mude!), e cuja leitura é fluida (gostosa), é meio caminho andado para uma
+ boa defesa.
+\begin_inset Newline newline
+\end_inset
+
+Some aí um bom documento de apresentação, com apresentação bem ensaiada
+ e teremos 50% do sucesso garantido.
+ Os outros 50% referem-se a importância e qualidade do trabalho desenvolvido!
 \end_layout
 
 \end_body

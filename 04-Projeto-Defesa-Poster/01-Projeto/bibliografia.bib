@@ -1,24 +1,43 @@
 %--------------------------------------------------------------------
 % NAME: andre.bib (18/02/2002)
 %
-% Base BibX para referências citadas em artigos
+% O que é um arquivo BiBTeX?
+% É um arquivo em modo texto (tipo ASCII), que inclui referências completas para os
+% trabalhos (artigos/relatórios/teses/etc) a serem citados em sua monografia/dissertação/tese.
+%
+% Porque usar?
+% A vantagem de usar uma base de dados com as referencias bibliográficas
+% (como este arquivo), é que seu editor científico (ex: o LyX) 
+% poderá gerar as citações nos mais variados formatos acadêmicos.
+%
+% Como faço para usar?
+% No caso do LyX(2.0.2), você insere a base bibliográfica usando:
+% Lyx->Inserir->Listas e Indices->Bibliografia BiBTeX
 %
 % INSTRUÇÕES:
 % 0- Use o find (crtl-s ##)  para localizar as diferentes seções desta base de dados
-%    para próximo ítem basta digitar ctrl-s novamente.
+%    para próximo ítem basta digitar ctrl-s novamente (no emacs!).
 % 1-Use o emacs ou um editor simples para editar este arquivo
-%   Pode acentuar normalmente, usando çá,,, depois use o programa
-%   bibtool para converter para o formato tex.
+%   Pode acentuar normalmente, usando çá,,; 
+
+% 2-Use o emacs (menu BIBTEX) para verificar a consistencia das entradas
+% Se tiver alguma inconsistência o emacs deve informar.
+
+% 3-Use o programa bibtool para gerar saída formatada.
+% ex: bibtool bibliografia
+
+% 4-Use as entradas normalmente no Lyx ou em outro editor tex.
+
+% 5-Se estiver no GNU/Linux, verifique se o arquivo .bib esta no formato do Unix. 
+% Use o programa dos2unix para converter arquivos do dos/windows para o GNU/Linux.
+% Use o programa unix2dos para converter arquivos do GNU/Linux para dos/windows.
+
 %   Para eliminar caracteris iso, e deixar somente ASCII, use o bibtool.
 %     bibtool -r iso2tex -i iso.bib -o ascii.bib
-% 2-Use o emacs (menu BIBTEX) para verificar a consistencia das entradas
-% 3-Use o programa bibtool para verificar a consistência das entradas
-% 4-Use as entradas normalmente no Lyx ou em outro editor tex.
-% 5-PS: Verifique se os arquivos estão no formato do Unix 
-% (use o programa dos2unix para converter arquivos do dos/windows para o linux).
+
 %--------------------------------------------------------------------
 %--------------------------------------------------------------------
-% Para facilitar a localizacao, use o formato
+% Para facilitar a localizacao das chaves, defina um padrao, como exemplo:
 % adb    - artigos pessoais
 % imgan  - artigos de análise de imagem
 % pm     - artigos sobre meios porosos
@@ -28,7 +47,7 @@
 % me     - artigos multi-escala
 % prob   - artigos probabilidade, processos estocásticos
 % microt - artigos micro tomografia
-% numan  - artigos sobre métodos numéricos
+% numan  - artigos sobre métodos numéricos 
 % math   - artigos matemáticos
 % sl     - software livre
 % prog   - artigos/manuais programação
@@ -61,19 +80,6 @@
 %--------------------------------------------------------------------
 % ## MESTRADO,  DOUTORADO, CONCURSOS  Andre
 %--------------------------------------------------------------------
-@mastersthesis{adb-mestrado,
-  author	= {André Duarte Bueno},
-  title		= {Transferência de Calor e Umidade em Telhas:
-		  Simulação e Análise Experimental},
-  school	= {Programa de Pós-Graduação em Engenharia Civil da Universidade Federal de Santa Catarina},
-  year		= {1994},
-  type		= {Tese de Mestrado},
-  address	= {Florianópolis},
-  month		= {agosto},
-  note		= {Nota},
-  key		= {Transferência de Calor, Telhas, tiles, meios porosos, transport in porous media}
-}
-
 @PhdThesis{adb-tese,
   author = 	 {André Duarte Bueno},
   title = 	 {Estudo Geométrico das Representações Tridimensionais da Estrutura Porosa e Grafo de 
@@ -87,6 +93,21 @@
 % incluir memorial UENF
 % incluir projeto UENF
 
+@mastersthesis{adb-mestrado,
+  author	= {André Duarte Bueno},
+  title		= {Transferência de Calor e Umidade em Telhas:
+		  Simulação e Análise Experimental},
+  school	= {Programa de Pós-Graduação em Engenharia Civil da Universidade Federal de Santa Catarina},
+  year		= {1994},
+  type		= {Tese de Mestrado},
+  address	= {Florianópolis},
+  month		= {agosto},
+  note		= {Nota},
+  key		= {Transferência de Calor, Telhas, tiles, meios porosos, transport in porous media}
+}
+
+
+% Monografia concurso
 @TechReport{adb-monografia-ufsc,
   author = 	 {André Duarte Bueno},
   title = 	 {Método de Reconstrução da Gaussiana Truncada 2: Análise das Representações Obtidas e Resultados},
@@ -109,9 +130,8 @@
  month		= {March}
 }
 
-
 %--------------------------------------------------------------------
-% ## Artigos em congressos Andre
+% ## Artigos em congressos 
 %--------------------------------------------------------------------
 @inproceedings{adb-zonaconforto,
   author	= {André Duarte Bueno and  Roberto Lamberts},
@@ -122,7 +142,7 @@
 }
 
 %--------------------------------------------------------------------
-% ## Manuais Andre
+% ## Manuais 
 %--------------------------------------------------------------------
 @manual{adb-prog-apostilaprogramacao-v03,
   author	= {André Duarte Bueno},
@@ -133,7 +153,7 @@
 }
 
 %--------------------------------------------------------------------
-% ## Não publicado Andre
+% ## Não publicado 
 %--------------------------------------------------------------------
 @unpublished{adb-prog-simulacaotelha,
   author	= {André Duarte Bueno and Paulo Cesar Philippi},
@@ -144,7 +164,7 @@
 }
 
 %--------------------------------------------------------------------
-% ## Relatórios Andre
+% ## Relatório Andre
 %--------------------------------------------------------------------
 
 @techreport{adb-rel2003,
@@ -157,7 +177,7 @@
 }
 
 %--------------------------------------------------------------------
-% Livros andre
+% Livro 
 %--------------------------------------------------------------------
 @Book{adb-prog-livroCpp,
   author = 	 {André Duarte Bueno},
@@ -182,7 +202,7 @@
 }
 
 %--------------------------------------------------------------------
-% ## Métodos experimentais
+% Anais de Congressos
 %--------------------------------------------------------------------
 
 @InProceedings{pm-brakel-mercurypor,
@@ -195,7 +215,7 @@
 }
 
 %--------------------------------------------------------------------
-% ## PERCOLAÇÃO
+% Artigos
 %--------------------------------------------------------------------
 @Article{perc-ioannidis-chatzis,
   author	= {M. Ioannidis and I. Chatzis},
@@ -207,7 +227,7 @@
 }
 
 %--------------------------------------------------------------------
-% ## Fenômenos de Histerese
+% ## Assunto dos artigos abaixo...
 %--------------------------------------------------------------------
 @Article{Pavel-hysteresys,
   author = 	 {B.Plohr and D. Marchesin and Pavel Bedrikovetsky and P. Krause},
@@ -224,7 +244,7 @@
 %--------------------------------------------------------------------
 
 @Book{SL-latex-lyxtut,
-  author = 	 {Amir Karger et al.},
+  author = 	 {Amir Karger},
   title = 	 {O Tutorial de Lyx},
   year = 	 {2004},
   address = 	 {},
@@ -232,7 +252,7 @@
 }
 
 @Book{SL-latex-lyxUG,
-  author = 	 {LyX Team},
+  author = 	 {"Lyx\_Team"},
   title = 	 {The LyX User's Guide},
   year = 	 {2004},
   address = 	 {},
@@ -240,7 +260,7 @@
 }
 
 @Book{SL-latex-lyxEF,
-  author = 	 {LyX Team},
+  author = 	 {"Lyx\_Team"},
   title = 	 {Extended LyX Features},
   year = 	 {2004},
   address = 	 {},
@@ -264,7 +284,7 @@
 }
 
 @Book{SL-latex-Guide2e,
-  author = 	 {Helmut Kopla e Patrick W. Daly},
+  author = 	 {Helmut Kopla and Patrick W. Daly},
   title = 	 {A Guide to Latex 2e},
   year = 	 {1995},
   address = 	 {New York},
@@ -287,4 +307,18 @@
   year = 	 {1985},
   address = 	 {},
   publisher = 	 {Addison-Wesley}
+}
+
+
+
+
+%--------------------------------------------------------------------
+% ## Referencia online
+%--------------------------------------------------------------------
+@ONLINE{RefOnline,
+author = {Doe, Ringo},
+title = {This is a test entry of type {@ONLINE}},
+month = jun,
+year = {2009},
+url = {http://www.test.org/doe/}
 }

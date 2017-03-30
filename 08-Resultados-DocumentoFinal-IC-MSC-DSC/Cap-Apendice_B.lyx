@@ -297,13 +297,74 @@ Inclusão de figuras
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Todas as ilustrações, quadros, fotos, esquemas, esboços, desenhos, diagramas,
  gráficos e demais imagens são incluídos como Figuras; já as Tabelas serão
  incluídas como tabelas.
  
 \end_layout
 
+\begin_layout Itemize
+Impressão colorida é caro, logo, quando fizer gráficos, prefira gráficos
+ em preto e branco com uso de marcadores.
+\end_layout
+
+\begin_layout Itemize
+
+\color red
+Lembre-se que se a figura, foto, esquemas, etc, for colorido o mesmo deve
+ obrigatoriamente ser impresso em cores.
+\end_layout
+
+\begin_layout Itemize
+Veja o que diz o link http://www.cedsmi.ufpr.br/celsoishida/tutorial/artigo/figura.p
+hp
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+"Toda figura deve ser explicada antes de aparecer.
+ É preciso uma descrição detalhada de toda sigla, variável ou parte da figura.
+\end_layout
+
+\begin_layout Itemize
+Deve-se explicar todos os detalhes para que a figura seja autoexplicativa.
+\end_layout
+
+\begin_layout Itemize
+Toda figura deve ser referenciada no texto.
+ 
+\end_layout
+
+\begin_layout Itemize
+Foi tirado de alguma fonte? Cite a fonte 'Fonte: (Ishida 2013)'.
+ Se modificou algo utilize 'Fonte: Adaptado de Ishida (2013)'.
+\end_layout
+
+\begin_layout Itemize
+Prefira traduzir do que deixar a figura em inglês [Sugestão Bueno: deixar
+ conforme original e caso necessário explicar em portugues]
+\end_layout
+
+\begin_layout Itemize
+Não deixe tabelas como sendo figuras.
+\end_layout
+
+\begin_layout Itemize
+Evitar: figura 'abaixo' e 'acima'.
+\end_layout
+
+\begin_layout Itemize
+Figuras devem ser chamadas de 'Figura X', com a primeira letra maiúscula
+ e o número da mesma.
+\end_layout
+
+\begin_layout Itemize
+Utilizar 'Inserir Label' no Lyx para incluir a referência abaixo da figura
+ e 'Inserir Referência cruzada' para citar a mesma.
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 Veja a seguir exemplo de inclusão de Figura.
  
@@ -497,6 +558,7 @@ subtítulo para figura b
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename ../imagens/I26.jpg
 	scale 35
@@ -535,6 +597,12 @@ name "Figure: Imagem colorida após pré-processamento."
 \end_inset
 
 
+\end_layout
+
+\begin_layout Description
+Dica: digamos que tenha uma figura e não lembre de onde a tirou.
+ Vá em http://images.google.com/, cole a figura que o google tenta achar a
+ mesma.
 \end_layout
 
 \begin_layout Section
@@ -617,8 +685,8 @@ x
 \begin{equation}
 FF(\mathbf{x})=\left\{ \begin{array}{cc}
 \begin{array}{c}
-1\:\:\: se\:\:\mathbf{x}\:\: pertence\: ao\: espaco\: poroso\:\:\:\:\:\\
-0\:\: se\:\:\mathbf{x}\:\: n\tilde{a}o\: pertence\: ao\: espaco\: poroso
+1\:\:\:se\:\:\mathbf{x}\:\:pertence\:ao\:espaco\:poroso\:\:\:\:\:\\
+0\:\:se\:\:\mathbf{x}\:\:n\tilde{a}o\:pertence\:ao\:espaco\:poroso
 \end{array}\end{array}\right.\label{eq_ffx-1}
 \end{equation}
 
@@ -699,8 +767,8 @@ caixa a esquerda irá gerar entrada automática na nomenclatura
 \begin{equation}
 FF(\mathbf{x})=\left\{ \begin{array}{cc}
 \begin{array}{c}
-1\:\:\: se\:\:\mathbf{x}\:\: pertence\: ao\: espaco\: poroso\:\:\:\:\:\\
-0\:\: se\:\:\mathbf{x}\:\: n\tilde{a}o\: pertence\: ao\: espaco\: poroso
+1\:\:\:se\:\:\mathbf{x}\:\:pertence\:ao\:espaco\:poroso\:\:\:\:\:\\
+0\:\:se\:\:\mathbf{x}\:\:n\tilde{a}o\:pertence\:ao\:espaco\:poroso
 \end{array}\end{array}\right.\label{eq_ffx-1-1}
 \end{equation}
 

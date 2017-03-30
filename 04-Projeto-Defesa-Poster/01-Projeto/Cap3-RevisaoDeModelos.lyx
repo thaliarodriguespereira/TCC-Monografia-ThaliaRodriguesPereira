@@ -84,12 +84,12 @@
 \begin_body
 
 \begin_layout Chapter
-Revisão de Conceitos e Modelos
+Revisão de Conceitos 
 \begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
-Revisão de Conceitos e Modelos
+Revisão de Conceitos
 \end_layout
 
 \end_inset
@@ -114,7 +114,7 @@ status open
 \backslash
 lhead{
 \backslash
-thechapter-Revisão dos Modelos a Serem Utilizados} 
+thechapter-Revisão de Conceitos} 
 \backslash
 rhead{
 \backslash
@@ -187,259 +187,6 @@ Um título de seção não pode vir seguido de um título de sub-seção!
 \begin_layout Itemize
 Entre os dois deve-se incluir algum texto, nem que seja o que vai ser visto
  nas sub-seções.
-\end_layout
-
-\begin_layout Subsection
-Inclusão de figuras
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Inclusão de figuras
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Veja a seguir exemplo de inclusão de Figura.
- 
-\end_layout
-
-\begin_layout Itemize
-No LyX 2.00, vá em "Inserir-Flutuante-Figura" (também pode clicar no ícone
- "Inserir Flutuante Figura").
-\end_layout
-
-\begin_layout Itemize
-Dentro do box "float:figure" ou "flutuante: Figura" você deve incluir o
- título da Figura - gráfico/foto/mapa/etc.
- 
-\end_layout
-
-\begin_layout Itemize
-a seguir inclua um "label-rótulo", que será utilizado para referência cruzada.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-No LyX 2.0 vá em "Inserir etiqueta" ou pressione o botão "Inserir Legenda".
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-acima do titulo coloque a figura.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-No LyX 2.0 vá em "Inserir Gráficos" ou click no ícone "Inserir Gráficos".
-\end_layout
-
-\begin_layout Itemize
-Para centralizar a figura, clicar no ícone "Configurações de parágrafo"
- e selecionar "center""centro".
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-outra possibilidade é copiar um box de figura existente, e então modificar
- título, rótulo e figura.
-\end_layout
-
-\begin_layout Itemize
-Dica: no canto superior esquerdo do box que contém a figura, existe um texto
- em vermelho com box cinza.
- Ao clicar com o botão esquerdo do mouse neste box, o mesmo é iconizado.
- Repeta o clic para retornar ao estado anterior.
- Ao clicar com o botão direito, abre-se um diálogo em que é possível selecionar
- a opção [ X ] Aqui definitivamente, se quizer obrigar o LyX/TeX-LaTeX a
- colocar a figura aqui.
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "Figure: sequencia"
-
-\end_inset
-
- as etapas fundamentais no processamento digital de imagens, adaptadas ao
- estudo de lâminas de meios porosos.
- Dentre as vantagens do uso da análise de imagens para a determinação das
- propriedades físicas das rochas destacam-se a possibilidade de análise
- de grande quantidade de amostras a um custo reduzido e o uso de amostras
- de calha e de testemunhos danificados.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../../imagens/0-sequencia-processos-conhecimentos-base.png
-	scale 35
-	rotateOrigin center
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Etapas fundamentais no processamento digital de imagens, aplicadas ao estudo
- de lâminas de meios porosos [adaptado de Gonzales e Woods (1992)].
-\begin_inset CommandInset label
-LatexCommand label
-name "Figure: sequencia"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Outro exemplo com duas figuras em um box
-\end_layout
-
-\begin_layout Standard
-A Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "Figure: Imagem colorida após pré-processamento."
-
-\end_inset
-
- mostra uma imagem do Berea 200 colorida em (a) e depois da etapa de pré-process
-amento com o filtro passa baixa em (b).
- Observe a redução do contraste e um certo embaçamento da imagem.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement hp
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-subtítulo para figura a
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../../imagens/I26.jpg
-	scale 50
-	rotateOrigin center
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-subtítulo para figura b
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../../imagens/I26.jpg
-	scale 50
-	rotateOrigin center
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Titulo da figura.
- Em (a) blablabla; em (b) blablabla.
-\begin_inset CommandInset label
-LatexCommand label
-name "Figure: Imagem colorida após pré-processamento."
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -532,8 +279,8 @@ x
 \begin{equation}
 FF(\mathbf{x})=\left\{ \begin{array}{cc}
 \begin{array}{c}
-1\:\:\: se\:\:\mathbf{x}\:\: pertence\: ao\: espaco\: poroso\:\:\:\:\:\\
-0\:\: se\:\:\mathbf{x}\:\: n\tilde{a}o\: pertence\: ao\: espaco\: poroso
+1\:\:\:se\:\:\mathbf{x}\:\:pertence\:ao\:espaco\:poroso\:\:\:\:\:\\
+0\:\:se\:\:\mathbf{x}\:\:n\tilde{a}o\:pertence\:ao\:espaco\:poroso
 \end{array}\end{array}\right.\label{eq_ffx-1}
 \end{equation}
 
@@ -614,8 +361,8 @@ caixa a esquerda irá gerar entrada automática na nomenclatura
 \begin{equation}
 FF(\mathbf{x})=\left\{ \begin{array}{cc}
 \begin{array}{c}
-1\:\:\: se\:\:\mathbf{x}\:\: pertence\: ao\: espaco\: poroso\:\:\:\:\:\\
-0\:\: se\:\:\mathbf{x}\:\: n\tilde{a}o\: pertence\: ao\: espaco\: poroso
+1\:\:\:se\:\:\mathbf{x}\:\:pertence\:ao\:espaco\:poroso\:\:\:\:\:\\
+0\:\:se\:\:\mathbf{x}\:\:n\tilde{a}o\:pertence\:ao\:espaco\:poroso
 \end{array}\end{array}\right.\label{eq_ffx-1-1}
 \end{equation}
 
@@ -779,7 +526,7 @@ et al
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \paragraph_spacing single
@@ -954,7 +701,7 @@ O tamanho das colunas é definido pelo texto colocado dentro da coluna.
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1281,7 +1028,7 @@ reference "tab:Exemplo-de-tabela-2"
 placement h
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard

@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass abnt
@@ -7,6 +7,7 @@
 \usepackage {graphicx}
 \usepackage {longtable}
 \usepackage {indentfirst}
+\usepackage {listings}
 \renewenvironment{center}{\par\centering}{\par}
 
 % Comentar linhas abaixo se não estiver usando pacote abntex
@@ -17,24 +18,26 @@
 \renewcommand {\familydefault}{\sfdefault}
 
 %\usepackage{natbib}
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
 \end_preamble
 \options normaltoc, sumarioincompleto
 \use_default_options false
 \maintain_unincluded_children false
 \language brazilian
 \language_package default
-\inputencoding latin1
+\inputencoding iso8859-1
 \fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -58,15 +61,24 @@
 \pdf_pdfusetitle true
 \papersize a4paper
 \use_geometry true
-\use_amsmath 1
-\use_esint 0
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
 \index Índice
 \shortcut idx
@@ -96,7 +108,3239 @@
 \begin_body
 
 \begin_layout Chapter
-Título do Apêndice
+O Básico do TeX/LaTeX/LyX
+\end_layout
+
+\begin_layout Itemize
+Nota: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Informações específicas do LaTeX podem ser obtidas aqui 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.latex-project.org/"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Informações específicas do LyX podem ser obtidas aqui 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.lyx.org/"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+O que é o LyX?
+\end_layout
+
+\begin_layout Standard
+Veja o que diz o site 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.lyx.org/Home"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quotation
+"
+\emph on
+LyX is a document processor that encourages an approach to writing based
+ on the structure of your documents (WYSIWYM) and not simply their appearance
+ (WYSIWYG).
+ LyX combines the power and flexibility of TeX/LaTeX with the ease of use
+ of a graphical interface.
+ This results in world-class support for creation of mathematical content
+ (via a fully integrated equation editor) and structured documents like
+ academic articles, theses, and books.
+ In addition, staples of scientific authoring such as reference list and
+ index creation come standard.
+ But you can also use LyX to create a letter or a novel or a theatre play
+ or film script.
+ A broad array of ready, well-designed document layouts are built in.
+ LyX is for people who want their writing to look great, right out of the
+ box.
+ No more endless tinkering with formatting details, “finger painting” font
+ attributes or futzing around with page boundaries.
+ You just write.
+ On screen, LyX looks like any word processor; its printed output — or richly
+ cross-referenced PDF, just as readily produced — looks like nothing else.
+ LyX is released under a Free Software/Open Source license, runs on Linux/Unix,
+ Windows, and Mac OS X, and is available in several languages.
+\emph default
+"
+\end_layout
+
+\begin_layout Section
+Pacotes a serem instalados 
+\end_layout
+
+\begin_layout Subsection
+Pacotes a serem instalados no GNU/Linux
+\end_layout
+
+\begin_layout Standard
+Apresenta-se a seguir um conjunto de pacotes a serem instalados no GNU/Linux.
+\end_layout
+
+\begin_layout Itemize
+yum -y install emacs gedit kate 
+\end_layout
+
+\begin_layout Itemize
+yum -y install kbibtex cpp2latex latex2html tex-preview tex-simplecv texinfo
+ texlive texlive-babel-portuges.noarch texlive-bezos texlive-dvips texlive-esint.n
+oarch texlive-fragments texlive-greek-fontenc texlive-kpfonts texlive-latex
+ texlive-listings texlive-multirow texlive-nomencl.noarch texlive-pretty-ref
+ texlive-rotfloat texlive-texmf-fonts texlive-texmf-latex texlive-utils
+ texlive-esint-type1.noarch texlive-hanging texlive-language-cyrillic
+\end_layout
+
+\begin_layout Itemize
+yum install 'tex(esint10.pfb)'
+\end_layout
+
+\begin_layout Itemize
+yum -y install lyx 
+\end_layout
+
+\begin_layout Itemize
+yum -y install abnt abntex 
+\end_layout
+
+\begin_layout Itemize
+yum -y install gnuplot 
+\end_layout
+
+\begin_layout Subsection
+Pacotes a serem instalados no Windows
+\end_layout
+
+\begin_layout Standard
+Para instalar no windows veja:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.lyx.org/Download"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "http://wiki.lyx.org/Windows/Windows"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "ftp://ftp.lyx.org/pub/lyx/bin/2.1.1/LyX-2.1.1-Bundle-1.exe"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Configuração TeX/LaTeX
+\end_layout
+
+\begin_layout Subsection
+Ativando a hifenação de textos em português
+\end_layout
+
+\begin_layout Itemize
+Rodar o programa 
+\series bold
+texconfig
+\series default
+, selecionar o ítem `HYPHEN' e a seguir 'LaTeX'.
+ Procure pela linha:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+%! portuges pt8hyph.tex
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+e retire o comentário %!, ficando
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+%! portuges pt8hyph.t
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Salve a modificação
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\size large
+\color blue
+ (ctrl+x ctrl+s) e saia do emacs (ctrl+x ctrl+s)
+\end_layout
+
+\end_inset
+
+.
+ Abra um terminal e rode o comando 
+\series bold
+texhash
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+O programa 
+\series bold
+texhash
+\series default
+ é usado para atualizar a base de dados do LaTeX.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Definindo o padrão de tamanho de papel 
+\end_layout
+
+\begin_layout Itemize
+Selecione o ítem `XDVI', e a seguir `PAPER'.
+ Selecione `A4'.
+\end_layout
+
+\begin_layout Itemize
+Selecione o ítem `DVIPS', e a seguir `GLOBAL'.
+ Selecione `A4'.
+\end_layout
+
+\begin_layout Itemize
+Salve a modificação
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\size large
+\color blue
+ (ctrl+x ctrl+s) e saia do emacs (ctrl+x ctrl+s)
+\end_layout
+
+\end_inset
+
+.
+ Abra um terminal e rode o comando 
+\series bold
+texhash.
+\end_layout
+
+\begin_layout Section
+Uso do LyX
+\end_layout
+
+\begin_layout Subsection
+Inclusão de Figuras
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Inclusão de figuras
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Todas as ilustrações, quadros, fotos, esquemas, esboços, desenhos, diagramas,
+ gráficos e demais imagens são incluídos como Figuras; já as Tabelas serão
+ incluídas como tabelas.
+ 
+\end_layout
+
+\begin_layout Standard
+Veja a seguir exemplo de inclusão de Figura.
+ 
+\end_layout
+
+\begin_layout Itemize
+No LyX 2.00, vá em "Inserir-Flutuante-Figura" (também pode clicar no ícone
+ "Inserir Flutuante Figura").
+\end_layout
+
+\begin_layout Itemize
+Dentro do box "float:figure" ou "flutuante: Figura" você deve incluir o
+ título da Figura - gráfico/foto/mapa/etc.
+ 
+\end_layout
+
+\begin_layout Itemize
+a seguir inclua um "label-rótulo", que será utilizado para referência cruzada.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+No LyX 2.0 vá em "Inserir etiqueta" ou pressione o botão "Inserir Legenda".
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+acima do titulo coloque a figura.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+No LyX 2.0 vá em "Inserir Gráficos" ou click no ícone "Inserir Gráficos".
+\end_layout
+
+\begin_layout Itemize
+Para centralizar a figura, clicar no ícone "Configurações de parágrafo"
+ e selecionar "center""centro".
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+outra possibilidade é copiar um box de figura existente, e então modificar
+ título, rótulo e figura.
+\end_layout
+
+\begin_layout Itemize
+Dica: no canto superior esquerdo do box que contém a figura, existe um texto
+ em vermelho com box cinza.
+ Ao clicar com o botão esquerdo do mouse neste box, o mesmo é iconizado.
+ Repeta o clic para retornar ao estado anterior.
+ Ao clicar com o botão direito, abre-se um diálogo em que é possível selecionar
+ a opção [ X ] Aqui definitivamente, se quizer obrigar o LyX/TeX-LaTeX a
+ colocar a figura aqui.
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Figure: sequencia"
+
+\end_inset
+
+ as etapas fundamentais no processamento digital de imagens, adaptadas ao
+ estudo de lâminas de meios porosos.
+ Dentre as vantagens do uso da análise de imagens para a determinação das
+ propriedades físicas das rochas destacam-se a possibilidade de análise
+ de grande quantidade de amostras a um custo reduzido e o uso de amostras
+ de calha e de testemunhos danificados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/0-sequencia-processos-conhecimentos-base.png
+	scale 35
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Etapas fundamentais no processamento digital de imagens, aplicadas ao estudo
+ de lâminas de meios porosos [adaptado de Gonzales e Woods (1992)]
+\begin_inset CommandInset label
+LatexCommand label
+name "Figure: sequencia"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Veja a seguir exemplo com duas figuras em um box
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Figure: Imagem colorida após pré-processamento."
+
+\end_inset
+
+ mostra uma imagem do Berea 200 colorida em (a) e depois da etapa de pré-process
+amento com o filtro passa baixa em (b).
+ Observe a redução do contraste e um certo embaçamento da imagem.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement hp
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/I26.jpg
+	width 30page%
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+subtítulo para figura a
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../imagens/I26.jpg
+	width 30page%
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+subtítulo para figura b
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Titulo da figura.
+ Em (a) blablabla; em (b) blablabla
+\begin_inset CommandInset label
+LatexCommand label
+name "Figure: Imagem colorida após pré-processamento."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Inclusão de Equações
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Inclusão de equações
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Veja a seguir exemplo de equações numeradas.
+ No Lyx 2.0 vá em "Inserir Math Fórmula Numerada".
+ Se selecionar a equação e pressionar no ícone "Inserir Legenda" ou em "Inserir
+ Etiqueta", pode-se dar um nome para a equação, e este nome pode ser referenciad
+o ao longo do texto.
+\end_layout
+
+\begin_layout Standard
+A caracterização tem como objetivo identificar parâmetros geométricos do
+ material em estudo.
+ Em uma imagem bidimensional já segmentada procura-se determinar a porosidade,
+ a distribuição de tamanho de poros, a função autocorrelação, a função conectivi
+dade, o número de objetos, a área dos objetos e fatores de forma.
+ Alguns destes parâmetros são descritos a seguir.
+\end_layout
+
+\begin_layout Standard
+Seja 
+\series bold
+x
+\series default
+ um ponto de coordenada (x,y) onde 
+\emph on
+x,y
+\emph default
+ são valores inteiros num espaço discreto bidimensional.
+ Pode-se definir a função de fase 
+\emph on
+FF
+\emph default
+(
+\series bold
+x
+\series default
+) pela relação: 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+sem usar a opção de nomenclatura automática, copiar para nomenclatura as
+ definições de 
+\series bold
+x
+\series default
+, e 
+\emph on
+FF
+\emph default
+(
+\series bold
+x
+\series default
+).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+FF(\mathbf{x})=\left\{ \begin{array}{cc}
+\begin{array}{c}
+1\:\:\:se\:\:\mathbf{x}\:\:pertence\:ao\:espaco\:poroso\:\:\:\:\:\\
+0\:\:se\:\:\mathbf{x}\:\:n\tilde{a}o\:pertence\:ao\:espaco\:poroso
+\end{array}\end{array}\right.\label{eq_ffx-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Seja 
+\series bold
+x
+\series default
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "x"
+description "Um ponto de coordenada (x,y)"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+usando a opção de nomenclatura automática, note a caixa ao lado de x
+\end_layout
+
+\end_inset
+
+ um ponto de coordenada (x,y) onde 
+\emph on
+x,y
+\emph default
+ são valores inteiros num espaço discreto bidimensional.
+ Pode-se definir a função de fase 
+\emph on
+FF
+\emph default
+(
+\series bold
+x
+\series default
+)
+\emph on
+ 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "FF(x)"
+description "Função de fase "
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+caixa a esquerda irá gerar entrada automática na nomenclatura
+\end_layout
+
+\end_inset
+
+
+\emph default
+ pela relação: 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+FF(\mathbf{x})=\left\{ \begin{array}{cc}
+\begin{array}{c}
+1\:\:\:se\:\:\mathbf{x}\:\:pertence\:ao\:espaco\:poroso\:\:\:\:\:\\
+0\:\:se\:\:\mathbf{x}\:\:n\tilde{a}o\:pertence\:ao\:espaco\:poroso
+\end{array}\end{array}\right.\label{eq_ffx-1-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Inclusão de Tabelas
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Inclusão de tabelas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Exemplo-de-tabela"
+
+\end_inset
+
+ blablabla.
+\end_layout
+
+\begin_layout Itemize
+Para inserir uma tabela o procedimento é praticamente o mesmo da inserção
+ de figuras, a diferença é que você deve selecionar "Inserir Flutuante Tabela".
+\end_layout
+
+\begin_layout Itemize
+Para alterar manualmente a largura de uma coluna, posiciona o mouse sobre
+ a coluna, click com o botão direito, selecione "More" e "Configurações",
+ depois entre com a largura e pressione ok.
+\end_layout
+
+\begin_layout Itemize
+Quando colocamos o mouse dentro da tabela, aparece uma barra de tarefas
+ na parte de baixo do Lyx, que nos permite manipular alguns aspectos da
+ tabela.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O tamanho das colunas é definido pelo texto colocado dentro da coluna.
+ Você pode setar o tamanho da coluna; clicar com botão direito em cima da
+ coluna que quer modificar, a seguir vá em more->configurações e então sete
+ a largura em cm.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de tabela flutuante
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Exemplo-de-tabela"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coluna 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coluna 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coluna 3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Exemplo-de-tabela-2"
+
+\end_inset
+
+ blablabla.
+ A primeira coluna foi definida com 3cm de largura, e a tabela foi rotacionada
+ (configurações - rodar lado).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de tabela flutuante - coluna com dimensão fixa e rotacionada
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Exemplo-de-tabela-2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="20" columns="11">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coluna 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coluna 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coluna 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coluna 4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coluna 5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coluna 6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coluna 7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coluna 8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coluna 9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coluna 10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 1 blablablal l adlalda ldlasdlasd asld
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linha 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Inclusão de Listagens de Código
+\end_layout
+
+\begin_layout Standard
+O TeX/LaTeX inclui uma quantidade enorme de pacotes que podem ser instalados
+ em sua máquina para dar suporte a algum tipo de documento científico ou
+ algum tipo de diagramação específica.
+ Informações específicas do LaTeX podem ser obtidas aqui 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.latex-project.org/"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A inclusão de listagens de códigos é um exemplo de diagramação específica;
+ neste caso queremos que um texto armazenado externamento, como um arquivo
+ de código em C++, seja inserido na monografia.
+ Podemos fazer isto usando o pacote listings.
+ Para tal, digitamos CTRL+L para inserir um comando do LaTeX.
+ Lembrando que este comando segue as regras definidas para o pacote listings
+ (detalhes aqui 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings"
+
+\end_inset
+
+ e aqui
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.ctan.org/pkg/listings"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Veremos a seguir um exemplo e depois o que significa os comandos passados.
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Nota: Comandos de TeX/LaTeX aparecem dentro de um box com linhas vermelhas,
+ como o comando a seguir que inclui uma referência.
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CAplicacao-h}
+\end_layout
+
+\end_inset
+
+ o arquivo com código da classe 
+\family typewriter
+CAplicacao
+\family default
+.
 \end_layout
 
 \begin_layout Standard
@@ -107,36 +3351,107 @@ status open
 
 
 \backslash
-lhead{Apêndice 
+lstset{language=C++} 
 \backslash
-thechapter: Titulo do apêndice}
+lstinputlisting[ caption={Arquivo de cabeçalho da classe.}, label={CAplicacao-h},
+extendedchars=true,breaklines=true,basicstyle=
 \backslash
-rhead{
+footnotesize
 \backslash
-thepage}
+tt] {../../listagens/CAplicacao.h}
 \end_layout
 
 \end_inset
 
-Descreve-se neste apêndice ...
+
 \end_layout
 
 \begin_layout Standard
-[tudo aquilo que for importante para a tese mas não essencial, deve ser
- colocado em apêndices]
-\begin_inset Note Note
+Apresenta-se na listagem 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-Pegue todo aquele material do tipo "encher linguíça" e coloque aqui.
+
+
+\backslash
+ref{CAplicacao-cpp}
+\end_layout
+
+\end_inset
+
+ o arquivo de implementação da classe 
+\family typewriter
+CAplicacao
+\family default
+.
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
 \begin_layout Plain Layout
-Deixar no meio do texto principal da monografia/tese material que não é
- fundamental ao trabalho, seu desenvolvimento científico, só enche o saco
- do orientador e leitores.
- Na prática o aluno perde ponto!
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da classe.}, label={CAplicacao
+-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../listagens/CAplicacao.cpp}
+\end_layout
+
+\end_inset
+
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{List-5-3-programa.cpp}
+\end_layout
+
+\end_inset
+
+ o programa que usa a classe 
+\family typewriter
+CAplicacao
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={
+\end_layout
+
+\begin_layout Plain Layout
+
+Arquivo de implementação da função 
+\backslash
+texttt{main()}.}, label={List-5-3-programa.cpp},extendedchars=true,breaklines=true
+,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../listagens/Programa.cpp}
 \end_layout
 
 \end_inset
@@ -145,23 +3460,217 @@ Deixar no meio do texto principal da monografia/tese material que não é
 \end_layout
 
 \begin_layout Standard
-[como exemplo, revisão de metodologias, técnicas, modelos matemáticos, ítens
- desenvolvidos por terceiros]
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=,backgroundcolor=
+\backslash
+color{azulclaro}}   
+\backslash
+lstinputlisting[caption=,extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../listagens/Programa.out}   
+\backslash
+lstset{backgroundcolor=} 
 \end_layout
 
-\begin_layout Standard
-[algoritmos e programas devem ser colocados no apêndice]
-\end_layout
-
-\begin_layout Standard
-[imagens de programas desenvolvidos/utilizados devem ser colocados no apêndice]
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Agora vamos explicar estes comandos:
+\end_layout
+
+\begin_layout Itemize
+
+\backslash
+lstset{language=C++} 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Indica que o arquivo a ser incluído é um código em C++.
+ O pacote listings suporta dezenas de linguagens.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe.} 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Aqui temos, dentro de {} o título que irá aparecer em cima da listagem.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+, label={CAplicacao-h}, 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Aqui estamos dando um apelido(um rótulo) para esta listagem.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+extendedchars=true, 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Aqui informamos que o código pode ter caracteres extendidos.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+breaklines=true, 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Aqui pedimos para cortar automaticamente as linhas muito grandes, movendo
+ para linha inferior.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Aqui estamos definindo o tamanho da letra as opções são 
+\begin_inset Newline newline
+\end_inset
+
+(
+\begin_inset CommandInset href
+LatexCommand href
+target "http://faculty.uoit.ca/bohun/latex/fonts.html"
+
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Itemize
+
+\backslash
+tiny 5 5 note que tyne equivale aproximadamente a uma letra com fonte 5
+\end_layout
+
+\begin_layout Itemize
+
+\backslash
+scriptsize 7 7 
+\end_layout
+
+\begin_layout Itemize
+
+\backslash
+footnotesize 8 8 
+\end_layout
+
+\begin_layout Itemize
+
+\backslash
+small 9 9 
+\end_layout
+
+\begin_layout Itemize
+
+\backslash
+normalsize 10 10 
+\end_layout
+
+\begin_layout Itemize
+
+\backslash
+large 12 12 
+\end_layout
+
+\begin_layout Itemize
+
+\backslash
+Large 14 14.40 
+\end_layout
+
+\begin_layout Itemize
+
+\backslash
+LARGE 18 17.28 
+\end_layout
+
+\begin_layout Itemize
+
+\backslash
+huge 20 20.74 
+\end_layout
+
+\begin_layout Itemize
+
+\backslash
+Huge 24 24.88
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+{../listagens/CAplicacao.h} 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Finalmente aqui estamos informando o caminho e o nome do arquivo que será
+ incluido.
+ Prefira sempre caminhos relativos (ex: ../listagens/CAplicacao.h) no lugar
+ de caminhos fixos (ex: C:
+\backslash
+listagens
+\backslash
+CAplicacao.h).
+ Para indicar diretórios use / no GNU/Linux e 
+\backslash
+ no windows.
+\end_layout
+
+\begin_layout Itemize
+Note que se usar caminhos fixos, como em C:
+\backslash
+listagens
+\backslash
+CAplicacao.h, não irá funcionar em outros computadores!
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Maiores detalhes do pacote listings aqui 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+target "http://mirrors.ctan.org/macros/latex/contrib/listings/listings.pdf"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -239,22 +3748,67 @@ Insert Cross-Reference
 \begin_layout Enumerate
 Aqui um exemplo, vou citar material sobre LyX e Latex.
  Veja maiores informações sobre latex em 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset citation
 LatexCommand cite
 key "SL-latex-companion,SL-latex-donald,SL-latex-demo,SL-latex-Guide2e,SL-latex-lamport,SL-latex-lyxEF,SL-latex-lyxtut,SL-latex-lyxUG"
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
+\begin_layout Enumerate
+Dica: em alguns sites é possivel encontrar os dados .bib da citação; 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Exemplo:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Vá no link 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+target "http://books.google.com.br/books/about/LATEX.html?id=khVUAAAAMAAJ&redir_esc=y"
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+e pressione no final da página o botão BibTeX, ele vai fazer o download
+ da referencia completa no formato bib para você.
+ Ou seja, é tão bacana que em alguns casos nem precisa digitar a citação!
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset href
+LatexCommand href
+target "http://books.google.com.br/books/download/LATEX.bibtex?id=khVUAAAAMAAJ&hl=pt-BR&output=bibtex"
+
 \end_inset
 
 
 \end_layout
 
+\end_deeper
+\end_deeper
 \begin_layout Subsection
 Citações no meio do texto
 \begin_inset Index idx
@@ -272,12 +3826,19 @@ Citações no meio do texto
 \begin_layout Standard
 Segundo 
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citet
 key "SL-latex-companion"
 
 \end_inset
 
- asldkjasldkajsdlkajsdlaksjd
+ asldkjasldkajsdlkajsdlaksjd 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "SL-latex-lyxEF,SL-latex-lyxtut"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -435,20 +3996,25 @@ dkajsdlkajsdlaksjd
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status collapsed
+Diversos sites de pesquisa e mesmo sites de pesquisa como o google, costumam
+ ter informações sobre artigos e livros no formato .bib.
+\end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Citações usando natbib
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Requer comando: 
 \backslash
 usepackage[options]{natbib}, no LyX, Documento->Configurações->->Bibliografia->E
 stiloCitação->Natbib.
  
 \end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -466,12 +4032,21 @@ citet{goossens93}
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \backslash
 citet{goossens93} Goossens et al.
  (1993)
 \end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -489,11 +4064,20 @@ citep{goossens93}
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \backslash
 citep{goossens93} (Goossens et al., 1993) 
 \end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -511,11 +4095,20 @@ citet*{goossens93}
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \backslash
 citet*{goossens93} Goossens, Mittlebach, and Samarin (1993) 
 \end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -533,11 +4126,20 @@ citep*{goossens93}
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \backslash
 citep*{goossens93} (Goossens, Mittlebach, and Samarin, 1993) 
 \end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -555,11 +4157,20 @@ citeauthor{goossens93}
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \backslash
 citeauthor{goossens93} Goossens et al.
 \end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -577,11 +4188,20 @@ citeauthor*{goossens93}
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \backslash
 citeauthor*{goossens93} Goossens, Mittlebach, and Samarin 
 \end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -599,11 +4219,20 @@ citeyear{goossens93}
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \backslash
 citeyear{goossens93} 1993
 \end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -621,11 +4250,20 @@ citeyearpar{goossens93}
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \backslash
 citeyearpar{goossens93} (1993) 
 \end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -643,12 +4281,21 @@ citealt{goossens93}
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \backslash
 citealt{goossens93} Goossens et al.
  1993 
 \end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -666,11 +4313,48 @@ citealp{goossens93}
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \backslash
 citealp{goossens93} Goossens et al., 1993
 \end_layout
+
+\begin_layout Section
+Acessando arquivos/referencias bib disponibilizadas na internet
+\end_layout
+
+\begin_layout Standard
+Veja a seguir Figura do site 
+\begin_inset CommandInset href
+LatexCommand href
+name "books.google.com.br"
+
+\end_inset
+
+.
+ O usuário localizou o livro na base de dados do google, rolou a página
+ para baixo e encontrou o link para as referencias nos formatos: BIBTeX,
+ EndNote e RefMan.
+ Baixe a versão BIBTex e copie seu conteúdo para o arquivo bibliografia.bib.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ../../imagens/imagensSites/books.google.com.br.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ../../imagens/imagensSites/books.google.com.br-referenciaCompleta.png
 
 \end_inset
 
@@ -678,7 +4362,7 @@ citealp{goossens93} Goossens et al., 1993
 \end_layout
 
 \begin_layout Section
-Informações adicionais
+Informações Adicionais
 \end_layout
 
 \begin_layout Itemize
@@ -722,23 +4406,40 @@ target "http://en.wikibooks.org/wiki/LaTeX/Bibliography_Management"
 
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Itemize
+Projeto LaTeX3, 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://latex-project.org/latex3.html"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 \noindent
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\noindent
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "bibliografia"
-options "abnt-alf"
+options "bibtotoc,apalike"
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-...
+\end_inset
+
+
 \end_layout
 
 \end_body
