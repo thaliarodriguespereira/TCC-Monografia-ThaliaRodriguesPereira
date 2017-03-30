@@ -131,7 +131,39 @@ Não se atenha ao modelo; leia o tutorial do LyX que é em português!
 status open
 
 \begin_layout Plain Layout
-.
+Nota importante:
+\end_layout
+
+\begin_layout Plain Layout
+----> Este modelo usa o abntex1 <----
+\end_layout
+
+\begin_layout Plain Layout
+No final de 2016 saiu a versão abntex2 que é a que esta vindo em várias
+ distribuições do GNU/Linux e versões mais recentes do miktex.
+ Isto pode causar incompatibilidades....
+\end_layout
+
+\begin_layout Plain Layout
+Como este modelo ainda usa abntex1 é possível que apareçam mensagens de
+ erro, normalmente a reclamação da falta de algum arquivo do tex/latex caso
+ abntex1 não tenha sido instalado.
+\end_layout
+
+\begin_layout Plain Layout
+Caso isto ocorra, anote num papel o nome do arquivo que esta pedindo.
+\end_layout
+
+\begin_layout Plain Layout
+Verifique se o arquivo esta localizado dentro do diretório abntex-08 (normalment
+e na pasta texmf).
+ Caso afirmativo, copie o arquivo para o diretório onde esta o arquivo mestre(es
+te que você lê).
+ Repita este procedimento para todos os arquivos solicitados.
+\end_layout
+
+\begin_layout Plain Layout
+Muito provavelmente vai funcionar!
 \end_layout
 
 \end_inset
