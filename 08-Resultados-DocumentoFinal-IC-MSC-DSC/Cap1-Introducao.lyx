@@ -260,6 +260,11 @@ Objetivo geral:
 ertação/tese].
 \end_layout
 
+\begin_layout Itemize
+Note que esta diretamente relacionado ao escopo do problema, a solução do
+ problema apresentado.
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 Objetivos específicos:
@@ -272,6 +277,16 @@ Objetivos específicos:
 
 \begin_layout Itemize
 [.....descrever de forma clara, direta, objetiva, cada objetivo específico].
+\end_layout
+
+\begin_layout Itemize
+Note que não são as etapas a serem realizadas no trabalho, as etapas aparecem
+ no capítulo de metodologia, aqui você deve colocar, por exemplo, questões
+ da física do problema, da matemática do problema, da modelagem numérica
+ computacional (ou experimental) e que serão resolvidas com seu trabalho.
+ Ou seja, são as coisas específicas que serão resolvidas para resolver o
+ problema geral.
+ 
 \end_layout
 
 \end_deeper

@@ -140,18 +140,19 @@ O objetivo deste capítulo é:
 
 \begin_deeper
 \begin_layout Itemize
-Indicar o método utilizado, a área e sub-área de concentração.
+Indicar a motivação para o tema; a classificação da pesquisa; o método utilizado
+, a área e sub-área de concentração.
+ 
+\end_layout
+
+\begin_layout Itemize
+Descrever hipóteses, pressupostos, variáveis.
  
 \end_layout
 
 \begin_layout Itemize
 Anunciar as ideias mestras adotadas e o plano de trabalho seguido.
  Pode ser em forma de indagação.
- 
-\end_layout
-
-\begin_layout Itemize
-Descrever hipóteses, pressupostos, variáveis.
  
 \end_layout
 
@@ -180,7 +181,12 @@ Dados: Indicar a origem dos dados, como foram/serão obtidos, analisados.
 \end_layout
 
 \begin_layout Itemize
-Testes e validações: Indicar como os resultados serão processados e analisados.
+Experimentos, ensaios e simulações.
+\end_layout
+
+\begin_layout Itemize
+Estudos estatíscicos, testes e validações: Indicar como os resultados serão
+ processados e analisados.
 \end_layout
 
 \end_deeper
@@ -828,22 +834,12 @@ Não ocorre variação dimensional no tamanho dos poros da telha em função
 \begin_layout Enumerate
 O coeficiente de condução k(h) leva em consideração a transferência de calor
  devido a diferença de temperatura e a transferência de conteúdo de líquido
- entre os elementos volumes de controle.
+ entre os volumes de controle.
 \end_layout
 
 \begin_layout Enumerate
 Nas medicoes dos valores de wl(conteúdo de massa mássico) são desconsideradas
- quaisquer variações decorrentes de mudanças no formato dos poros, associadas
- a laterização das faces da telha.
-\end_layout
-
-\begin_layout Enumerate
-A laterizacao das faces das amostras é desconsiderada.
-\end_layout
-
-\begin_layout Enumerate
-As hipóteses simplificadoras de cada um dos ensaios realizados serão mais
- claramente especificadas no relato do ensaio/experimento.
+ quaisquer variações decorrentes de mudanças no formato dos poros.
 \end_layout
 
 \begin_layout Enumerate
@@ -974,7 +970,7 @@ status open
 \begin_layout Plain Layout
 Como um trabalho científico precisa ser repetido e diferentes softwares
  podem fazer as coisas de forma diferente; é fundamental informar com clareza
- os dados dos softwares utilizados.
+ os dados dos softwares utilizados (incluindo versão).
  Viabiliza-se desta forma a repetitibilidade das simulações.
 \end_layout
 
@@ -1122,12 +1118,21 @@ name "sub:Simulações-computacionais"
 \end_layout
 
 \begin_layout Itemize
+Informar como o software será validado.
+\end_layout
+
+\begin_layout Itemize
+Informar como serão feitas análises de sensibilidade.
+\end_layout
+
+\begin_layout Itemize
 Listar previamente as simulações que serão realizadas e seus objetivos.
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-a ideia é evitar que o aluno sai fazendo centenas de simulações inúteis!
+Listar previamente as simulações que serão realizadas e seus objetivos a
+ ideia é evitar que o aluno sai fazendo centenas de simulações inúteis!
 \end_layout
 
 \end_inset

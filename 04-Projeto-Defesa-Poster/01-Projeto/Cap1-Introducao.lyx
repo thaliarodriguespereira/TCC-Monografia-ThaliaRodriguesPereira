@@ -18,7 +18,6 @@
 \end_preamble
 \options normaltoc, sumarioincompleto
 \use_default_options false
-\master Monografia-Dissertacao-Tese-master.lyx
 \maintain_unincluded_children false
 \language brazilian
 \language_package default
@@ -222,8 +221,8 @@ Citar os 2-3 principais trabalhos relacionados e fazer uma breve crítica
 \end_layout
 
 \begin_layout Itemize
-Neste capítulo podem entrar 1 e no máximo 2 figuras, bem ilustrativas (quase
- leigas).
+Neste capítulo podem entrar uma e no máximo duas figuras, bem ilustrativas
+ (quase leigas).
 \end_layout
 
 \begin_layout Section
@@ -261,6 +260,11 @@ Objetivo geral:
 ertação/tese].
 \end_layout
 
+\begin_layout Itemize
+Note que esta diretamente relacionado ao escopo do problema, a solução do
+ problema apresentado.
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 Objetivos específicos:
@@ -273,6 +277,16 @@ Objetivos específicos:
 
 \begin_layout Itemize
 [.....descrever de forma clara, direta, objetiva, cada objetivo específico].
+\end_layout
+
+\begin_layout Itemize
+Note que não são as etapas a serem realizadas no trabalho, as etapas aparecem
+ no capítulo de metodologia, aqui você deve colocar, por exemplo, questões
+ da física do problema, da matemática do problema, da modelagem numérica
+ computacional (ou experimental) e que serão resolvidas com seu trabalho.
+ Ou seja, são as coisas específicas que serão resolvidas para resolver o
+ problema geral.
+ 
 \end_layout
 
 \end_deeper
@@ -502,6 +516,13 @@ Um documento que tem layout e formatação adequada (como este modelo - não
 Some aí um bom documento de apresentação, com apresentação bem ensaiada
  e teremos 50% do sucesso garantido.
  Os outros 50% referem-se a importância e qualidade do trabalho desenvolvido!
+\end_layout
+
+\begin_layout Itemize
+Nota: 
+\color red
+Lembre-se que se a figura, foto, esquemas, etc, for colorido o mesmo deve
+ obrigatoriamente impresso em cores.
 \end_layout
 
 \end_body

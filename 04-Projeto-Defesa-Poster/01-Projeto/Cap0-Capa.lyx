@@ -7,9 +7,17 @@
 \usepackage {graphicx}
 \usepackage {longtable}
 \usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+\usepackage {helvet}
+\renewcommand {\familydefault}{\sfdefault}
 \end_preamble
+\options normaltoc, sumarioincompleto
 \use_default_options false
-\master Monografia-Dissertacao-Tese-master.lyx
 \maintain_unincluded_children false
 \language brazilian
 \language_package default
@@ -30,10 +38,22 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement h
 \paperfontsize 12
 \spacing onehalf
-\use_hyperref false
+\use_hyperref true
+\pdf_title "Título da Monografia - Dissertação - Tese"
+\pdf_author "Nome do Autor"
+\pdf_subject "Descrever assunto"
+\pdf_keywords "Copiar do resumo"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref page
+\pdf_pdfusetitle true
 \papersize a4paper
 \use_geometry true
 \use_package amsmath 1
@@ -66,12 +86,12 @@
 \rightmargin 20mm
 \bottommargin 20mm
 \secnumdepth 2
-\tocdepth 2
+\tocdepth 1
 \paragraph_separation indent
 \paragraph_indentation default
 \quotes_language english
 \papercolumns 1
-\papersides 2
+\papersides 1
 \paperpagestyle fancy
 \tracking_changes false
 \output_changes false
@@ -844,7 +864,17 @@ lhead{Dedicatória}
 
 \begin_layout Standard
 \align right
-coloque aqui a dedicação da Tese/Dissertação/Monografia.
+coloque aqui a dedicação
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+dedicação
+\end_layout
+
+\end_inset
+
+ da Tese/Dissertação/Monografia.
 \end_layout
 
 \begin_layout Standard
@@ -878,6 +908,20 @@ lhead{Agradecimentos}
 \paragraph_spacing onehalf
 \align left
 Ao ...
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Agradecimentos
+\end_layout
+
+\end_inset
+
+Agradecimentos
+\end_layout
+
+\begin_layout Standard
+Aos pais...
 \end_layout
 
 \begin_layout Standard
@@ -893,16 +937,7 @@ Aos professores e funcionários do LENEP/CCT/UENF....
 \end_layout
 
 \begin_layout Standard
-Aos pais...
-\end_layout
-
-\begin_layout Standard
 Ao CENPES/PETROBRAS pelo fornecimento de material....
-\end_layout
-
-\begin_layout Standard
-\paragraph_spacing double
-A CAPES/ANP/FAPERJ pelo fornecimento de bolsa de estudos.
 \end_layout
 
 \begin_layout Itemize
@@ -910,10 +945,25 @@ A CAPES/ANP/FAPERJ pelo fornecimento de bolsa de estudos.
 \align left
 Reconhecer que teve ajuda e apoio é uma característica importante para todo
  profissional e pesquisador.
- Lembre-se dos amigos, dos professores, dos funcionários, dos colaboradores.
+ 
+\end_layout
+
+\begin_layout Itemize
+\align left
+Lembre-se dos amigos, dos professores, dos funcionários, dos colaboradores.
  Lembre-se de quem emprestou/cedeu material, dados, informações, amostras.
- Lembre-se de quem lhe ajudou nos algoritmos/programas, na preparação e
- realização de experimentos e simulações.
+ 
+\end_layout
+
+\begin_layout Itemize
+\align left
+Lembre-se de quem lhe ajudou nos algoritmos/programas;
+\end_layout
+
+\begin_layout Itemize
+\align left
+Lembre-se de quem lhe ajudou na preparação e realização de experimentos
+ de laboratório.
  
 \end_layout
 
@@ -930,6 +980,41 @@ Cada agradecimento deve ser curto e objetivo.
 Troque o genérico "aos amigos" pelo nome completo dos seus amigos e nome
  completo das pessoas que colaboraram com seu trabalho.
  Os nomes das pessoas devem ser completos (não ambíguos).
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\paragraph_spacing double
+(obrigatório para bolsistas prh20-anp/ctpetro) - 
+\end_layout
+
+\end_inset
+
+Ao comitê gestor do PRH20-ANP-CTPETRO/LENEP/CCT/UENF, a Agência Nacional
+ do Petróleo, Gás Natural e Biocombustíveis – ANP, a Financiadora de Estudos
+ e Projetos – FINEP e ao Ministério da Ciência e Tecnologia – MCT pelo fornecime
+nto de bolsa de estudos e taxa de bancada por meio do Programa de Recursos
+ Humanos da ANP para o Setor Petróleo e Gás – PRH-ANP/MCT.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(obrigatório para bolsistas prh20-anp/petrobras) - 
+\end_layout
+
+\end_inset
+
+Ao comitê gestor do PRH20-ANP-PETROBRAS/LENEP/CCT/UENF, e a Universidade
+ Petrobras pelo fornecimento de bolsa de estudos e taxa de bancada por meio
+ do PFRH-PETROBRAS, Programa de Formação de Recursos Humanos da Petrobras.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -976,14 +1061,6 @@ lhead{Epígrafe}
 
 \emph on
 [Opcional e a escolha do autor(a) Ex: ]
-\end_layout
-
-\begin_layout Standard
-\align right
-
-\emph on
-"O temor do Senhor é o princípio da sabedoria..." (Prov.
- 9:10)
 \end_layout
 
 \end_body

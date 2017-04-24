@@ -295,9 +295,19 @@ filename "Cap-Nomenclatura.lyx"
 
 \begin_layout Standard
 \align block
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\align block
 \begin_inset CommandInset include
 LatexCommand include
 filename "Cap-ResumoAbstract.lyx"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -385,6 +395,16 @@ filename "Cap4-Metodologia.lyx"
 \begin_inset CommandInset include
 LatexCommand include
 filename "Cap5-Cronograma.lyx"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+O cronograma só aparece no projeto!
+\end_layout
 
 \end_inset
 
