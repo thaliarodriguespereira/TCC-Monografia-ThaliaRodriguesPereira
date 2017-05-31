@@ -127,7 +127,7 @@ thepage}
 \end_layout
 
 \begin_layout Standard
-Na revisão bibliográfica apresentou-se uma revisão dos trabalhos relacionados
+Na revisão bibliográfica apresentou-se uma revisão dos artigos relacionados
  a este trabalho.
  Apresenta-se neste capítulo um conjunto de conceitos e modelos desenvolvidos
  por outros autores mas que estão diretamente relacionados a este trabalho
@@ -136,11 +136,13 @@ Na revisão bibliográfica apresentou-se uma revisão dos trabalhos relacionados
 \end_layout
 
 \begin_layout Itemize
-É normal incluir, no início da tese, um capítulo onde são descritos os principai
-s conceitos, as principais metodologias que foram desenvolvidas por terceiros
- e que serão utilizadas em seu trabalho.
- Se estes conhecimentos já forem muito conhecidos, este capítulo deve ser
- transformado em um apêndice.
+É normal incluir, no início da tese/dissertação/IC, um capítulo onde são
+ descritos os principais conceitos, as principais metodologias que foram
+ desenvolvidas por terceiros e que serão utilizadas em seu trabalho.
+ Se estes conhecimentos já forem conhecidos(estiverem em livros), este capítulo
+ não é necessário, basta referenciar os livros que tem os conceitos nos
+ demais capítulos.
+ Outra possibilidade é transformar este capítulo em um apêndice.
  Mas lembre-se, o objetivo deste capítulo é facilitar a leitura da tese
  por pessoas que não são especialistas da área.
 \end_layout
@@ -154,6 +156,32 @@ s conceitos, as principais metodologias que foram desenvolvidas por terceiros
  você.
 \end_layout
 
+\begin_layout Itemize
+Não coloque na sua tese/dissertação/IC coisas banais encontradas em livros
+ textos (caso necessário referencie os livros).
+ No capítulo de revisão de conceitos devem ser colocados conceitos avançados
+ que você usou no seu trabalho mas não constam dos livros ou estão apenas
+ em livros avançados.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Dica para alunos de IC: 
+\end_layout
+
+\begin_layout Itemize
+não coloque neste capítulo conceitos bobos como porosidade, permeabilidade,
+ e demais conceitos vistos em sala de aula o.
+ Sei TCC, sua monografia é um aprofundamento em um determinado tema, não
+ fazendo nenhum sentido repetir conceitos vistos em sala de aula ou nos
+ livros.
+\end_layout
+
+\begin_layout Itemize
+não insista! isto costuma irritar os professores da banca!!
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Você deve copiar a descrição acima para seção 
 \begin_inset CommandInset ref
@@ -187,56 +215,6 @@ Um título de seção não pode vir seguido de um título de sub-seção!
 \begin_layout Itemize
 Entre os dois deve-se incluir algum texto, nem que seja o que vai ser visto
  nas sub-seções.
-\end_layout
-
-\begin_layout Section
-Porosidade
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Porosidade
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-A porosidade é definida por:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\varepsilon=\left\langle FF(\mathbf{x})\right\rangle \label{eq_porosidade-1}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-onde 
-\begin_inset Formula $\left\langle \right\rangle $
-\end_inset
-
- representa a média estatística.
- 
-\end_layout
-
-\begin_layout Standard
-..exemplo de citação de equação numerada e com etiqueta....conforme equação da
- porosidade 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq_porosidade-1"
-
-\end_inset
-
-....
 \end_layout
 
 \begin_layout Section
@@ -346,7 +324,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../imagens/Correlacao-espacial_x_frequencial.jpg
-	scale 75
+	width 75text%
 	rotateOrigin center
 
 \end_inset

@@ -139,8 +139,7 @@ thispagestyle{empty}
 \align center
 
 \size large
-TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃ
-O / TESE; TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃO / TESE
+TÍTULO DO(A) TCC/DISSERTAÇÃO/TESE
 \begin_inset Note Note
 status open
 
@@ -206,7 +205,7 @@ MACAÉ - RJ
 \begin_inset Newline newline
 \end_inset
 
-MARÇO - 2015
+MAIO - 2017
 \end_layout
 
 \begin_layout Standard
@@ -397,7 +396,118 @@ MACAÉ - RJ
 \begin_inset Newline newline
 \end_inset
 
-MARÇO - 2015
+MAIO - 2017
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../imagens/logomarcas/logoANP_h_fundobranco_cor.jpg
+	width 25text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../imagens/logomarcas/logo_finep_novo.jpg
+	width 25text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../imagens/logomarcas/logo-mct.jpg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1061,6 +1171,13 @@ lhead{Epígrafe}
 
 \emph on
 [Opcional e a escolha do autor(a) Ex: ]
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\emph on
+"XXXXXXX"
 \end_layout
 
 \end_body

@@ -135,28 +135,6 @@ thepage}
 Descreve-se neste apêndice ...
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lhead{Apêndice 
-\backslash
-thechapter: Titulo do apêndice}
-\backslash
-rhead{
-\backslash
-thepage}
-\end_layout
-
-\end_inset
-
-Descreve-se neste apêndice ...
-\end_layout
-
 \begin_layout Itemize
 Tudo aquilo que for importante para a tese mas não essencial, deve ser colocado
  em apêndices.
@@ -284,7 +262,9 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../imagens/UsandoProgramaSemantikDoLinux-Monografianumerica-1.jpg
-	scale 35
+	width 100text%
+	height 100theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -295,8 +275,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-O programa semantik ajuda no desenvolvimento das ideias da monografia/dissertaçã
-o/tese.
+O programa semantik ajuda no desenvolvimento das ideias
 \end_layout
 
 \end_inset
@@ -320,7 +299,9 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../imagens/UsandoProgramaSemantikDoLinux-Monografianumerica-0.jpg
-	scale 50
+	width 100text%
+	height 100theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -331,8 +312,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-O programa semantik ajuda no desenvolvimento das ideias da monografia/dissertaçã
-o/tese.
+O programa semantik ajuda no desenvolvimento das ideias
 \end_layout
 
 \end_inset

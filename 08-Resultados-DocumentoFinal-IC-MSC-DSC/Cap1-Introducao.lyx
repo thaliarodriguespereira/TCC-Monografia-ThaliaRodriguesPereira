@@ -164,8 +164,12 @@ Valida-se os modelos e algoritmos desenvolvidos contra dados experimentais
 \end_layout
 
 \begin_layout Itemize
-O primeiro parágrafo da introdução pode ser um super resumo de sua monografia/di
-ssertação/tese - veja o exemplo acima.
+\align block
+O primeiro parágrafo da introdução pode ser um super resumo de sua 
+\begin_inset Newline newline
+\end_inset
+
+monografia/dissertação/tese - veja o exemplo acima.
  A ideia é fazer um resumo do resumo.
 \end_layout
 
@@ -256,8 +260,11 @@ Objetivo geral:
 
 \begin_deeper
 \begin_layout Itemize
-[.....descrever de forma clara, direta, objetiva, o objetivo geral da monografia/diss
-ertação/tese].
+[.....descrever de forma clara, direta, objetiva, o objetivo geral da 
+\begin_inset Newline newline
+\end_inset
+
+monografia/dissertação/tese].
 \end_layout
 
 \begin_layout Itemize

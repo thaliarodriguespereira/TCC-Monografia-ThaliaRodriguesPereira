@@ -5,30 +5,51 @@
 =================================================================================
 
 =================================================================================
+<<<<<<< HEAD
 	INSTRUÇÕES PARA CONFECÇÃO MONOGRAFIA/DISSERTAÇÃO/TESE COM O LYX
 	MATERIAL ELABORADO PELO SETOR DE 
 	Modelagem Matemática e Computacional do LENEP/CCT/UENF
 	Prof. André Duarte Bueno, Leandro Puerari
+=======
+INSTRUÇÕES PARA CONFECÇÃO MONOGRAFIA/DISSERTAÇÃO/TESE COM O LYX
+MATERIAL ELABORADO PELO SETOR DE 
+Modelagem Matemática Computacional do LENEP/CCT/UENF
+Prof. André Duarte Bueno, Leandro Puerari
+Para download acesse: 	
+https://github.com/ldsc/ModeloDiretorio-Aluno-Bolsista-TCC-IC-MSC-DSC-Projeto
+>>>>>>> bc726003c211d4022345afd760a72884b95416e5
 =================================================================================
 
 Este conjunto de arquivos deve ser utilizado para confecção de sua 
 monografia/dissertação/tese usando o editor de texto LyX (http://www.lyx.org).
 
+<<<<<<< HEAD
 O setor de Modelagem Matemática e Computacional dispõe de CDs com a distribuição 
 GNU/Linux utilizada no laboratório.
 Fazer a solicitação ao NRC (com Arthur).
+=======
+O LENEP dispõe de CDs com a distribuição  GNU/Linux utilizada no laboratório.
+Fazer a solicitação ao NRC (com Douglas ou Arthur).
+>>>>>>> bc726003c211d4022345afd760a72884b95416e5
 
 PRÉ-REQUISITOS
 ==============
-Ter o GNU/Linux-Fedora, o pacote tetex e o LyX instalados.
+Ter o GNU/Linux-Fedora, os pacotes texlive e o LyX instalados.
 
 O Lyx também tem versão para Windows, mas, neste caso, deve-se instalar o pacote completo, 
+<<<<<<< HEAD
 que inclui os pacotes MiKTeX e CygWin (veja http://wiki.lyx.org/Windows/Windows).
+=======
+veja http://wiki.lyx.org/Windows/Windows.
+
+Para maiores instruções, veja o diretório Instalar-LyX e Instalar-Pacote-ABNTex
+>>>>>>> bc726003c211d4022345afd760a72884b95416e5
 
 COMO USAR?
 ==========
 1- Instalar o GNU/Linux e o LyX em seu computador.
 Todos os computadores do LENEP devem ter o GNU/Linux e o LyX instalados,
+<<<<<<< HEAD
 se não estiverem funcionando entre em contato com o núcleo responsável pelo computador
 (em 2015 Sr Arthur).
 
@@ -43,14 +64,33 @@ git clone https://github.com/ldsc/ModeloDiretorio-Aluno-Bolsista-TCC-IC-MSC-DSC-
 4- Abrir o arquivo master Monografia-Dissertacao-Tese-master.lyx
 localizado dentro de
 ModeloDiretorio-Aluno-Bolsista-TCC-IC-MSC-DSC-Projeto-GIT/08-Resultados-DocumentoFinal-IC-MSC-DSC
+=======
+se não estiverem funcionando entre em contato com o NRC (Douglas ou Arthur).
 
-5- Pressionar ctrl-r para obter uma visualização dos arquivos 
+2- Copiar os arquivos modelos, obtidos em
+https://github.com/ldsc/ModeloDiretorio-Aluno-Bolsista-TCC-IC-MSC-DSC-Projeto/archive/master.zip
+para um diretório qualquer 
+(por exemplo: /u/seuLogin/Tese /u/seuLogin/Dissertacao /u/seuLogin/Monografia).
+
+3- Abrir o LyX
+
+4- Abrir o arquivo Monografia-Dissertacao-Tese-master.lyx
+localizado dentro de:
+ModeloDiretorio-Aluno-Bolsista-TCC-IC-MSC-DSC-Projeto/08-Resultados-DocumentoFinal-IC-MSC-DSC
+>>>>>>> bc726003c211d4022345afd760a72884b95416e5
+
+5- Pressionar ctrl+r para obter uma visualização dos arquivos 
 no formato pdf
 
 6- Após abrir o arquivo master, você pode editar um arquivo específico, 
+<<<<<<< HEAD
 basta clicar no ícone com o nome do arquivo para acessar quadro de diálogo que permite
 que o arquivo seja aberto.
 
+=======
+basta clicar no ícone com o nome do arquivo para acessar UM quadro de diálogo que permite
+que o arquivo seja aberto (click em editar).
+>>>>>>> bc726003c211d4022345afd760a72884b95416e5
 Faça as correções/modificações que achar pertinente 
 (mudar texto e não layout, se preocupe apenas com o conteúdo).
 
@@ -58,7 +98,11 @@ Alternativamente, pode-se abrir diretamente cada um dos arquivos.
 
 7- Para ver a versão final:
 - Basta abrir o arquivo master e pressionar Ctrl-r (Ver->ViewPDF);
+<<<<<<< HEAD
 - ou gerar uma versão pdf usando File->Export->pdf (pdflatex)
+=======
+- ou gerar uma versão pdf usando File->Export->pdflatex
+>>>>>>> bc726003c211d4022345afd760a72884b95416e5
 - Outra opção é exportar o arquivo master no formato do tex e 
 então executar diretamente os comando do arquivo makefile disponibilizado. 
 Para isto, abra um terminal, vá para o diretório com os arquivos da 
@@ -96,4 +140,7 @@ B) Peça ajuda de seus colegas.
 C) Peça ajuda de seu orientador.
 D) Peça ajuda do Prof. Bueno.
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc726003c211d4022345afd760a72884b95416e5

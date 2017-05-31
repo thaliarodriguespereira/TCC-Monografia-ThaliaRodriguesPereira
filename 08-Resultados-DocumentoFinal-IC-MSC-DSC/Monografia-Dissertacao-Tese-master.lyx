@@ -9,11 +9,12 @@
 \usepackage {indentfirst}
 \renewenvironment{center}{\par\centering}{\par}
 
+%DICA: Para instalar abntex no Fedora
+% yum install texlive-abntex2.noarch texlive-abntex2-doc.noarch
 % Comentar linhas abaixo se não estiver usando pacote abntex
 % ou se o pacote ainda não foi instalado.
-% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
-%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
-%Adicionado et all em italico
+% Neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%O comando abaixo especifica alguns detalhes, maiores detalhes no site do http://www.alessandroduarte.com.br/?page_id=552
 \usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0, abnt-etal-text=it]{abntcite}
 \usepackage {helvet}
 \renewcommand {\familydefault}{\sfdefault}
@@ -118,6 +119,10 @@ status open
 
 \begin_layout Plain Layout
 Não se atenha ao modelo; leia o tutorial do LyX que é em português!
+\end_layout
+
+\begin_layout Plain Layout
+Testado com LyX 2.1.3
 \end_layout
 
 \end_inset
