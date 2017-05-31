@@ -3583,6 +3583,88 @@ Você pode incluir ítens no arquivo .bib que não irão fazer parte da tese,
  mas poderão ser citadas em artigos futuros.
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+ou seja, seu arquivo .bib deve ter todas as referencias que irá citar ao
+ longo da vida acadêmica.
+\end_layout
+
+\begin_layout Enumerate
+se ficar muito grande pode ser dividido por área.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Cada item adicionado ao arquivo .bib tem uma chave, o nome desta chave não
+ pode ter espaço nem acentos.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+No exemplo abaixo a chave é 
+\series bold
+adb-mestrado-1994
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+@mastersthesis{
+\series bold
+adb-mestrado-1994
+\series default
+,
+\end_layout
+
+\begin_layout Standard
+author = {André Duarte Bueno},
+\end_layout
+
+\begin_layout Standard
+title = {Transferência de Calor e Umidade em Telhas: Simulação e Análise
+ Experimental},
+\end_layout
+
+\begin_layout Standard
+school = {Programa de Pós-Graduação em Engenharia Civil da Universidade
+ Federal de Santa Catarina},
+\end_layout
+
+\begin_layout Standard
+year = {1994},
+\end_layout
+
+\begin_layout Standard
+type = {Tese de Mestrado},
+\end_layout
+
+\begin_layout Standard
+address = {Florianópolis},
+\end_layout
+
+\begin_layout Standard
+month = {agosto},
+\end_layout
+
+\begin_layout Standard
+key = {Transferência de Calor, Telhas, meios porosos, transport in porous
+ media}
+\end_layout
+
+\begin_layout Standard
+}
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A codificação de caracteres definada para o documento deve ser a mesma usada
+ pelo arquivo .bib.
+ Se seu documento do LyX usa ISO-8859-1, o arquivo .bib deve usar a mesma
+ codificação.
+ No editor Kate vá em "Salvar como com codificação..." e localize a opção ISO-8859-
+1.
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 Para fazer uma citação é necessário incluir no arquivo do lyx um 

@@ -494,7 +494,7 @@ rhead{}
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "bibliografia"
-options "plain"
+options "abntex2-alf"
 
 \end_inset
 
