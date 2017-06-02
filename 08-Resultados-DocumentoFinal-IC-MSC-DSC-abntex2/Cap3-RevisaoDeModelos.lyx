@@ -240,10 +240,32 @@ outra possibilidade é copiar um box de figura existente, e então modificar
 Dica: no canto superior esquerdo do box que contém a figura, existe um texto
  em vermelho com box cinza.
  Ao clicar com o botão esquerdo do mouse neste box, o mesmo é iconizado.
- Repeta o clic para retornar ao estado anterior.
+ Repota o click para retornar ao estado anterior.
  Ao clicar com o botão direito, abre-se um diálogo em que é possível selecionar
  a opção [ X ] Aqui definitivamente, se quizer obrigar o LyX/TeX-LaTeX a
  colocar a figura aqui.
+\end_layout
+
+\begin_layout Itemize
+Nota
+\begin_inset space ~
+\end_inset
+
+importante: Título de seção, título de figura, título de tabela não leva
+ ponto final.
+ Sempre coloque a fonte dentro de [].
+\end_layout
+
+\begin_layout Itemize
+Quando referenciar uma figura diga "Apresenta-se na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Figure: sequencia"
+
+\end_inset
+
+ ", com F em itálico.
+ O mesmo é válido para tabelas.
 \end_layout
 
 \begin_layout Standard
@@ -288,7 +310,7 @@ status open
 
 \begin_layout Plain Layout
 Etapas fundamentais no processamento digital de imagens, aplicadas ao estudo
- de lâminas de meios porosos [adaptado de Gonzales e Woods (1992)].
+ de lâminas de meios porosos [adaptado de Gonzales e Woods (1992)]
 \begin_inset CommandInset label
 LatexCommand label
 name "Figure: sequencia"
@@ -877,7 +899,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Função autocorrelação nas direções x e y, e determinada usando FFT.
+Função autocorrelação nas direções x e y, e determinada usando FFT
 \begin_inset CommandInset label
 LatexCommand label
 name "Figure: Função autocorrelação normal e determinada usando FFT2"
@@ -1039,7 +1061,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Exemplo de tabela flutuante.
+Exemplo de tabela flutuante
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Exemplo-de-tabela"
@@ -1047,6 +1069,10 @@ name "tab:Exemplo-de-tabela"
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+[Fonte .....]
 \end_layout
 
 \end_inset
@@ -1366,7 +1392,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Exemplo de tabela flutuante - coluna com dimensão fixa e rotacionada.
+Exemplo de tabela flutuante - coluna com dimensão fixa e rotacionada
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Exemplo-de-tabela-2"
