@@ -2,20 +2,12 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass abnt
-\begin_preamble
-\usepackage {graphicx}
-\usepackage {longtable}
-
-\usepackage {indentfirst}
-\renewenvironment{center}{\par\centering}{\par}
-\end_preamble
-\use_default_options false
-\master Monografia-Dissertacao-Tese-master.lyx
+\textclass abntex2
+\use_default_options true
 \maintain_unincluded_children false
 \language brazilian
 \language_package default
-\inputencoding iso8859-1
+\inputencoding utf8
 \fontencoding global
 \font_roman default
 \font_sans default
@@ -32,16 +24,15 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement p
-\paperfontsize 12
-\spacing onehalf
+\paperfontsize default
+\spacing single
 \use_hyperref false
-\papersize a4paper
-\use_geometry true
+\papersize default
+\use_geometry false
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
-\use_package esint 0
+\use_package esint 1
 \use_package mathdots 1
 \use_package mathtools 1
 \use_package mhchem 1
@@ -57,24 +48,18 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
-\index Índice
+\index Index
 \shortcut idx
 \color #008000
 \end_index
-\paperwidth 210mm
-\paperheight 297mm
-\leftmargin 30mm
-\topmargin 25mm
-\rightmargin 20mm
-\bottommargin 20mm
-\secnumdepth 2
-\tocdepth 2
+\secnumdepth 3
+\tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
 \quotes_language english
 \papercolumns 1
 \papersides 1
-\paperpagestyle fancy
+\paperpagestyle myheadings
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -106,6 +91,10 @@ name "chap:Metodologia"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -120,6 +109,11 @@ thechapter-Metodologia}
 rhead{
 \backslash
 thepage} 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1499,7 +1493,7 @@ A questão da repetitividade do experimento e de um número mínimo de execuçõ
  é fundamental num trabalho para que o mesmo possa ser considerado sério.
  Note que nos casos em que temos poucos resultados não poderemos fazer generaliz
 ações por causa da falta de dados.
- .
+ 
 \end_layout
 
 \end_body

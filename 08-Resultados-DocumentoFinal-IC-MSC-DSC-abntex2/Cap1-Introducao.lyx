@@ -1,0 +1,435 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass abntex2
+\use_default_options true
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Introdução
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Introdução
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Introdução"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Introdução}
+\backslash
+rhead{}
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No presente trabalho desenvolve-se um estudo das representações reconstruídas
+ em 3D, um novo algoritmo para
+\emph on
+ 
+\emph default
+determinação das configurações de equilíbrio em processos bifásicos de invasão
+ de fluidos e um método para determinação da permeabilidade através do Modelo
+ do Grafo de Conexão Serial;
+\emph on
+ 
+\emph default
+Valida-se os modelos e algoritmos desenvolvidos contra dados experimentais
+ de intrusão de mercúrio e de permeabilidade de rochas reservatório de petróleo.
+\end_layout
+
+\begin_layout Itemize
+O primeiro parágrafo da introdução pode ser um super resumo de sua monografia/di
+ssertação/tese - veja o exemplo acima.
+ A ideia é fazer um resumo do resumo.
+\end_layout
+
+\begin_layout Section
+Escopo do Problema
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Escopo do Problema
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Escopo-do-Problema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\begin_layout Itemize
+Definir o escopo do problema, a ideia geral.
+ Acentuar a sua importância.
+ Situá-lo nos aspectos econômicos e sociais.
+\end_layout
+
+\begin_layout Itemize
+Descrição do problema tecnológico.
+ Delimitar o problema tecnológico.
+ Situá-lo no tempo e no espaço.
+ 
+\end_layout
+
+\begin_layout Itemize
+Descrição do problema científico associado.
+ Delimitar o problema científico.
+ Situá-lo em relação ao desenvolvimento científico.
+ 
+\end_layout
+
+\begin_layout Itemize
+Citar os 2-3 principais trabalhos relacionados e fazer uma breve crítica
+ aos mesmos.
+ 
+\end_layout
+
+\begin_layout Itemize
+Neste capítulo podem entrar 1 e no máximo 2 figuras, bem ilustrativas (quase
+ leigas).
+\end_layout
+
+\begin_layout Section
+Objetivos
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Objetivos
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Objetivos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os objetivos deste trabalho são:
+\end_layout
+
+\begin_layout Itemize
+Objetivo geral:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+[.....descrever de forma clara, direta, objetiva, o objetivo geral da monografia/diss
+ertação/tese].
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Objetivos específicos:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+[.....descrever de forma clara, direta, objetiva, cada objetivo específico].
+\end_layout
+
+\begin_layout Itemize
+[.....descrever de forma clara, direta, objetiva, cada objetivo específico].
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+A 
+\emph on
+originalidade do tema
+\emph default
+ esta associada à ....
+ [descrever o que é inovador em seu trabalho, aquilo que você fez e que
+ se destaca]...
+\end_layout
+
+\begin_layout Section
+Organização do Documento
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Organização do Documento
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Organizacao-do-Documento"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se nesta seção a organização do documento.
+\end_layout
+
+\begin_layout Standard
+No Capítulo 2, 
+\begin_inset Quotes eld
+\end_inset
+
+Revisão Bibliográfica
+\begin_inset Quotes erd
+\end_inset
+
+, apresenta-se uma revisão bibliográfica detalhada dos trabalhos, técnicos
+ e científicos, que estão diretamente relacionados ao presente trabalho.
+\end_layout
+
+\begin_layout Standard
+No Capítulo 3, 
+\begin_inset Quotes eld
+\end_inset
+
+Metodologia
+\begin_inset Quotes erd
+\end_inset
+
+, apresenta-se a metodologia científica a ser utilizada no desenvolvimento
+ deste trabalho.
+ Inclui-se informações sobre motivação, área da pesquisa, intrumentos (materiais
+, equipamentos, softwares) utilizados, dados e formas de análise e interpretação.
+ 
+\end_layout
+
+\begin_layout Standard
+No Capítulo 4, 
+\begin_inset Quotes eld
+\end_inset
+
+Revisão dos Conceitos e Modelos a Serem Utilizados
+\begin_inset Quotes erd
+\end_inset
+
+, apresenta-se um conjunto de conceitos e modelos desenvolvidos por outros
+ autores mas que estão diretamente relacionados a este trabalho e que serão
+ amplamente utilizados.
+ Especialistas da área poderão pular a leitura deste capítulo.
+\end_layout
+
+\begin_layout Standard
+No Capítulo 5, 
+\begin_inset Quotes eld
+\end_inset
+
+Desenvolvimento
+\begin_inset Quotes erd
+\end_inset
+
+, apresenta-se os modelos/métodos/algoritmos/ensaios que foram desenvolvidos.
+\end_layout
+
+\begin_layout Standard
+No Capítulo 6, 
+\begin_inset Quotes eld
+\end_inset
+
+Resultados e Análises
+\begin_inset Quotes erd
+\end_inset
+
+, apresenta-se os resultados obtidos e análises desenvolvidas.
+\end_layout
+
+\begin_layout Standard
+No Capítulo 7, 
+\begin_inset Quotes eld
+\end_inset
+
+Conclusões
+\begin_inset Quotes erd
+\end_inset
+
+, apresenta-se neste capítulo as conclusões e sugestões para trabalhos futuros.
+\end_layout
+
+\begin_layout Standard
+Apresenta-se a seguir as 
+\begin_inset Quotes eld
+\end_inset
+
+Referências Bibliográficas
+\begin_inset Quotes erd
+\end_inset
+
+ e os 
+\begin_inset Quotes eld
+\end_inset
+
+Apêndices
+\begin_inset Quotes erd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Apêndice_A: 
+\begin_inset Quotes eld
+\end_inset
+
+XXX
+\begin_inset Quotes erd
+\end_inset
+
+, ...
+\end_layout
+
+\begin_layout Standard
+Apêndice_B: 
+\begin_inset Quotes eld
+\end_inset
+
+XXX
+\begin_inset Quotes erd
+\end_inset
+
+, ...
+\end_layout
+
+\begin_layout Standard
+Apêndice_C: 
+\begin_inset Quotes eld
+\end_inset
+
+XXX
+\begin_inset Quotes erd
+\end_inset
+
+, ...
+\end_layout
+
+\begin_layout Itemize
+A descrição da organização do documento auxilia o leitor, além de ajudar
+ o autor a organizar seu trabalho.
+\end_layout
+
+\begin_layout Itemize
+Esta parte deve ser feita logo no início do trabalho e tem como objetivo
+ ajudar a organizar as ideias.
+\end_layout
+
+\begin_layout Itemize
+Lembre-se, cada capítulo deve iniciar com uma descrição do que vai ser visto.
+ Você deve copiar para cá o texto do início de cada capítulo.
+ A ideia é ajudar o leitor: lembre-se, hoje em dia a maioria das pessoas
+ irá ler seu trabalho aos poucos, as vezes um capítulo por dia, assim, a
+ descrição no início do capítulo ajuda o leitor a se situar.
+\end_layout
+
+\end_body
+\end_document

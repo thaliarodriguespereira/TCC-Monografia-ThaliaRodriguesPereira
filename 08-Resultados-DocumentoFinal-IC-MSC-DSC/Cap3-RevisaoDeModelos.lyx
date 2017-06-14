@@ -233,6 +233,16 @@ Autocorrelação
 
 \begin_layout Standard
 A função autocorrelação é definida pela relação,
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+equações completas idealmente em parágrafo separado, numerado
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -249,21 +259,37 @@ C(\mathbf{u})=\left\langle \left[FF(\mathbf{x})\right]\left[FF(\mathbf{x}+\mathb
 \begin_layout Standard
 onde 
 \series bold
-u
+
+\begin_inset Formula $\mathbf{u[m]}$
+\end_inset
+
+
 \series default
- é o vetor deslocamento.
+ é o vetor deslocamento, 
+\series bold
+
+\begin_inset Formula $\mathbf{x[m]}$
+\end_inset
+
+ 
+\series default
+é a posição do píxel, e 
+\begin_inset Formula $FF$
+\end_inset
+
+ é a função de fase anteriormente descrita.
  Observe que a função autocorrelação fornece a probabi\SpecialChar \-
 li\SpecialChar \-
 dade de intersecção
  na direção 
 \series bold
-u
-\series default
- de dois pontos na fase porosa separados pela distância 
-\begin_inset Newline newline
+
+\begin_inset Formula $\mathbf{u}$
 \end_inset
 
 
+\series default
+ de dois pontos na fase porosa separados pela distância 
 \begin_inset Formula $|\mathbf{u}|$
 \end_inset
 
@@ -274,7 +300,11 @@ u
 \emph default
  A função 
 \emph on
-autocovariância normalizada
+autocovariância normalizada, 
+\begin_inset Formula $R(\mathbf{u}),$
+\end_inset
+
+
 \emph default
  é dada por:
 \end_layout
@@ -284,6 +314,30 @@ autocovariância normalizada
 \begin{equation}
 R(\mathbf{u})=\frac{\left\langle \left[FF(\mathbf{x})-\varepsilon\right]\left[FF(\mathbf{x}+\mathbf{u})-\varepsilon\right]\right\rangle }{\left(\varepsilon-\varepsilon^{2}\right)}\label{eq_autocovariancia-1}
 \end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde 
+\begin_inset Formula $\varepsilon[m\text{³/m³}]$
+\end_inset
+
+ é a porosidade.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Todo termo quando aparece pela primeira vez precisa ser definido da sequinte
+ forma
+\end_layout
+
+\begin_layout Plain Layout
+Símbolo[unidade], descrição; 
+\end_layout
 
 \end_inset
 
@@ -336,7 +390,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Função autocorrelação nas direções x e y, e determinada usando FFT.
+Função autocorrelação nas direções x e y, e determinada usando FFT
 \begin_inset CommandInset label
 LatexCommand label
 name "Figure: Função autocorrelação normal e determinada usando FFT2"

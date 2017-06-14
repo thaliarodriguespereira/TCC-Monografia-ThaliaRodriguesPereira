@@ -2,26 +2,12 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass abnt
-\begin_preamble
-\usepackage {graphicx}
-\usepackage {longtable}
-\usepackage {indentfirst}
-\renewenvironment{center}{\par\centering}{\par}
-
-% Comentar linhas abaixo se não estiver usando pacote abntex
-% ou se o pacote ainda não foi instalado.
-% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
-\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
-\usepackage {helvet}
-\renewcommand {\familydefault}{\sfdefault}
-\end_preamble
-\options normaltoc, sumarioincompleto
-\use_default_options false
+\textclass abntex2
+\use_default_options true
 \maintain_unincluded_children false
 \language brazilian
 \language_package default
-\inputencoding iso8859-1
+\inputencoding utf8
 \fontencoding global
 \font_roman default
 \font_sans default
@@ -38,28 +24,15 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize 12
-\spacing onehalf
-\use_hyperref true
-\pdf_title "Título da Monografia - Dissertação - Tese"
-\pdf_author "Nome do Autor"
-\pdf_subject "Descrever assunto"
-\pdf_keywords "Copiar do resumo"
-\pdf_bookmarks true
-\pdf_bookmarksnumbered true
-\pdf_bookmarksopen true
-\pdf_bookmarksopenlevel 1
-\pdf_breaklinks true
-\pdf_pdfborder true
-\pdf_colorlinks false
-\pdf_backref page
-\pdf_pdfusetitle true
-\papersize a4paper
-\use_geometry true
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
-\use_package esint 0
+\use_package esint 1
 \use_package mathdots 1
 \use_package mathtools 1
 \use_package mhchem 1
@@ -75,24 +48,18 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
-\index Índice
+\index Index
 \shortcut idx
 \color #008000
 \end_index
-\paperwidth 210mm
-\paperheight 297mm
-\leftmargin 30mm
-\topmargin 25mm
-\rightmargin 20mm
-\bottommargin 20mm
-\secnumdepth 2
-\tocdepth 1
+\secnumdepth 3
+\tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
 \quotes_language english
 \papercolumns 1
 \papersides 1
-\paperpagestyle fancy
+\paperpagestyle myheadings
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -154,8 +121,18 @@ status open
 
 \backslash
 lhead{Nomenclatura}
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 addcontentsline{toc}{chapter}{Nomenclatura}
 \end_layout
@@ -212,7 +189,15 @@ O LyX/LaTeX automaticamente monta a nomenclatura para você.
 \end_layout
 
 \begin_layout Plain Layout
-Dica: use a maneira antiga!
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+DICA: use a maneira antiga!! a nomenclatura do LyX 2.0 ainda não funciona
+ direito.
 \end_layout
 
 \end_inset
