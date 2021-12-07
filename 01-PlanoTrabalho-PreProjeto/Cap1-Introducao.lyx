@@ -1,0 +1,591 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass abnt
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+\usepackage {helvet}
+\renewcommand {\familydefault}{\sfdefault}
+\end_preamble
+\options normaltoc, sumarioincompleto
+\use_default_options false
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref true
+\pdf_title "Título da Monografia - Dissertação - Tese"
+\pdf_author "Nome do Autor"
+\pdf_subject "Descrever assunto"
+\pdf_keywords "Copiar do resumo"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref page
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 1
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Introdução
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Introdução
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Introdução"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Introdução}
+\backslash
+rhead{}
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste trabalho será desenvolvido um procedimento matemático-numérico para
+ a análise do efeito eletrossísmico em meios 1D, isto é, os campos elétrico
+ e magnético e os deslocamentos sólidos e fluidos dependem apenas de uma
+ coordenada espacial e será considerado somente uma fonte externa eletromagnétic
+a.
+ Além de realizar um estudo de propagação das ondas em meios elásticos e
+ condutivos, considerando o processo de acoplamento através do efeito eletrociné
+tico, a análise de atenuação e dispersão dessas ondas.
+\end_layout
+
+\begin_layout Section
+Escopo do Problema
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Escopo do Problema
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Escopo-do-Problema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A aplicação da geofísica permite o estudo do subsolo usando as medidas de
+ suas propriedades físicas, assim como, adquirir, processar e interpretar
+ os dados coletados por instrumentos especiais, com objetivo de obter informaçõe
+s sobre a estrutura e composição das rochas em subsuperfície.
+ Os métodos geofísicos fazem parte de um conjunto de ferramentas investigativas
+ indispensáveis à prospecção de óleo e gás, seja em qualquer nível de detalhe,
+ ou econômico, desejável.
+\end_layout
+
+\begin_layout Standard
+Dentre esses métodos o mais importante devido à quantidade de informação,
+ a ampla área coletada e também na sua aplicação é o levantamento sísmico
+ que fornece informações da geologia da subsuperfície.
+ Na sísmica se estuda a estrutura da terra em dezenas de quilômetros, baseando-s
+e em ondas elásticas que são refletidas e refratadas nas interfaces que
+ separam as rochas de diferentes constituições petrofísicas (THOMAS, 2004).
+ 
+\end_layout
+
+\begin_layout Standard
+O levantamento geofísico é dividido em dois tipos: os que fazem uso dos
+ campos naturais da Terra, e aqueles que envolvem a aplicação na superfície
+ de energia gerada artificialmente.
+ O presente trabalho apresenta o segundo método, que envolve a geração de
+ campos elétricos ou eletromagnéticos locais que possam ser usados de modo
+ análogo ao dos campos naturais, ou, no mais importante grupo de métodos
+ de levantamento geofísico, a geração de ondas sísmicas, cuja velocidade
+ de propagação e caminhos de transmissão através da subsuperfície são mapeados
+ para fornecer informações sobre a distribuição dos limites geológicos em
+ profundidade e são capazes de produzir um quadro mais detalhado e bem resolvido
+ da geologia de subsuperfície (KEAREY, BROOKS, HILL, 2009).
+\end_layout
+
+\begin_layout Standard
+Os métodos atuais de exploração em subsuperfície são baseados em princípios
+ geofísicos sísmicos ou elétricos.
+ O método sismoeletromagnético combina esses dois príncipios, sísmica e
+ os métodos eletromagnéticos aos fluidos, considerando somente como fonte
+ externa uma fonte eletromagnética.
+ Oferece uma caracterização da estrutura não invasiva da superfície terrestre,
+ desde as primeiras centenas de metros até uma profundidade da ordem de
+ 1000 m, em termos de fluidos (água, óleo, gás) (L.
+ JOUNIAUX, F.
+ ZYSERMAN, 2015).
+\end_layout
+
+\begin_layout Standard
+A eletrossísmica é o método sismoeletromagnético que consiste em perturbações
+ acústicas mensuráveis na superfície induzidas por campos eletromagnéticos.
+ O sinal eletromagnético relacionado ao movimento relativo entre o fluido
+ e a matriz da rocha é chamado de fenômeno eletrocinético.
+ Em um meio poroso, a densidade de corrente elétrica, ligada aos íons dentro
+ do fluido, é acoplada ao fluxo (Overbeek, 1952) de modo que os potenciais
+ de fluxo são gerados por fluidos que se movem através desses tipos de meios
+ (Jouniaux et al., 2009).
+ Esse efeito está relacionado à existência de uma dupla camada elétrica
+ entre a rocha e o fluido, desenvolvida no contato entre a parede do poro
+ e o eletrólito.
+ O fluxo de corrente, devido ao movimento da camada difusa, é induzido por
+ uma diferença de pressão do fluido ao longo da interface.
+ 
+\end_layout
+
+\begin_layout Standard
+De acordo com Priimenko e Vishnevskii (2008), são diversos os tipos de interaçõe
+s envolvendo campo elétrico, campo magnético e deslocamento de partículas
+ de um corpo.
+ Essas interações de campos eletromagnéticos com campos de deformações mecânicas
+ em meios contínuos são descritos pela eletrodinâmica e pela poroelasticidade.
+ O acoplamento eletrossísmico ocorre quando um meio poroelástico é submetido
+ a um campo eletromagnético.
+ Quando o efeito eletrocinético é induzido pela propagação das ondas sísmicas,
+ o que leva a um movimento relativo entre fluido e a matriz da rocha, o
+ coeficiente eletrocinético depende da frequência, assim como a permeabilidade
+ dinâmica.
+ 
+\end_layout
+
+\begin_layout Standard
+As equações que regem o fenômeno do acoplamento eletrocinético foram desenvolvid
+as por Pride (1994) que propôs um modelo matemático representado por um
+ sistema de equações diferenciais parciais composto pelas equações de Biot
+ (poroelasticidade) acopladas com as equações de Maxwell (eletromagnetismo).
+ Ursin (1983), em seu estudo, trata, de forma unificada, a propagação de
+ ondas elásticas e eletromagnéticas em meios estratificados.
+ A ideia é unir as equações que regem os fenômenos da propagação das ondas
+ elásticas e eletromagnéticas, transformando as equações diferenciais parciais
+ que modelam estes fenômenos em um sistema de equações diferenciais ordinárias
+ de mesmo formato, denominado sistema do tipo Ursin.
+ Os estudos realizados por White e Zhou (2006) mostraram que a propagação
+ de ondas poroelásticas e eletromagnéticas acopladas pelo efeito eletrocinético
+ em um meio estratificado podem ser tratados pelo formalismo de Ursin.
+\end_layout
+
+\begin_layout Section
+Objetivos
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Objetivos
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Objetivos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O objetivo principal deste trabalho é realizar uma simulação do modelo matemátic
+o relacionado com a propagação das ondas em meios elásticos e condutivos,
+ considerando os processos de acoplamento, através do efeito eletrossísmico,
+ destas ondas com o campo eletromagnético, realizando a análise de atenuação
+ e dispersão das ondas..
+ E em seguida analisar a influência da variação dos parâmetros físicos e
+ petrofísicos do meio na solução do problema.
+\end_layout
+
+\begin_layout Standard
+Para alcançar o objetivo geral, busca-se atingir os seguintes objetivos
+ específicos: 
+\end_layout
+
+\begin_layout Itemize
+Apresentar uma visão geral do efeito eletrossísmico; 
+\end_layout
+
+\begin_layout Itemize
+Realizar o desenvolvimento baseado na teoria das equações diferenciais,
+ no método de Ursin e na linguagem MatLab;
+\end_layout
+
+\begin_layout Itemize
+Realizar uma análise de dispersão e atenuação das ondas que governam o efeito
+ eletrosísmico em meios 1D;
+\end_layout
+
+\begin_layout Itemize
+Realizar uma análise de influência dos parâmetros petrofísicos na propagação
+ das ondas elásticas e eletromagnéticas acopladas;
+\end_layout
+
+\begin_layout Itemize
+Desenvolver um algoritmo numérico baseado no método de resolução criado;
+ 
+\end_layout
+
+\begin_layout Itemize
+Criar um código computacional no ambiente MatLab capaz de obter a solução
+ analítica-numérica do problema; 
+\end_layout
+
+\begin_layout Itemize
+Executar simulações da propagação dessas ondas em meios 1D, validando assim
+ o desenvolvimento teórico realizado.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Section
+Organização do Documento
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Organização do Documento
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Organizacao-do-Documento"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Lembre-se, cada capítulo deve iniciar com uma descrição do que vai ser visto.
+ Você deve copiar para seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Organizacao-do-Documento"
+
+\end_inset
+
+ exatamente o mesmo texto do início de cada capítulo.
+ A ideia é ajudar o leitor: lembre-se, hoje em dia a maioria das pessoas
+ irá ler seu trabalho aos poucos, as vezes um capítulo por dia, assim, a
+ descrição no início do capítulo ajuda o leitor a se situar.
+ 
+\end_layout
+
+\begin_layout Itemize
+A descrição da organização do documento auxilia o leitor, além de ajudar
+ o autor a organizar seu trabalho.
+\end_layout
+
+\begin_layout Itemize
+Esta parte deve ser feita logo no início do trabalho e tem como objetivo
+ ajudar a organizar as ideias.
+\end_layout
+
+\begin_layout Itemize
+Veja exemplo a seguir.
+\end_layout
+
+\begin_layout Plain Layout
+Apresenta-se nesta seção a organização do documento.
+\end_layout
+
+\begin_layout Plain Layout
+No Capítulo 2, 
+\begin_inset Quotes eld
+\end_inset
+
+Revisão Bibliográfica
+\begin_inset Quotes erd
+\end_inset
+
+, apresenta-se uma revisão bibliográfica detalhada dos trabalhos, técnicos
+ e científicos, que estão diretamente relacionados ao presente trabalho.
+\end_layout
+
+\begin_layout Plain Layout
+No Capítulo 3, 
+\begin_inset Quotes eld
+\end_inset
+
+Metodologia
+\begin_inset Quotes erd
+\end_inset
+
+, apresenta-se a metodologia científica a ser utilizada no desenvolvimento
+ deste trabalho.
+ Inclui-se informações sobre motivação, área da pesquisa, intrumentos (materiais
+, equipamentos, softwares) utilizados, dados e formas de análise e interpretação.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+No Capítulo 4, 
+\begin_inset Quotes eld
+\end_inset
+
+Revisão dos Conceitos e Modelos a Serem Utilizados
+\begin_inset Quotes erd
+\end_inset
+
+, apresenta-se um conjunto de conceitos e modelos desenvolvidos por outros
+ autores mas que estão diretamente relacionados a este trabalho e que serão
+ amplamente utilizados.
+ Especialistas da área poderão pular a leitura deste capítulo.
+\end_layout
+
+\begin_layout Plain Layout
+No Capítulo 5, 
+\begin_inset Quotes eld
+\end_inset
+
+Desenvolvimento
+\begin_inset Quotes erd
+\end_inset
+
+, apresenta-se os modelos/métodos/algoritmos/ensaios que foram desenvolvidos.
+\end_layout
+
+\begin_layout Plain Layout
+No Capítulo 6, 
+\begin_inset Quotes eld
+\end_inset
+
+Resultados e Análises
+\begin_inset Quotes erd
+\end_inset
+
+, apresenta-se os resultados obtidos e análises desenvolvidas.
+\end_layout
+
+\begin_layout Plain Layout
+No Capítulo 7, 
+\begin_inset Quotes eld
+\end_inset
+
+Conclusões
+\begin_inset Quotes erd
+\end_inset
+
+, apresenta-se neste capítulo as conclusões e sugestões para trabalhos futuros.
+\end_layout
+
+\begin_layout Plain Layout
+Apresenta-se a seguir as 
+\begin_inset Quotes eld
+\end_inset
+
+Referências Bibliográficas
+\begin_inset Quotes erd
+\end_inset
+
+ e os 
+\begin_inset Quotes eld
+\end_inset
+
+Apêndices
+\begin_inset Quotes erd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Plain Layout
+Apêndice_A: 
+\begin_inset Quotes eld
+\end_inset
+
+XXX
+\begin_inset Quotes erd
+\end_inset
+
+, ...
+\end_layout
+
+\begin_layout Plain Layout
+Apêndice_B: 
+\begin_inset Quotes eld
+\end_inset
+
+XXX
+\begin_inset Quotes erd
+\end_inset
+
+, ...
+\end_layout
+
+\begin_layout Plain Layout
+Apêndice_C: 
+\begin_inset Quotes eld
+\end_inset
+
+XXX
+\begin_inset Quotes erd
+\end_inset
+
+, ...
+\end_layout
+
+\begin_layout Itemize
+Nota: Todo material auxiliar, não diretamente relacionado ao trabalho deve
+ estar nos apêndices! 
+\begin_inset Newline newline
+\end_inset
+
+Ou seja, nos capítulos COLOCAR SOMENTE MATERIAL DIRETAMENTE RELACIONADO
+ AO SEU TRABALHO! 
+\begin_inset Newline newline
+\end_inset
+
+Isto faz com a linha de raciocínio se desenvolva naturalmente, fazendo com
+ que a leitura do material fique gostosa.
+\begin_inset Newline newline
+\end_inset
+
+Um documento que tem layout e formatação adequada (como este modelo - não
+ mude!), e cuja leitura é fluida (gostosa), é meio caminho andado para uma
+ boa defesa.
+\begin_inset Newline newline
+\end_inset
+
+Some aí um bom documento de apresentação, com apresentação bem ensaiada
+ e teremos 50% do sucesso garantido.
+ Os outros 50% referem-se a importância e qualidade do trabalho desenvolvido!
+\end_layout
+
+\begin_layout Itemize
+Nota: 
+\color red
+Lembre-se que se a figura, foto, esquemas, etc, for colorido o mesmo deve
+ obrigatoriamente impresso em cores.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
