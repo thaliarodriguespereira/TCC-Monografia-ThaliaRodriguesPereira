@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass abnt
 \begin_preamble
 \usepackage {graphicx}
@@ -19,47 +21,31 @@
 \renewcommand {\familydefault}{\sfdefault}
 %\usepackage[abnt-etal-text=emph,......]{abntcite} ou \usepackage[abnt-etal-text=it,......]{abntcite} 
 
-
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
 % Informa que vai usar o pacote listings, 
 % disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
 \usepackage{listings}
-
-% Define um novo comando, chamado lst
-% observe que lst chama o comando  lstinputlisting.
-\newcommand{\lst}[2]{%
-    \noindent\rule[-1ex]{\textwidth}{0.3mm}\vspace{-1ex}
-    \lstinputlisting[caption={#2},label={#1},stringspaces=false,frame={tb},lineskip=-1pt,extendedchars=true,%
-    basicstyle=\footnotesize\tt,labelstep=1,labelstyle=\tiny,indent=2em,language=Java,breaklines]{#1}
-    \vspace{1ex}%
-}
-% \listfiles
-% \usepackage[]{hyperref}
-% \usepackage{mathptmx}  % instead of package times
-%\ usepackage[scaled=0.9]{helvet} % or [scaled=0.92], if you like
-%% Pacote de citações para formato abnt
-%% \usepackage[num]{abntcite}
-%% \usepackage[alf]{abntcite}
-%% FIM  Lyx-Document Settings
-\usepackage{color}
-\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
 \end_preamble
-\options normaltoc, sumarioincompleto
+\options normaltoc, sumariocompleto
 \use_default_options false
 \maintain_unincluded_children false
 \language brazilian
-\language_package default
+\language_package babel
 \inputencoding iso8859-1
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -95,13 +81,14 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
-\biblio_style apalike
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -116,7 +103,10 @@
 \tocdepth 1
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
@@ -132,10 +122,57 @@
 \begin_layout Standard
 \align block
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
-Não se atenha ao modelo; leia o tutorial do LyX que é em português!
+Não se atenha ao modelo; leia o tutorial do \SpecialChar LyX
+ que é em português!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Nota importante:
+\end_layout
+
+\begin_layout Plain Layout
+—-> Este modelo usa o abntex1 <—-
+\end_layout
+
+\begin_layout Plain Layout
+No final de 2016 saiu a versão abntex2 que é a que esta vindo em várias
+ distribuições do GNU/Linux e versões mais recentes do miktex.
+ Isto pode causar incompatibilidades....
+\end_layout
+
+\begin_layout Plain Layout
+Como este modelo ainda usa abntex1 é possível que apareçam mensagens de
+ erro, normalmente a reclamação da falta de algum arquivo do tex/latex caso
+ abntex1 não tenha sido instalado.
+\end_layout
+
+\begin_layout Plain Layout
+Caso isto ocorra, anote num papel o nome do arquivo que esta pedindo.
+\end_layout
+
+\begin_layout Plain Layout
+Verifique se o arquivo esta localizado dentro do diretório abntex-08 (normalment
+e na pasta texmf).
+ Caso afirmativo, copie o arquivo para o diretório onde esta o arquivo mestre(es
+te que você lê).
+ Repita este procedimento para todos os arquivos solicitados.
+\end_layout
+
+\begin_layout Plain Layout
+Muito provavelmente vai funcionar!
 \end_layout
 
 \end_inset
@@ -174,7 +211,12 @@ LatexCommand tableofcontents
 
 \end_inset
 
+ 
+\begin_inset Note Note
+status open
 
+\begin_layout Plain Layout
+\align block
 \begin_inset ERT
 status open
 
@@ -194,7 +236,7 @@ rhead{}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align block
 \begin_inset FloatList figure
 
@@ -220,7 +262,7 @@ rhead{}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align block
 \begin_inset FloatList table
 
@@ -228,7 +270,7 @@ rhead{}
 
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Ler todas as notas!
@@ -254,11 +296,14 @@ Existem duas maneiras de gerar a nomenclatura:
 \end_layout
 
 \begin_layout Plain Layout
-2) - A partir do LyX 2.0 existe a opção de inserir lista de nomenclatura(Inserir-
->ListaIndice->Nomenclatura).
+2) - A partir do \SpecialChar LyX
+ 2.0 existe a opção de inserir lista de nomenclatura(Inserir->Li
+staIndice->Nomenclatura).
  Neste caso, você precisa indicar, ao longo da monografia/dissertação/tese,
  o que entra na nomenclatura.
- O LyX/LaTeX automaticamente monta a nomenclatura para você.
+ O \SpecialChar LyX
+/\SpecialChar LaTeX
+ automaticamente monta a nomenclatura para você.
  Se usar esta opção o arquivo nomenclatura deve ser retirado do arquivo
  master.
  PS: ainda não usei esta opção!
@@ -293,11 +338,6 @@ filename "Cap-Nomenclatura.lyx"
 
 \end_layout
 
-\begin_layout Standard
-\align block
-\begin_inset Note Note
-status open
-
 \begin_layout Plain Layout
 \align block
 \begin_inset CommandInset include
@@ -323,16 +363,6 @@ filename "Cap1-Introducao.lyx"
 \end_inset
 
 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-qual o escopo do problema e os objetivos.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -340,39 +370,6 @@ qual o escopo do problema e os objetivos.
 \begin_inset CommandInset include
 LatexCommand include
 filename "Cap2-RevisaoBibliografica.lyx"
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-o que já foi feito, e crítica aos trabalhos existentes destacando a necessidade
- de seu trabalho.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap3-RevisaoDeModelos.lyx"
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-todos os conceitos matemáticos, computacionais; que você vai usar e que
- estão diretamente relacionados ao problema.
-\end_layout
 
 \end_inset
 
@@ -388,13 +385,43 @@ filename "Cap4-Metodologia.lyx"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\align block
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+qual o escopo do problema e os objetivos.
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align block
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+o que já foi feito, e crítica aos trabalhos existentes destacando a necessidade
+ de seu trabalho.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \align block
 \begin_inset CommandInset include
 LatexCommand include
-filename "Cap5-Cronograma.lyx"
+filename "Cap3-RevisaoDeModelos.lyx"
 
 \end_inset
 
@@ -403,7 +430,8 @@ filename "Cap5-Cronograma.lyx"
 status open
 
 \begin_layout Plain Layout
-O cronograma só aparece no projeto!
+todos os conceitos matemáticos, computacionais; que você vai usar e que
+ estão diretamente relacionados ao problema.
 \end_layout
 
 \end_inset
@@ -411,9 +439,9 @@ O cronograma só aparece no projeto!
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 o passo a passo de como vai fazer pesquisa.
@@ -422,11 +450,64 @@ o passo a passo de como vai fazer pesquisa.
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align block
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap5-Desenvolvimento.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align block
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap6-Resultados.lyx"
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Resultados e Análise dos Resultados.
+ Se ficar muito extenso pode separar em dois capítulos, Cap.
+ Resultados e Cap.
+ Análise Resultados.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align block
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap7-Conclusoes.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\noindent
-\align block
 \begin_inset ERT
 status open
 
@@ -450,8 +531,9 @@ rhead{}
 \noindent
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
+btprint "btPrintCited"
 bibfiles "bibliografia"
-options "abnt-alf"
+options "plain"
 
 \end_inset
 
@@ -459,6 +541,137 @@ options "abnt-alf"
 \end_layout
 
 \begin_layout Standard
+CARCIONE, J.
+ (2007) Wave Fields in Real Media: Wave Propagation in Anisotropic, Anelastic,
+ Porous and Electromagnetics Media.
+ Elsevier, Amsterdam, The Netherlands.
+ 
+\end_layout
+
+\begin_layout Standard
+FRENKEL, J.
+ (1944) On the theory of seismic and seismoelectric phenomena in a moist
+ soil.
+ J.
+ Phsys.
+ (Soviet), 8, 230–241.
+ 
+\end_layout
+
+\begin_layout Standard
+HAN, Q.
+ and WANG, Z.
+ (2001) Time-domain simulation of SH-wave-induced electromagnetic field
+ in heterogeneous porous media: A fast finite element algorithm.
+ Geophysics, 66 (2), 448–461.
+ 
+\end_layout
+
+\begin_layout Standard
+HORNBOSTEL, S.
+ and THOMPSON, A.
+ H.
+ (2007 )Waveform design for electroseismic exploration.
+ Geophysics.
+ 
+\end_layout
+
+\begin_layout Standard
+IVANOV, A.
+ (1939) Effect of electrization of earth layers by elastic waves passing
+ through them.
+ Dokl.
+ AN SSSR, 24(1), 42–45.
+ 
+\end_layout
+
+\begin_layout Standard
+JOUNIAUX, L.; ZYSERMAN, F.
+ Seismo-electrics, electro-seismics, and seismomagnetics for earth sciences.
+ Solid Earth Discussions, v.
+ 7, p.
+ 2563–2662, 2015.
+ 
+\end_layout
+
+\begin_layout Standard
+OLIVEIRA, I.
+ B.
+ de.
+ Modelagem de propagação das ondas elásticas em meios porosos 1D: modelos
+ de Biot vs.
+ Biot-JKD.
+ Tese (Doutorado) — Universidade Estadual do Norte Fluminense, 2018.
+\end_layout
+
+\begin_layout Standard
+PRIDE, S.
+ (1994) Governing equations for the coupled electromagnetic and acoustics
+ of porous media.
+ Physical Review B, 50(21), 15678–15693.
+ 
+\end_layout
+
+\begin_layout Standard
+PRIIMENKO, V.; VISHNEVSKII, M.
+ Nonlinear mathematical problems of electromagnetoelastic interactions.
+ Nonlinear Analysis Research Trends.
+ New York: Nova Science Publishers, p.
+ 99–155, 2008.
+\end_layout
+
+\begin_layout Standard
+THOMAS, J.
+ E.
+ Fundamentos de engenharia de petroleo.
+ Rio de Janeiro: Interciencia, 2004.
+ 
+\end_layout
+
+\begin_layout Standard
+THOMPSON, A.
+ and GIEST, G.
+ (1993) Geophysical applications of electrokinetic conversion.
+ The Leading Edge, 12(12), 1169–1173 
+\end_layout
+
+\begin_layout Standard
+THOMPSON, A.
+ H.
+ , HORNBOSTEL, S., et al.
+ Field tests of electroseismic hydrocarbon detection.
+ Geophysics, in press.
+ 
+\end_layout
+
+\begin_layout Standard
+THOMPSON, A.
+ H.
+ (2005) Electromagnetic-to-seismic conversion: Successful developments suggest
+ viable applications in exploration and production.
+ 75th SEG Annual Meeting, Expanded Abstracts, Houston.
+ 
+\end_layout
+
+\begin_layout Standard
+THOMPSON, R.
+ (1936) The seismic electric effect.
+ Geophysics, 1(3), 327–335.
+ 
+\end_layout
+
+\begin_layout Standard
+URSIN, B.
+ (1983) Review of elastic and electromagnetic waves propagation in horizontally
+ layered media.
+ Geophysics, 48(8), 1063–1081.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \start_of_appendix
 \noindent
 \begin_inset CommandInset include
@@ -470,22 +683,7 @@ filename "Cap-Apendice_A.lyx"
 
 \end_layout
 
-\begin_layout Standard
-\noindent
-\begin_inset Note Note
-status open
-
 \begin_layout Plain Layout
-Leia aqui no apêndice A como incluir listagens de código (ligaćão com arquivos
- externos)!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \noindent
 \begin_inset CommandInset include
 LatexCommand include
@@ -494,8 +692,23 @@ filename "Cap-Apendice_B.lyx"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
 \begin_inset Note Note
-status open
+status collapsed
+
+\begin_layout Plain Layout
+Leia aqui no apêndice A como incluir listagens de código (ligação com arquivos
+ externos)!
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
 
 \begin_layout Plain Layout
 Leia aqui no apêndice B como fazer citações!
@@ -505,7 +718,7 @@ Leia aqui no apêndice B como fazer citações!
 
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Todo material auxiliar, não diretamente relacionado ao trabalho deve estar
@@ -539,10 +752,12 @@ Some aí um bom documento de apresentação, com apresentação bem ensaiada,
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset CommandInset index_print
 LatexCommand printindex
 type "idx"
+name "Índice"
+literal "true"
 
 \end_inset
 
@@ -552,6 +767,25 @@ status collapsed
 
 \begin_layout Plain Layout
 Índice remissivo
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+para ter et all em itálico acrescente, junto com suas outras opcões: 
+\backslash
+usepackage[abnt-etal-text=emph,......]{abntcite} ou 
+\backslash
+usepackage[abnt-etal-text=it,......]{abntcite}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

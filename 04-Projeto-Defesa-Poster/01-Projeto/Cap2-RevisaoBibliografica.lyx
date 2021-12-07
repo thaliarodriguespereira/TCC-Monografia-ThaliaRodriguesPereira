@@ -1,7 +1,9 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass abnt
 \begin_preamble
 \usepackage {graphicx}
@@ -14,18 +16,20 @@
 \maintain_unincluded_children false
 \language brazilian
 \language_package default
-\inputencoding latin1
+\inputencoding iso8859-1
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
-
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -37,16 +41,26 @@
 \use_hyperref false
 \papersize a4paper
 \use_geometry true
-\use_amsmath 1
-\use_esint 0
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
+\use_minted 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -61,7 +75,10 @@
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
@@ -118,162 +135,160 @@ name "cha:Revisão-Bibliográfica"
 \end_layout
 
 \begin_layout Standard
-No escopo do problema, apresentou-se uma breve revisão dos trabalhos relacionado
-s a tese; Apresenta-se neste capítulo uma revisão bibliográfica detalhada
- dos trabalhos, técnicos e científicos, que estão diretamente relacionados
- ao trabalho.
-\end_layout
-
-\begin_layout Itemize
-Ou seja, entram citações de trabalhos tecnológicos e científicos desenvolvidos
- por terceiros - os outros.
- Principalmente artigos científicos.
+A interação eletrocinética, induzida pela perturbação do potencial eletrocinétic
+o, por meio da eletrossísmica, vem sendo observada em laboratório e em campo
+ por muitos anos, Thompson (1936) e Ivanov (1939).
  
-\end_layout
-
-\begin_layout Itemize
-É comum a gente ampliar ou melhorar uma metodologia existente, neste caso,
- a metodologia existente precisa ser detalhada.
- Faça uma citação curta da metodologia existente neste capítulo; e uma descrição
- detalhada da metodologia que vai ser modificada no capítulo de "Revisão
- de Modelos"; As melhorias/ampliações que você fizer, devem entrar no capítulo
- de desenvolvimento.
- Separando o que os outros fizeram do que você fez.
-\end_layout
-
-\begin_layout Itemize
-Lembre-se, cada capítulo deve iniciar com uma breve descrição do que vai
- ser visto.
- A ideia é ajudar o leitor a se situar.
- Você deve copiar a breve descrição para seção 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Organizacao-do-Documento"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-A organização deste capítulo precisa ser exatamente como colocado abaixo,
- mas você pode renomear os títulos das seções, usando um título mais adequado
- ao seu trabalho.
- O fundamental é não esquecer de citar alguns trabalhos tecnológicos, vários
- trabalhos científicos e de fazer uma crítica ao que existe, justificando
- seu trabalho.
-\end_layout
-
-\begin_layout Section
-Artigos Tecnológicos
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Artigos-Tecnologicos"
-
-\end_inset
-
- (+gerais)
 \end_layout
 
 \begin_layout Standard
-....
-\end_layout
-
-\begin_layout Itemize
-Desenvolver cronológica e conceitualmente os trabalhos relacionados a sua
- monografia/dissertação/tese.
+Frenkel (1944) foi o primeiro a observar a teoria dos fenômenos eletrossísmicos.
+ Ele postulou equações que descrevem o fluxo relativo de fluido-sólido induzido
+ por uma onda sísmica.
+ Considerou os campos elétricos induzidos pelo fluxo de fluido, empregando
+ a equação de Helmholtz-Smoluchowski.
+ Esta equação não considera a geração de ondas eletromagnéticas nas interfaces
+ (a resposta da interface), permite apenas os campos elétricos cossísmicos.
+ Uma vez que a equação de Helmholtz-Smoluchowski considera apenas os campos
+ elétricos causados por gradientes de pressão, ela falha em levar em consideraçã
+o a conversão de energia eletrossísmica associada às ondas de cisalhamento.
  
-\end_layout
-
-\begin_layout Itemize
-Citar um a um os trabalhos lidos, descrevendo o que os outros autores fizeram
- e como fizerem.
- 
-\end_layout
-
-\begin_layout Itemize
-Pode incluir várias figuras e tabelas dos trabalhos citados, mas todos devem
- ser claramente explicados, e devem ser diretamente relacionados ao problema
- a ser resolvido.
-\end_layout
-
-\begin_layout Itemize
-Revisão dos métodos utilizados por outros autores, artigos tecnológicos.
-\end_layout
-
-\begin_layout Itemize
-Descrição do modelo...., citações, referências,.., vantagens/desvantagens...
-\end_layout
-
-\begin_layout Section
-Artigos Científicos
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Artigos-Cientificos"
-
-\end_inset
-
- (+específicos)
 \end_layout
 
 \begin_layout Standard
-....
-\end_layout
-
-\begin_layout Itemize
-Desenvolver cronológica e conceitualmente os trabalhos relacionados a sua
- monografia/dissertação/tese.
+Os fenômenos eletrossísmicos estão associados ao fluxo relativo de fluido-sólido
+ causado por ondas sísmicas.
+ A teoria da propagação de ondas sísmicas em meios porosos saturados, desenvolvi
+da por Maurice A.
+ Biot (Biot, 1956a, 1956b, 1962a, 1962b) pode ser vista como a próxima etapa
+ no desenvolvimento da teoria eletrossísmica.
+ De acordo com a teoria de Biot, uma perturbação sísmica se propaga através
+ de meios porosos saturados de fluido na forma de uma onda de rotação (cisalhame
+nto) e duas de dilatação (pressão).
+ As duas ondas de pressão são chamadas de ondas rápidas e lentas.
+ As ondas rápidas correspondem às partes sólidas e fluidas que se movem
+ na fase, enquanto as ondas lentas correspondem às partes sólidas e fluidas
+ que se movem fora da fase.
+ Biot também mostra que as ondas lentas se propagam em velocidades mais
+ baixas do que as ondas rápidas.
+ A teoria de Biot indica que as ondas lentas se dissipam rapidamente com
+ a distância da fonte.
+ No entanto, essas ondas são geradas novamente quando as ondas rápidas cruzam
+ as interfaces entre meios porosos saturados de fluido diferentes (Geertsma
+ e Smit, 1961).
  
 \end_layout
 
-\begin_layout Itemize
-Citar um a um os trabalhos lidos, descrevendo o que os outros autores fizeram
- e como fizerem.
+\begin_layout Standard
+Nourbehecht (1963) falha em fazer uso da teoria de Biot quando estuda os
+ efeitos do acoplamento termodinâmico irreversível em meio poroso e investiga
+ o acoplamento eletrocinético assumindo material sólido estacionário e permite
+ apenas o fluxo de fluido.
+ Novamente, nenhuma atenção é dada à conversão de energia eletrossísmica
+ associada às ondas de cisalhamento.
+ Seus resultados, no entanto, mostram que o ângulo de incidência das ondas
+ de pressão que incidem sobre uma fronteira entre dois meios porosos saturados
+ de fluido precisa ser diferente de zero para a geração de um sinal elétrico
+ detectável na superfície.
  
 \end_layout
 
-\begin_layout Itemize
-Revisão dos métodos utilizados por outros autores, artigos científicos.
-\end_layout
-
-\begin_layout Itemize
-Descrição do modelo...., citações, referências,.., vantagens/desvantagens...
-\end_layout
-
-\begin_layout Section
-Crítica aos Trabalhos Existentes
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Critica-aos-Trabalhos-Existentes"
-
-\end_inset
-
-
+\begin_layout Standard
+Neev e Yeatts (1989) propõem equações que tentam modelar o acoplamento entre
+ ondas mecânicas e campos elétricos.
+ Como seu trabalho não é baseado no conjunto completo de equações de Maxwell,
+ eles também concluem incorretamente que as ondas de cisalhamento não geram
+ ondas eletromagnéticas.
+ 
 \end_layout
 
 \begin_layout Standard
-....
-\end_layout
-
-\begin_layout Itemize
-Coloque aqui uma crítica aos trabalhos existentes; esta crítica deve ajudar
- a fundamentar/justificar seu trabalho.
- A ideia é, os outros não viram o que estou vendo e eu vou fazer!
-\end_layout
-
-\begin_layout Itemize
-Ao final da revisão bibliográfica ressaltar a necessidade e importância
- de seu trabalho.
- Destacar as inovações de seu trabalho.
-\end_layout
-
-\begin_layout Itemize
-Ou seja, você precisa justificar - do ponto de vista tecnológico e científico
- - a necessidade do seu trabalho!
+O primeiro desenvolvimento teórico na teoria eletrossísmica que incorpora
+ o conjunto completo da equação de Maxwell é atribuído a Pride (1994).
+ O autor usa argumentos para derivar um conjunto de equações governantes
+ macroscópicas que descrevem fenômenos eletrossísmicos.
+ Essas equações consistem nas equações de Biot acopladas às equações de
+ Maxwell por meio de duas equações de transporte que satisfazem o princípio
+ de reciprocidade de fluxos acoplados de Onsager.
+ 
 \end_layout
 
 \begin_layout Standard
-.
+Haartsen (1995) e Pride e Haartsen (1996) usam as equações governantes dos
+ fenômenos eletrossísmicos para estudar ondas planas em meios porosos homogêneos.
+ Seus resultados mostram que, para ondas longitudinais planas, a corrente
+ induzida por gradientes de pressão é balanceada por uma corrente de condução
+ oposta e equivalente acionada pelo campo elétrico cossísmico.
+ Portanto, não há corrente elétrica líquida dentro da onda sísmica.
+ 
+\end_layout
+
+\begin_layout Standard
+Como resultado, não ocorre nenhuma radiação de onda eletromagnética.
+ Da mesma forma, ondas de cisalhamento planas em meios homogêneos podem
+ causar fluxo relativo de fluido-sólido devido ao deslocamento dos grãos
+ sólidos, configurando assim um campo magnético cossísmico e um pequeno
+ campo elétrico cossísmico induzido que viaja junto com a onda de cisalhamento.
+ Como não há desequilíbrio de corrente dentro da onda de cisalhamento, nenhuma
+ onda eletromagnética é gerada.
+ Quando a onda sísmica é, no entanto, incidente em uma interface entre meios
+ de diferentes propriedades eletrossísmicas, um desequilíbrio de corrente
+ dinâmico é causado pela variação na densidade de corrente através da interface.
+ Este desequilíbrio de corrente gera uma onda eletromagnética que se propaga
+ independentemente da onda sísmica, dando origem à resposta da interface,
+ conforme observado nos dados de campo de Ivanov (1939), Martner e Sparks
+ (1959), Thompson e Gist (1993), Butler et al.
+ (1996), Mikhailov et al.
+ (1997), Garambois e Dietrich (2001) e Haines et al.
+ (2001).
+\end_layout
+
+\begin_layout Standard
+Haartsen e Pride (1997) usam as equações que regem os fenômenos eletrossísmicos
+ e o Método da Matriz Global para investigar ondas eletrossísmicas de fontes
+ pontuais em camadas.
+ Seus resultados indicam que a resposta da interface mostra semelhanças
+ com o campo de ondas que seria obtido se a interface fosse substituída
+ por um dipolo elétrico oscilante equivalente posicionado na interface diretamen
+te abaixo da fonte sísmica.
+ Esta observação confirma que a resposta da interface é devido à geração
+ de ondas eletromagnéticas de propagação independente na fronteira entre
+ meios porosos saturados com fluido diferentes.
+ Haartsen et al.
+ (1998) usam posteriormente a teoria de Biot para calcular a quantidade
+ de fluxo relativo induzido pela solução da função de Green.
+ Desta forma, eles estudam as correntes de fontes de ponto sísmico em meios
+ poroelásticos homogêneos em função da salinidade, porosidade e permeabilidade.
+ 
+\end_layout
+
+\begin_layout Standard
+Usando um método relacionado ao Método da Matriz Global Ranada Shaw et al.
+ (2000) chegam a expressões para a reflexão eletrossísmica e coeficientes
+ de transmissão pertencentes a uma interface entre dois meios porosos.
+ Eles investigam a influência da porosidade / permeabilidade e contrastes
+ de salinidade na magnitude da resposta da interface.
+ 
+\end_layout
+
+\begin_layout Standard
+Garambois e Dietrich (2001) derivam funções de transferência eletrossísmica
+ (e magnetossísmica) para os campos elétrico e magnético cossísmico.
+ As funções de transferência eletrossísmica fornecem relações lineares entre
+ as amplitudes do deslocamento do grão sólido associado às ondas de pressão
+ rápidas e lentas e as amplitudes dos campos elétricos cossísmicos resultantes.
+ Da mesma forma, a transferência magnetossísmica representa uma relação
+ linear entre a amplitude do deslocamento do grão sólido devido à passagem
+ de uma onda de cisalhamento e a amplitude do campo magnético induzido.
+ A exatidão das funções de transferência é confirmada pela comparação com
+ os dados de campo registrados.
+ 
+\end_layout
+
+\begin_layout Standard
+Todas essas pesquisas sugerem que o acoplamento eletrocinético pode ser
+ usado como ferramenta geofísica para caracterizar conteúdo de fluido e
+ microestrutura.
 \end_layout
 
 \end_body

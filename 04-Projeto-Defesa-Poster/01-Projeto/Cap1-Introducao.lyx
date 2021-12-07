@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass abnt
 \begin_preamble
 \usepackage {graphicx}
@@ -23,16 +25,18 @@
 \language_package default
 \inputencoding iso8859-1
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -75,6 +79,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -89,7 +94,10 @@
 \tocdepth 1
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
@@ -148,25 +156,14 @@ pagenumbering{arabic}
 \end_layout
 
 \begin_layout Standard
-No presente trabalho desenvolve-se um estudo das representações reconstruídas
- em 3D, um novo algoritmo para
-\emph on
- 
-\emph default
-determinação das configurações de equilíbrio em processos bifásicos de invasão
- de fluidos e um método para determinação da permeabilidade através do Modelo
- do Grafo de Conexão Serial;
-\emph on
- 
-\emph default
-Valida-se os modelos e algoritmos desenvolvidos contra dados experimentais
- de intrusão de mercúrio e de permeabilidade de rochas reservatório de petróleo.
-\end_layout
-
-\begin_layout Itemize
-O primeiro parágrafo da introdução pode ser um super resumo de sua monografia/di
-ssertação/tese - veja o exemplo acima.
- A ideia é fazer um resumo do resumo.
+Neste trabalho será desenvolvido um procedimento matemático-numérico para
+ a análise do efeito eletrossísmico em meios 1D, isto é, os campos elétrico
+ e magnético e os deslocamentos sólidos e fluidos dependem apenas de uma
+ coordenada espacial e será considerado somente uma fonte externa eletromagnétic
+a.
+ Além de realizar um estudo de propagação das ondas em meios elásticos e
+ condutivos, considerando o processo de acoplamento através do efeito eletrociné
+tico, a análise de atenuação e dispersão dessas ondas.
 \end_layout
 
 \begin_layout Section
@@ -191,38 +188,98 @@ name "sec:Escopo-do-Problema"
 \end_layout
 
 \begin_layout Standard
-.....
+A aplicação da geofísica permite o estudo do subsolo usando as medidas de
+ suas propriedades físicas, assim como, adquirir, processar e interpretar
+ os dados coletados por instrumentos especiais, com objetivo de obter informaçõe
+s sobre a estrutura e composição das rochas em subsuperfície.
+ Os métodos geofísicos fazem parte de um conjunto de ferramentas investigativas
+ indispensáveis à prospecção de óleo e gás, seja em qualquer nível de detalhe,
+ ou econômico, desejável.
 \end_layout
 
-\begin_layout Itemize
-Definir o escopo do problema, a ideia geral.
- Acentuar a sua importância.
- Situá-lo nos aspectos econômicos e sociais.
-\end_layout
-
-\begin_layout Itemize
-Descrição do problema tecnológico.
- Delimitar o problema tecnológico.
- Situá-lo no tempo e no espaço.
+\begin_layout Standard
+Dentre esses métodos o mais importante devido à quantidade de informação,
+ a ampla área coletada e também na sua aplicação é o levantamento sísmico
+ que fornece informações da geologia da subsuperfície.
+ Na sísmica se estuda a estrutura da terra em dezenas de quilômetros, baseando-s
+e em ondas elásticas que são refletidas e refratadas nas interfaces que
+ separam as rochas de diferentes constituições petrofísicas (THOMAS, 2004).
  
 \end_layout
 
-\begin_layout Itemize
-Descrição do problema científico associado.
- Delimitar o problema científico.
- Situá-lo em relação ao desenvolvimento científico.
+\begin_layout Standard
+O levantamento geofísico é dividido em dois tipos: os que fazem uso dos
+ campos naturais da Terra, e aqueles que envolvem a aplicação na superfície
+ de energia gerada artificialmente.
+ O presente trabalho apresenta o segundo método, que envolve a geração de
+ campos elétricos ou eletromagnéticos locais que possam ser usados de modo
+ análogo ao dos campos naturais, ou, no mais importante grupo de métodos
+ de levantamento geofísico, a geração de ondas sísmicas, cuja velocidade
+ de propagação e caminhos de transmissão através da subsuperfície são mapeados
+ para fornecer informações sobre a distribuição dos limites geológicos em
+ profundidade e são capazes de produzir um quadro mais detalhado e bem resolvido
+ da geologia de subsuperfície (KEAREY, BROOKS, HILL, 2009).
+\end_layout
+
+\begin_layout Standard
+Os métodos atuais de exploração em subsuperfície são baseados em princípios
+ geofísicos sísmicos ou elétricos.
+ O método sismoeletromagnético combina esses dois príncipios, sísmica e
+ os métodos eletromagnéticos aos fluidos, considerando somente como fonte
+ externa uma fonte eletromagnética.
+ Oferece uma caracterização da estrutura não invasiva da superfície terrestre,
+ desde as primeiras centenas de metros até uma profundidade da ordem de
+ 1000 m, em termos de fluidos (água, óleo, gás) (L.
+ JOUNIAUX, F.
+ ZYSERMAN, 2015).
+\end_layout
+
+\begin_layout Standard
+A eletrossísmica é o método sismoeletromagnético que consiste em perturbações
+ acústicas mensuráveis na superfície induzidas por campos eletromagnéticos.
+ O sinal eletromagnético relacionado ao movimento relativo entre o fluido
+ e a matriz da rocha é chamado de fenômeno eletrocinético.
+ Em um meio poroso, a densidade de corrente elétrica, ligada aos íons dentro
+ do fluido, é acoplada ao fluxo (Overbeek, 1952) de modo que os potenciais
+ de fluxo são gerados por fluidos que se movem através desses tipos de meios
+ (Jouniaux et al., 2009).
+ Esse efeito está relacionado à existência de uma dupla camada elétrica
+ entre a rocha e o fluido, desenvolvida no contato entre a parede do poro
+ e o eletrólito.
+ O fluxo de corrente, devido ao movimento da camada difusa, é induzido por
+ uma diferença de pressão do fluido ao longo da interface.
  
 \end_layout
 
-\begin_layout Itemize
-Citar os 2-3 principais trabalhos relacionados e fazer uma breve crítica
- aos mesmos.
+\begin_layout Standard
+De acordo com Priimenko e Vishnevskii (2008), são diversos os tipos de interaçõe
+s envolvendo campo elétrico, campo magnético e deslocamento de partículas
+ de um corpo.
+ Essas interações de campos eletromagnéticos com campos de deformações mecânicas
+ em meios contínuos são descritos pela eletrodinâmica e pela poroelasticidade.
+ O acoplamento eletrossísmico ocorre quando um meio poroelástico é submetido
+ a um campo eletromagnético.
+ Quando o efeito eletrocinético é induzido pela propagação das ondas sísmicas,
+ o que leva a um movimento relativo entre fluido e a matriz da rocha, o
+ coeficiente eletrocinético depende da frequência, assim como a permeabilidade
+ dinâmica.
  
 \end_layout
 
-\begin_layout Itemize
-Neste capítulo podem entrar uma e no máximo duas figuras, bem ilustrativas
- (quase leigas).
+\begin_layout Standard
+As equações que regem o fenômeno do acoplamento eletrocinético foram desenvolvid
+as por Pride (1994) que propôs um modelo matemático representado por um
+ sistema de equações diferenciais parciais composto pelas equações de Biot
+ (poroelasticidade) acopladas com as equações de Maxwell (eletromagnetismo).
+ Ursin (1983), em seu estudo, trata, de forma unificada, a propagação de
+ ondas elásticas e eletromagnéticas em meios estratificados.
+ A ideia é unir as equações que regem os fenômenos da propagação das ondas
+ elásticas e eletromagnéticas, transformando as equações diferenciais parciais
+ que modelam estes fenômenos em um sistema de equações diferenciais ordinárias
+ de mesmo formato, denominado sistema do tipo Ursin.
+ Os estudos realizados por White e Zhou (2006) mostraram que a propagação
+ de ondas poroelásticas e eletromagnéticas acopladas pelo efeito eletrocinético
+ em um meio estratificado podem ser tratados pelo formalismo de Ursin.
 \end_layout
 
 \begin_layout Section
@@ -247,58 +304,58 @@ name "sec:Objetivos"
 \end_layout
 
 \begin_layout Standard
-Os objetivos deste trabalho são:
+O objetivo principal deste trabalho é realizar uma simulação do modelo matemátic
+o relacionado com a propagação das ondas em meios elásticos e condutivos,
+ considerando os processos de acoplamento, através do efeito eletrossísmico,
+ destas ondas com o campo eletromagnético, realizando a análise de atenuação
+ e dispersão das ondas..
+ E em seguida analisar a influência da variação dos parâmetros físicos e
+ petrofísicos do meio na solução do problema.
+\end_layout
+
+\begin_layout Standard
+Para alcançar o objetivo geral, busca-se atingir os seguintes objetivos
+ específicos: 
 \end_layout
 
 \begin_layout Itemize
-Objetivo geral:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-[.....descrever de forma clara, direta, objetiva, o objetivo geral da monografia/diss
-ertação/tese].
+Apresentar uma visão geral do efeito eletrossísmico; 
 \end_layout
 
 \begin_layout Itemize
-Note que esta diretamente relacionado ao escopo do problema, a solução do
- problema apresentado.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Objetivos específicos:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-[.....descrever de forma clara, direta, objetiva, cada objetivo específico].
+Realizar o desenvolvimento baseado na teoria das equações diferenciais,
+ no método de Ursin e na linguagem MatLab;
 \end_layout
 
 \begin_layout Itemize
-[.....descrever de forma clara, direta, objetiva, cada objetivo específico].
+Realizar uma análise de dispersão e atenuação das ondas que governam o efeito
+ eletrosísmico em meios 1D;
 \end_layout
 
 \begin_layout Itemize
-Note que não são as etapas a serem realizadas no trabalho, as etapas aparecem
- no capítulo de metodologia, aqui você deve colocar, por exemplo, questões
- da física do problema, da matemática do problema, da modelagem numérica
- computacional (ou experimental) e que serão resolvidas com seu trabalho.
- Ou seja, são as coisas específicas que serão resolvidas para resolver o
- problema geral.
+Realizar uma análise de influência dos parâmetros petrofísicos na propagação
+ das ondas elásticas e eletromagnéticas acopladas;
+\end_layout
+
+\begin_layout Itemize
+Desenvolver um algoritmo numérico baseado no método de resolução criado;
  
 \end_layout
 
-\end_deeper
-\begin_layout Standard
-A 
-\emph on
-originalidade do tema
-\emph default
- esta associada à ....
- [descrever o que é inovador em seu trabalho, aquilo que você fez e que
- se destaca]...
+\begin_layout Itemize
+Criar um código computacional no ambiente MatLab capaz de obter a solução
+ analítica-numérica do problema; 
 \end_layout
+
+\begin_layout Itemize
+Executar simulações da propagação dessas ondas em meios 1D, validando assim
+ o desenvolvimento teórico realizado.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
 
 \begin_layout Section
 Organização do Documento
@@ -351,11 +408,11 @@ Esta parte deve ser feita logo no início do trabalho e tem como objetivo
 Veja exemplo a seguir.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Apresenta-se nesta seção a organização do documento.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 No Capítulo 2, 
 \begin_inset Quotes eld
 \end_inset
@@ -368,7 +425,7 @@ Revisão Bibliográfica
  e científicos, que estão diretamente relacionados ao presente trabalho.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 No Capítulo 3, 
 \begin_inset Quotes eld
 \end_inset
@@ -384,7 +441,7 @@ Metodologia
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 No Capítulo 4, 
 \begin_inset Quotes eld
 \end_inset
@@ -399,7 +456,7 @@ Revisão dos Conceitos e Modelos a Serem Utilizados
  Especialistas da área poderão pular a leitura deste capítulo.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 No Capítulo 5, 
 \begin_inset Quotes eld
 \end_inset
@@ -411,7 +468,7 @@ Desenvolvimento
 , apresenta-se os modelos/métodos/algoritmos/ensaios que foram desenvolvidos.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 No Capítulo 6, 
 \begin_inset Quotes eld
 \end_inset
@@ -423,7 +480,7 @@ Resultados e Análises
 , apresenta-se os resultados obtidos e análises desenvolvidas.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 No Capítulo 7, 
 \begin_inset Quotes eld
 \end_inset
@@ -435,7 +492,7 @@ Conclusões
 , apresenta-se neste capítulo as conclusões e sugestões para trabalhos futuros.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Apresenta-se a seguir as 
 \begin_inset Quotes eld
 \end_inset
@@ -455,7 +512,7 @@ Apêndices
 :
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Apêndice_A: 
 \begin_inset Quotes eld
 \end_inset
@@ -467,7 +524,7 @@ XXX
 , ...
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Apêndice_B: 
 \begin_inset Quotes eld
 \end_inset
@@ -479,7 +536,7 @@ XXX
 , ...
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Apêndice_C: 
 \begin_inset Quotes eld
 \end_inset
@@ -523,6 +580,11 @@ Nota:
 \color red
 Lembre-se que se a figura, foto, esquemas, etc, for colorido o mesmo deve
  obrigatoriamente impresso em cores.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

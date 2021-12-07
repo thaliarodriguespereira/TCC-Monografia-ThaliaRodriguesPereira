@@ -1,7 +1,9 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass abnt
 \begin_preamble
 \usepackage {graphicx}
@@ -15,18 +17,20 @@
 \maintain_unincluded_children false
 \language brazilian
 \language_package default
-\inputencoding latin1
+\inputencoding iso8859-1
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
-
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -38,16 +42,26 @@
 \use_hyperref false
 \papersize a4paper
 \use_geometry true
-\use_amsmath 1
-\use_esint 0
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
+\use_minted 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -62,7 +76,10 @@
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
@@ -127,69 +144,6 @@ Apresenta-se neste capítulo a metodologia científica a ser utilizada no
  
 \end_layout
 
-\begin_layout Itemize
-Descreva de forma objetiva a metodologia do trabalho a ser desenvolvido,
- a sequência científica, de forma que outros autores possam reproduzir seu
- trabalho.
- 
-\end_layout
-
-\begin_layout Itemize
-O objetivo deste capítulo é:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Indicar a motivação para o tema; a classificação da pesquisa; o método utilizado
-, a área e sub-área de concentração.
- 
-\end_layout
-
-\begin_layout Itemize
-Descrever hipóteses, pressupostos, variáveis.
- 
-\end_layout
-
-\begin_layout Itemize
-Anunciar as ideias mestras adotadas e o plano de trabalho seguido.
- Pode ser em forma de indagação.
- 
-\end_layout
-
-\begin_layout Itemize
-Instrumentos:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Materiais: Como foram obtidos/selecionados, classificados (ex: artigos/livros/ma
-nuais).
-\end_layout
-
-\begin_layout Itemize
-Equipamentos: Listar equipamentos, fabricantes, modelos, série.
-\end_layout
-
-\begin_layout Itemize
-Softwares: Listar softwares utilizados, sites, versões.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Dados: Indicar a origem dos dados, como foram/serão obtidos, analisados.
- Como serão organizados e usados nos processos.
-\end_layout
-
-\begin_layout Itemize
-Experimentos, ensaios e simulações.
-\end_layout
-
-\begin_layout Itemize
-Estudos estatíscicos, testes e validações: Indicar como os resultados serão
- processados e analisados.
-\end_layout
-
-\end_deeper
 \begin_layout Section
 Motivação Para o Tema
 \begin_inset Index idx
@@ -212,34 +166,38 @@ name "sec:Motivacao-Para-o-Tema"
 \end_layout
 
 \begin_layout Itemize
-Envolvimento anterior do graduando/mestrando/doutorando com o tema:
+Envolvimento anterior com o tema:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Conhecimentos adquiridas nas disciplinas.
+Conhecimentos adquiridos nas disciplinas: Métodos Geofísicos de Exploração
+ II - Sísmicos, Propriedades Físicas de Minerais e Rochas, Métodos da Física-Mat
+emática, Perfilagem de Poços I e Interpretação Integrada Geologia-Geofísica.
  
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Usos futuros do conhecimento na área em estudo por parte do aluno:
+Usos futuros do conhecimento na área em estudo:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Elaboração de softwares aplicativos considerando os conceitos analisados.
+Elaboração de softwares aplicativos considerando os conceitos analisados;
  
 \end_layout
 
 \begin_layout Itemize
-Como tema base para a realização de mestrado/doutorado.
- 
-\end_layout
-
-\begin_layout Itemize
-Análise de outros materiais/equipamentos/sistemas considerando o mesmo processo
- metodológico.
+Como tema base para a realização de mestrado/doutorado; 
 \end_layout
 
 \begin_layout Itemize
@@ -247,68 +205,54 @@ Estudo e aperfeiçoamento das variáveis envolvidas.
  
 \end_layout
 
-\begin_layout Itemize
-Formulação de processo de cálculo simplificado para a aplicação dos conceitos
- apresentados.
- Isto ocorre em trabalhos mais tecnológicos, em que simplificação o problema
- e adotam-se procedimentos mais práticos.
-\end_layout
-
 \end_deeper
 \begin_layout Itemize
 Fonte de interesse atual pelo tema:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 Discussões com o orientador dos processos físicos envolvidos, realização
  de exercícios preliminares sobre o assunto.
- A constatação que blablabla.
+ 
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
 Facilidades pessoais do aluno para a abordagem do tema:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Facilidade no estudo dos conceitos matemáticos/físicos/químicos envolvidos
- no processo.
+Estudo dos conceitos matemáticos e físicos envolvidos no processo.
  
-\end_layout
-
-\begin_layout Itemize
-Facilidade na aplicação dos processos com a utilização de simulação no computado
-r.
- Prática no uso de programas de computador.
-\end_layout
-
-\begin_layout Itemize
-Facilidade no uso dos equipamentos experimentais.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
 Dificuldades atuais do aluno que podem ser minoradas a partir do trabalho:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Dificuldades no trato de língua inglesa;
+Dificuldades no trato da língua inglesa;
 \end_layout
 
 \begin_layout Itemize
-Necessidade de ampliar conhecimentos em matemática/física/química...
-\end_layout
-
-\begin_layout Itemize
-Não saber programar; 
-\end_layout
-
-\begin_layout Itemize
-Não saber usar corretamente/adequadamente/com eficiência equipamentos experiment
-ais.
+Necessidade de ampliar conhecimentos em programação e utilização de simulação
+ no computador; 
 \end_layout
 
 \begin_layout Itemize
@@ -344,7 +288,7 @@ Podemos classificar o tipo de pesquisa sob diferentes aspectos, a seguir,
 \end_layout
 
 \begin_layout Subsection
-Quanto ao fim, área, sub-área, tema específico e disciplinas relacionadas
+Quanto ao fim, área, sub-área e disciplinas relacionadas
 \end_layout
 
 \begin_layout Itemize
@@ -353,53 +297,92 @@ Quanto ao fim:
 
 \begin_deeper
 \begin_layout Itemize
-Pura
-\end_layout
-
-\begin_layout Itemize
-Aplicada
+Aplicada.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Área e sub-área de estudo:
+Área de estudo:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-indique a área e sub-área da pesquisa, tome como base a definição das áreas
- de pesquisa do CNPq.
+Geociências.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Sub-área de estudo:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Geofísica.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
 Subordinação do tema a áreas do conhecimento científico:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-indique as áreas do conhecimento científico as quais o trabalho esta relacionado.
+Matemática aplicada e computacional; 
+\end_layout
+
+\begin_layout Itemize
+Engenharia de petróleo; 
+\end_layout
+
+\begin_layout Itemize
+Geofísica de poço; 
+\end_layout
+
+\begin_layout Itemize
+Mecânica do contínuo.
+ 
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
 Disciplinas relacionadas:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-indique disciplinas relacionadas,
+Métodos Geofísicos de Exploração II - Sísmicos; 
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
-Áreas não incluidas:
+Propriedades Físicas de Minerais e Rochas; 
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
-indique áreas correlacionadas mas que no seu caso não serão consideradas/utiliza
-das.
+Métodos da Física-Matemática; 
+\end_layout
+
+\begin_layout Itemize
+Perfilagem de Poços I; 
+\end_layout
+
+\begin_layout Itemize
+Interpretação Integrada Geologia-Geofísica.
 \end_layout
 
 \end_deeper
@@ -417,7 +400,7 @@ Tipo de modelagem
 
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Quanto-ao-tipo-de-modelagem"
+name "subsec:Quanto-ao-tipo-de-modelagem"
 
 \end_inset
 
@@ -425,91 +408,19 @@ name "sub:Quanto-ao-tipo-de-modelagem"
 \end_layout
 
 \begin_layout Standard
-O presente trabalho é de caráter ...
-\end_layout
-
-\begin_layout Subsubsection
-Modelagem Teórica
-\end_layout
-
-\begin_layout Itemize
-...
- teórico pois envolve o estudo de modelos físicos e matemáticos, e o desenvolvim
-ento de equações diferenciais que dão resposta ao problema proposto.
-\end_layout
-
-\begin_layout Itemize
-Embora possam ser utilizados modelos experimentais e mesmo numérico-computaciona
-is, a essência do problema científico é tratada através do modelo físico-matemát
-ico.
-\end_layout
-
-\begin_layout Subsubsection
-Modelagem Numérico-Computacional
-\end_layout
-
-\begin_layout Itemize
-...
- numérico-computacional pois envolve o estudo de modelos numérico-computacionais
-, e o desenvolvimento de algoritmos e programas que dão resposta ao problema
- proposto.
-\end_layout
-
-\begin_layout Itemize
-Embora possam ser utilizados modelos experimentais e mesmo físico-matemático,
- a essência do problema científico é tratada através do modelo numérico-computac
-ional.
-\end_layout
-
-\begin_layout Subsubsection
-Modelagem Experimental
-\end_layout
-
-\begin_layout Itemize
-....
- experimental, pois envolve a montagem e/ou utilização de aparelhos experimentai
-s, incluindo sua concepção e instalação física.
- 
-\end_layout
-
-\begin_layout Itemize
-O leiaute do experimento pode ser inovador, ou pode repetir outros trabalhos
- (para testes e validações, variações e comparações).
- 
-\end_layout
-
-\begin_layout Itemize
-Deve-se tomar todos os cuidados possíveis na sua instalação e na preparação
- da experiência (ensaio).
- 
-\end_layout
-
-\begin_layout Itemize
-Requer a calibração dos equipamentos.
-\end_layout
-
-\begin_layout Itemize
-É fundamental a criação de um roteiro (sequência) para a realização do experimen
-to, de forma a diminuir os riscos de erros.
- 
-\end_layout
-
-\begin_layout Itemize
-Deve-se estar preparado para erros nas experiências, o que leva a necessidade
- de conseguir/comprar uma quantidade extra de material para sua repetição.
-\end_layout
-
-\begin_layout Itemize
-Neste tipo de modelagem, embora possam ser utilizados modelos matemáticos
- e mesmo numérico-computacionais, a essência do problema científico é tratada
- através do modelo experimental.
+O presente trabalho é de caráter teórico, pois envolve o estudo de modelos
+ físicos e matemáticos, e o desenvolvimento de equações diferenciais que
+ dão resposta ao problema proposto.
+ Embora possam ser utilizados modelos numérico-computacionais e o desenvolviment
+o de algoritmos e programas, a essência do problema científico é tratada
+ através do modelo físico-matemático.
 \end_layout
 
 \begin_layout Subsection
 Quanto ao tipo de análise
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Quanto-ao-tipo-de-analise"
+name "subsec:Quanto-ao-tipo-de-analise"
 
 \end_inset
 
@@ -517,9 +428,9 @@ name "sub:Quanto-ao-tipo-de-analise"
 \end_layout
 
 \begin_layout Standard
-Quanto ao tipo de análise podemos classificar a pesquisa em ....
+Quanto ao tipo de análise pode-se classificar a pesquisa em analítica.
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 indutiva, dedutiva ou analítica.
@@ -530,73 +441,11 @@ indutiva, dedutiva ou analítica.
 
 \end_layout
 
-\begin_layout Subsubsection
-Indutiva
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "Indução"
-description "Indução"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-A análise indutiva parte do conhecimento de alguns casos e depois generaliza
- para o todo.
- Parte de uma amostra e conclui para toda a população.
-\end_layout
-
-\begin_layout Itemize
-Os resultados devem ser analisados estatisticamente e comparados com modelos
- numéricos e modelos conceituais (físico-matemáticos).
-\end_layout
-
-\begin_layout Subsubsection
-Dedutiva
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "Dedução"
-description "Dedução"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-A análise dedutiva parte de conhecimentos gerais e procura particularizar
- algo.
- Parte da população para uma amostra.
-\end_layout
-
-\begin_layout Subsubsection
-Analítica - analise e síntese
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "Análise e síntese"
-description "Análise e síntese"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Analisar um fenômeno consiste em partilhar o mesmo de forma a através do
- estudo das partes chegar as conclusões para o todo.
-\end_layout
-
-\begin_layout Itemize
-Sintetizar é reagrupar os grupos de dados analisados em separado.
-\end_layout
-
 \begin_layout Subsection
 Limitação do trabalho
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Limitacao-do-trabalho"
+name "subsec:Limitacao-do-trabalho"
 
 \end_inset
 
@@ -604,7 +453,7 @@ name "sub:Limitacao-do-trabalho"
 \end_layout
 
 \begin_layout Standard
-Apresenta-se nesta seção...
+Apresenta-se nesta subseção as limitações deste trabalho.
 \end_layout
 
 \begin_layout Subsubsection
@@ -624,13 +473,8 @@ Limitações
 \begin_layout Itemize
 Todo o trabalho será desenvolvido no LENEP/CCT/UENF.
  
-\end_layout
-
-\begin_layout Itemize
-Os dados adotados e usados nos desenvolvimentos terão como região especifica
- .....
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 deve-se aqui delimitar claramente o trabalho nos seus aspectos espaciais.
@@ -642,33 +486,15 @@ deve-se aqui delimitar claramente o trabalho nos seus aspectos espaciais.
 \end_layout
 
 \begin_layout Subsubsection
-Limitações temporais
-\end_layout
-
-\begin_layout Itemize
-Os dados coletados cobrem o período de ...
- até ...
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-deve-se aqui delimitar temporalmente o período dos dados
-\end_layout
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsubsection
 Limitações quanto ao setor da indústria
 \end_layout
 
 \begin_layout Itemize
-O presente trabalho estabelece um estudo ligado a ...
- e a setores ....
+O presente trabalho estabelece um estudo ligado a engenharia de petróleo
+ e a setores de geofísica de poço e petrofísica.
+ 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 indicar quais partes da indústria de petróleo estão relacionadas direta
@@ -685,11 +511,12 @@ Limitações quanto a fase do empreendimento atingida
 \end_layout
 
 \begin_layout Itemize
-Neste trabalho não se pretende chegar as formulações exatas do problema.
- Será analizado um único lote de daods.
+Neste trabalho se pretende realizar uma simulação computacional para um
+ meio 1D estratificado e uma simulação para um meio 1D homogêneo, a fim
+ de se obter a validação do desenvolvimento analítico realizado.
  
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 geralmente nosso trabalho esta inserido numa subárea de pesquisa mais ampla,
@@ -704,42 +531,11 @@ geralmente nosso trabalho esta inserido numa subárea de pesquisa mais ampla,
 
 \end_layout
 
-\begin_layout Subsubsection
-Limitações quanto aos componentes atingidos
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Muitas vezes os objetivos gerais e o contexto do trabalho dão uma falsa
- ideia de que irão resolver várias coisas, quando na realidade pretendemos
- resolver apenas alguns de seus aspectos.
- 
-\end_layout
-
-\begin_layout Plain Layout
-Se seu trabalho envolver vários aspectos de um problema, ou usar dados de
- vários equipamentos/sistemas, indicar quais dados serão efetivamente/realmente
- alvo do seu trabalho.
-\end_layout
-
-\begin_layout Plain Layout
-Que partes dos equipamentos/sistemas serão realmente analisadas e consideradas
- no trabalho.
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
 \begin_layout Subsection
 Pressupostos
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Pressupostos"
+name "subsec:Pressupostos"
 
 \end_inset
 
@@ -747,21 +543,11 @@ name "sub:Pressupostos"
 \end_layout
 
 \begin_layout Itemize
-Para o presente estudo vamos trabalhar sobre dados disponíveis de ....
- 
-\end_layout
-
-\begin_layout Itemize
-Todas as formulações e dados conseguidos na bibliografia estão corretos
- ....
- 
-\end_layout
-
-\begin_layout Itemize
-Os dados climáticos utilizados serão fornecidos por medições realizadas
- na .....
+Para o presente estudo, a simulação computacional será realizada utilizando-se
+ os dados disponíveis em (BLANC et al., 2013 e Al-Besharah, Salman e Akashah,
+ 1987).
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Se você vai usar dados de terceiros, deve assumir como hipótese que os mesmos
@@ -779,131 +565,69 @@ Também deve considerar que os dados são suficientes para embasar suas conclus�
 
 \end_layout
 
-\begin_layout Section
-Hipóteses
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Hipóteses
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Hipoteses"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Nesta seção ...
-\end_layout
-
-\begin_layout Subsection
-Hipóteses subjacentes
-\end_layout
-
-\begin_layout Standard
-Estabelecer que a margem de erro ao não se considerar ....
- trás um erro global pequeno, para justificar a sua inclusão nos estudos.
-\end_layout
-
-\begin_layout Standard
-Os estudos demonstram que a consideração de ...
- são insignificantes.
-\end_layout
-
 \begin_layout Subsection
 Hipóteses de trabalho
 \end_layout
 
 \begin_layout Enumerate
-Exemplo:
+Meio elástico e condutivo em meios 1D; 
 \end_layout
 
 \begin_layout Enumerate
-Não ocorre variação dimensional no tamanho dos poros da telha em função
- da variação da temperatura.
+Meio elástico e condutivo com camadas homogêneas e estratificadas;
 \end_layout
 
 \begin_layout Enumerate
-O coeficiente de condução k(h) leva em consideração a transferência de calor
- devido a diferença de temperatura e a transferência de conteúdo de líquido
- entre os volumes de controle.
+Poros do meio poroso são interconectados e totalmente saturados com um fluido;
 \end_layout
 
 \begin_layout Enumerate
-Nas medicoes dos valores de wl(conteúdo de massa mássico) são desconsideradas
- quaisquer variações decorrentes de mudanças no formato dos poros.
+A amplitude das perturbações é pequena;
 \end_layout
 
 \begin_layout Enumerate
-...
+Altas frequencias; 
 \end_layout
 
-\begin_layout Section
-Intrumentos
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Intrumentos"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Materiais
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Materiais
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Materiais"
-
-\end_inset
-
+\begin_layout Enumerate
+Os efeitos termo-mecânicos são negligenciáveis.
  
 \end_layout
 
-\begin_layout Itemize
-Materiais utilizados nos experimentos (ex: reagentes).
- Como foram obtidos/selecionados, classificados.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-sempre prever que o ensaio pode dar errado e que vai precisar de mais reagente...ou
- outro material utilizado
-\end_layout
+\begin_layout Section
+Simulação Computacional
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Simulação Computacional"
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Standard
+Será feita uma simulação computacional com o intuito de se obter a validação
+ do desenvolvimento analítico realizado, que calcula a solução do sistema
+ de equações derivadas por S.
+ Pride, consistindo nas equações de movimento acopladas de Biot e nas equações
+ de Maxwell para um meio elástico e condutivo com camadas homogêneas e estratifi
+cadas com a presença de fonte do tipo pontual vertical.
+ 
+\end_layout
+
+\begin_layout Standard
+Após apresentação dos resultados obtidos, será feita uma análise desses
+ resultados, baseando-se na teoria da propagação de ondas elástica e condutiva
+ em um meio poroso saturado para altas frequências.
+\end_layout
+
 \begin_layout Subsection
-Equipamentos
+Equipamento
 \begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
-Equipamentos
+Equipamento
 \end_layout
 
 \end_inset
@@ -911,7 +635,7 @@ Equipamentos
 
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Equipamentos"
+name "subsec:Equipamento"
 
 \end_inset
 
@@ -919,12 +643,12 @@ name "sub:Equipamentos"
 \end_layout
 
 \begin_layout Itemize
-Listar equipamentos, fabricantes, modelos, série.
-\end_layout
-
-\begin_layout Itemize
+Siatema operacional: Windows 8.1 64 bits (6.3, compilação 9600); Fabricante
+ do sistema: Standard; Modelo do sistema: AHV; Processador: Intel (R) Core
+ (TM); 3-2310M CPU @ 2.10GHz (4 CPUs), ~2.1GHz; Memória: 4096 MB RAM; Versão
+ do Directx: Directx 11.
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Como um trabalho científico precisa ser repetido e modelos diferentes de
@@ -939,12 +663,12 @@ Como um trabalho científico precisa ser repetido e modelos diferentes de
 \end_layout
 
 \begin_layout Subsection
-Softwares
+Software
 \begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
-Softwares
+Software
 \end_layout
 
 \end_inset
@@ -952,7 +676,7 @@ Softwares
 
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Softwares"
+name "subsec:Software"
 
 \end_inset
 
@@ -960,12 +684,11 @@ name "sub:Softwares"
 \end_layout
 
 \begin_layout Itemize
-Listar softwares utilizados, sites, versões.
-\end_layout
-
-\begin_layout Itemize
+MatLab.
+ Versao (R2020a).
+ 64-bit (win64).
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Como um trabalho científico precisa ser repetido e diferentes softwares
@@ -977,214 +700,6 @@ Como um trabalho científico precisa ser repetido e diferentes softwares
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Dados
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Dados
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Dados"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Indicar a origem dos dados (local/período/contatos fornecedor).
-\end_layout
-
-\begin_layout Itemize
-Como foram/serão obtidos.
-\end_layout
-
-\begin_layout Itemize
-Como serão organizados e classificados.
-\end_layout
-
-\begin_layout Itemize
-Como serão analisados e usados nos processos.
-\end_layout
-
-\begin_layout Itemize
-Também aqui deve-se estar atendo para a questão da repetitibilidade, tanto
- por outros autores como por você mesmo - no caso de algumas amostras serem
- danificadas ou insuficientes!
-\end_layout
-
-\begin_layout Section
-Experimentos
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Experimentos
-\end_layout
-
-\end_inset
-
- - Ensaios e Simulações
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Experimentos-Ensaios-e-Simulacoes"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Nesta seção ...
-\end_layout
-
-\begin_layout Subsection
-Ensaios
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Ensaios
-\end_layout
-
-\end_inset
-
- laboratoriais
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Ensaios-laboratoriais"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Listar ensaios a serem realizados.
- Caso necessário indicar ordem.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Na maioria dos casos a ordem é fundamental!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Definir os procedimentos experimentais (principalmente as inovações).
-\end_layout
-
-\begin_layout Itemize
-Informar a necessidade de pré-ensaios e calibração dos equipamentos.
-\end_layout
-
-\begin_layout Itemize
-Informar como os resultados dos ensaios serão classificados, analisados
- e validados.
-\end_layout
-
-\begin_layout Subsection
-Simulações
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Simulações
-\end_layout
-
-\end_inset
-
- computacionais
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Simulações-computacionais"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Informar como o software será validado.
-\end_layout
-
-\begin_layout Itemize
-Informar como serão feitas análises de sensibilidade.
-\end_layout
-
-\begin_layout Itemize
-Listar previamente as simulações que serão realizadas e seus objetivos.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Listar previamente as simulações que serão realizadas e seus objetivos a
- ideia é evitar que o aluno sai fazendo centenas de simulações inúteis!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Informar como as simulações serão analisadas e validadas.
-\end_layout
-
-\begin_layout Itemize
-Informar como os resultados das simulações serão classificados, analisados
- e validados.
-\end_layout
-
-\begin_layout Section
-Estudos Estatísticos
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Estudos Estatísticos
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Estudos-Estatisticos"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Testes e validações: Indicar como os resultados serão processados e analisados.
-\end_layout
-
-\begin_layout Itemize
-Indicar quais métodos e estudos estatísticos serão realizados sobre os dados
- levantados.
- Isto é, tipo de análise estatística.
- Exemplo, média e desvio padrão; testes de hipóteses;...; análise de variância;...
-\end_layout
-
-\begin_layout Itemize
-Indicar critérios para verificação dos erros envolvidos (limites dos erros)
- e a necessidade ou não de novos ensaios/simulações, novos levantamentos
- de dados....
 \end_layout
 
 \end_body

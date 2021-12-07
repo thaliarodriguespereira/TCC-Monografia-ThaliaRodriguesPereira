@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass abnt
 \begin_preamble
 \usepackage {graphicx}
@@ -23,16 +25,18 @@
 \language_package default
 \inputencoding iso8859-1
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -75,6 +79,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -89,7 +94,10 @@
 \tocdepth 1
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
@@ -139,8 +147,7 @@ thispagestyle{empty}
 \align center
 
 \size large
-TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃ
-O / TESE; TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃO / TESE
+MODELAGEM ELETROSSÍSMICA EM MEIOS 1D 
 \begin_inset Note Note
 status open
 
@@ -166,7 +173,7 @@ O título deve ser o mais claro possível, não deixando dúvidas sobre o assunt
 \align center
 
 \size large
-NOME COMPLETO DO AUTOR(A)
+THALIA RODRIGUES PEREIRA
 \begin_inset Newline newline
 \end_inset
 
@@ -206,11 +213,15 @@ MACAÉ - RJ
 \begin_inset Newline newline
 \end_inset
 
-MARÇO - 2015
+DEZEMBRO - 2021
 \end_layout
 
 \begin_layout Standard
 \begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -249,6 +260,10 @@ thispagestyle{empty}
 
 \begin_layout Standard
 \begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -291,8 +306,7 @@ thispagestyle{empty}
 \align center
 
 \size large
-TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃ
-O / TESE; TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃO / TESE
+MODELAGEM ELETROSSÍSMICA EM MEIOS 1D
 \end_layout
 
 \begin_layout Standard
@@ -304,9 +318,7 @@ O / TESE; TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃO / TESE
 
 \begin_layout Standard
 \align center
-
-\size large
-NOME COMPLETO DO AUTOR(A)
+THALIA RODRIGUES PEREIRA
 \end_layout
 
 \begin_layout Standard
@@ -329,29 +341,18 @@ width "50text%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
 \align block
-Monografia/Dissertação/Tese apresentada ao Centro de Ciências e Tecnologia
- da Universidade Estadual do Norte Fluminense, como parte das exigências
- para obtenção do título de Mestre/Doutor em Engenharia de Reservatório
- e de Exploração.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-manter esta linha apenas nas dissertações/teses
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align block
-título de Engenheiro de Exploração e Produção de Petróleo.
+Monografia apresentada ao Centro de Ciências e Tecnologia da Universidade
+ Estadual do Norte Fluminense, como parte das exigências para obtenção do
+ título de Engenheira de Exploração e Produção de Petróleo.
 \begin_inset Note Note
 status open
 
@@ -378,8 +379,12 @@ manter esta linha apenas nas monografias
 
 \begin_layout Standard
 \align center
-Orientador: Prof.
- Fulano de Tal, D.Sc.
+Orientador: Viatcheslav Ivanovich Priimenko, Ph.D.
+\end_layout
+
+\begin_layout Standard
+\align center
+Co-orientadora: Marcia Miranda Azeredo, D.Sc.
 \end_layout
 
 \begin_layout Standard
@@ -394,10 +399,13 @@ Orientador: Prof.
 
 \size large
 MACAÉ - RJ
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
-MARÇO - 2015
+\begin_layout Standard
+\align center
+
+\size large
+DEZEMBRO - 2021
 \end_layout
 
 \begin_layout Standard
@@ -414,6 +422,11 @@ MARÇO - 2015
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 Página de aprovação
 \end_layout
 
@@ -422,7 +435,7 @@ Página de aprovação
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 
 \size large
@@ -443,26 +456,25 @@ pagenumbering{roman}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 
 \size large
-TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃ
-O / TESE; TÍTULO DA DISSERTAÇÃO / TESE; TÍTULO DA DISSERTAÇÃO / TESE
+MODELAGEM ELETROSSÍSMICA EM MEIOS 1D
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset VSpace 2.5cm
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 
 \size large
-NOME COMPLETO DO AUTOR(A)
+THALIA RODRIGUES PEREIRA
 \size default
 
 \begin_inset VSpace 2.5cm
@@ -471,7 +483,7 @@ NOME COMPLETO DO AUTOR(A)
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align right
 \begin_inset Box Frameless
 position "t"
@@ -484,29 +496,18 @@ width "50text%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
 \align block
-Monografia/Dissertação/Tese apresentada ao Centro de Ciências e Tecnologia
- da Universidade Estadual do Norte Fluminense, como parte das exigências
- para obtenção do título de Mestre/Doutor em Engenharia de Reservatório
- e de Exploração.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-manter esta linha apenas nas dissertações/teses
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align block
-título de Engenheiro de Exploração e Produção de Petróleo.
+Monografia apresentada ao Centro de Ciências e Tecnologia da Universidade
+ Estadual do Norte Fluminense, como parte das exigências para obtenção do
+ título de Engenheira de Exploração e Produção de Petróleo.
 \begin_inset Note Note
 status open
 
@@ -524,14 +525,14 @@ manter esta linha apenas nas monografias
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset VSpace 1cm
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \noindent
 \align left
 Aprovada em xx de xxxxxx de 20xx.
@@ -585,7 +586,7 @@ baselineskip}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \paragraph_spacing single
 \noindent
 \align left
@@ -629,7 +630,7 @@ baselineskip}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \paragraph_spacing single
 \noindent
 \align left
@@ -673,7 +674,7 @@ baselineskip}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \paragraph_spacing single
 \noindent
 \align left
@@ -717,14 +718,14 @@ baselineskip}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \noindent
 \align left
 Prof.
  Fulano de Tal (Ms.C, Engenharia) - LENEP/CCT/UENF - (Orientador)
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align block
 \begin_inset Newpage newpage
 \end_inset
@@ -732,7 +733,7 @@ Prof.
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \noindent
 
 \size large
@@ -751,7 +752,7 @@ lhead{Biografia}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \noindent
 [Opcional] 
 \begin_inset Note Note
@@ -770,14 +771,14 @@ Veja exemplo na tese de Bueno ou na dissertação de Tiago Schaewer.
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Newpage newpage
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \noindent
 
 \size large
@@ -796,7 +797,7 @@ lhead{Prefácio}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \noindent
 [Opcional] 
 \begin_inset Note Note
@@ -805,12 +806,10 @@ status open
 \begin_layout Plain Layout
 Diz respeito ao trabalho em si, é onde você coloca as dificuldades e problemas
  a realização do trabalho.
- 
 \end_layout
 
 \begin_layout Plain Layout
 Define a origem, características e finalidades do trabalho.
- 
 \end_layout
 
 \begin_layout Plain Layout
@@ -820,9 +819,13 @@ Público a que se dirige, trabalhos já realizados.
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align right
 \begin_inset Newpage newpage
 \end_inset
@@ -830,7 +833,7 @@ Público a que se dirige, trabalhos já realizados.
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \size large
 \begin_inset ERT
@@ -848,21 +851,21 @@ lhead{Dedicatória}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset space ~
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset VSpace 21.5cm
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align right
 coloque aqui a dedicação
 \begin_inset Index idx
@@ -877,7 +880,7 @@ dedicação
  da Tese/Dissertação/Monografia.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align right
 \begin_inset Newpage newpage
 \end_inset
@@ -885,7 +888,7 @@ dedicação
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align block
 
 \size large
@@ -904,7 +907,7 @@ lhead{Agradecimentos}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \paragraph_spacing onehalf
 \align left
 Ao ...
@@ -920,24 +923,28 @@ Agradecimentos
 Agradecimentos
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Aos pais...
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Aos amigos ....
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Aos membros da banca, professores ...
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Aos professores e funcionários do LENEP/CCT/UENF....
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Ao CENPES/PETROBRAS pelo fornecimento de material....
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -982,14 +989,14 @@ Troque o genérico "aos amigos" pelo nome completo dos seus amigos e nome
  Os nomes das pessoas devem ser completos (não ambíguos).
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \paragraph_spacing double
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
 \paragraph_spacing double
-(obrigatório para bolsistas prh20-anp/ctpetro) - 
+(obrigatório para bolsistas prh20-anp/ctpetro) -
 \end_layout
 
 \end_inset
@@ -1001,12 +1008,12 @@ nto de bolsa de estudos e taxa de bancada por meio do Programa de Recursos
  Humanos da ANP para o Setor Petróleo e Gás – PRH-ANP/MCT.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-(obrigatório para bolsistas prh20-anp/petrobras) - 
+(obrigatório para bolsistas prh20-anp/petrobras) -
 \end_layout
 
 \end_inset
@@ -1017,14 +1024,14 @@ Ao comitê gestor do PRH20-ANP-PETROBRAS/LENEP/CCT/UENF, e a Universidade
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Newpage newpage
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \size large
 \begin_inset ERT
@@ -1042,25 +1049,30 @@ lhead{Epígrafe}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset space ~
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset VSpace 22cm
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align right
 
 \emph on
 [Opcional e a escolha do autor(a) Ex: ]
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
