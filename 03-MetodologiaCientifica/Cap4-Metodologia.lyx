@@ -1,0 +1,706 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass abnt
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options false
+\master Monografia-Dissertacao-Tese-master.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement p
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Metodologia
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Metodologia
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Metodologia"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter-Metodologia} 
+\backslash
+rhead{
+\backslash
+thepage} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se neste capítulo a metodologia científica a ser utilizada no
+ desenvolvimento deste trabalho.
+ Inclui-se informações sobre a motivação para o tema, classificação da pesquisa
+ (área da pesquisa), intrumentos utilizados (materiais, equipamentos, softwares)
+, dados, experimentos/ensaios/simulações e formas de análise e interpretação.
+ 
+\end_layout
+
+\begin_layout Section
+Motivação Para o Tema
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Motivação Para o Tema
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Motivacao-Para-o-Tema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Envolvimento anterior com o tema:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Conhecimentos adquiridos nas disciplinas: Métodos Geofísicos de Exploração
+ II - Sísmicos, Propriedades Físicas de Minerais e Rochas, Métodos da Física-Mat
+emática, Perfilagem de Poços I e Interpretação Integrada Geologia-Geofísica.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Usos futuros do conhecimento na área em estudo:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Elaboração de softwares aplicativos considerando os conceitos analisados;
+ 
+\end_layout
+
+\begin_layout Itemize
+Como tema base para a realização de mestrado/doutorado; 
+\end_layout
+
+\begin_layout Itemize
+Estudo e aperfeiçoamento das variáveis envolvidas.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Fonte de interesse atual pelo tema:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Discussões com o orientador dos processos físicos envolvidos, realização
+ de exercícios preliminares sobre o assunto.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Facilidades pessoais do aluno para a abordagem do tema:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Estudo dos conceitos matemáticos e físicos envolvidos no processo.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Dificuldades atuais do aluno que podem ser minoradas a partir do trabalho:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Dificuldades no trato da língua inglesa;
+\end_layout
+
+\begin_layout Itemize
+Necessidade de ampliar conhecimentos em programação e utilização de simulação
+ no computador; 
+\end_layout
+
+\begin_layout Itemize
+Ampliação do conhecimento de alguns conceitos envolvidos no processo.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Classificação da Pesquisa
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Classificação da Pesquisa
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Classificacao-da-Pesquisa"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Podemos classificar o tipo de pesquisa sob diferentes aspectos, a seguir,
+ fazemos a classificação deste trabalho quanto ao fim, quando ao tipo de
+ modelagem e quanto ao tipo de análise.
+\end_layout
+
+\begin_layout Subsection
+Quanto ao fim, área, sub-área e disciplinas relacionadas
+\end_layout
+
+\begin_layout Itemize
+Quanto ao fim:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Aplicada.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Área de estudo:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Geociências.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Sub-área de estudo:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Geofísica.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Subordinação do tema a áreas do conhecimento científico:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Matemática aplicada e computacional; 
+\end_layout
+
+\begin_layout Itemize
+Engenharia de petróleo; 
+\end_layout
+
+\begin_layout Itemize
+Geofísica de poço; 
+\end_layout
+
+\begin_layout Itemize
+Mecânica do contínuo.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Disciplinas relacionadas:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Métodos Geofísicos de Exploração II - Sísmicos; 
+\end_layout
+
+\begin_layout Itemize
+Propriedades Físicas de Minerais e Rochas; 
+\end_layout
+
+\begin_layout Itemize
+Métodos da Física-Matemática; 
+\end_layout
+
+\begin_layout Itemize
+Perfilagem de Poços I; 
+\end_layout
+
+\begin_layout Itemize
+Interpretação Integrada Geologia-Geofísica.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Quanto ao tipo de modelagem
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Tipo de modelagem
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Quanto-ao-tipo-de-modelagem"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O presente trabalho é de caráter teórico, pois envolve o estudo de modelos
+ físicos e matemáticos, e o desenvolvimento de equações diferenciais que
+ dão resposta ao problema proposto.
+ Embora possam ser utilizados modelos numérico-computacionais e o desenvolviment
+o de algoritmos e programas, a essência do problema científico é tratada
+ através do modelo físico-matemático.
+\end_layout
+
+\begin_layout Subsection
+Quanto ao tipo de análise
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Quanto-ao-tipo-de-analise"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Quanto ao tipo de análise pode-se classificar a pesquisa em analítica.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+indutiva, dedutiva ou analítica.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Limitação do trabalho
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Limitacao-do-trabalho"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se nesta subseção as limitações deste trabalho.
+\end_layout
+
+\begin_layout Subsubsection
+Limitações
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Limitações
+\end_layout
+
+\end_inset
+
+ espaciais: 
+\end_layout
+
+\begin_layout Itemize
+Todo o trabalho será desenvolvido no LENEP/CCT/UENF.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+deve-se aqui delimitar claramente o trabalho nos seus aspectos espaciais.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Limitações quanto ao setor da indústria
+\end_layout
+
+\begin_layout Itemize
+O presente trabalho estabelece um estudo ligado a engenharia de petróleo
+ e a setores de geofísica de poço e petrofísica.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+indicar quais partes da indústria de petróleo estão relacionadas direta
+ e indiretamente ao seu trabalho
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Limitações quanto a fase do empreendimento atingida
+\end_layout
+
+\begin_layout Itemize
+Neste trabalho se pretende realizar uma simulação computacional para um
+ meio 1D estratificado e uma simulação para um meio 1D homogêneo, a fim
+ de se obter a validação do desenvolvimento analítico realizado.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+geralmente nosso trabalho esta inserido numa subárea de pesquisa mais ampla,
+ e numa linha de pesquisa mais ampla; você deve deliminar claramente qual
+ a fase atingida pelo seu trabalho, como o mesmo se insere na linha/sub-área
+ de pesquisa.
+ Deixar claro o que não vai ser feito!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Pressupostos
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Pressupostos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Para o presente estudo, a simulação computacional será realizada utilizando-se
+ os dados disponíveis em (BLANC et al., 2013 e Al-Besharah, Salman e Akashah,
+ 1987).
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Se você vai usar dados de terceiros, deve assumir como hipótese que os mesmos
+ estão corretos! a não ser no caso em que queira provar que os mesmos estão
+ errados/equivocados.
+\end_layout
+
+\begin_layout Plain Layout
+Também deve considerar que os dados são suficientes para embasar suas conclusões
+, caso negativo, deve deixar clara a necessidade de análises adicionais.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Hipóteses de trabalho
+\end_layout
+
+\begin_layout Enumerate
+Meio elástico e condutivo em meios 1D; 
+\end_layout
+
+\begin_layout Enumerate
+Meio elástico e condutivo com camadas homogêneas e estratificadas;
+\end_layout
+
+\begin_layout Enumerate
+Poros do meio poroso são interconectados e totalmente saturados com um fluido;
+\end_layout
+
+\begin_layout Enumerate
+A amplitude das perturbações é pequena;
+\end_layout
+
+\begin_layout Enumerate
+Altas frequencias; 
+\end_layout
+
+\begin_layout Enumerate
+Os efeitos termo-mecânicos são negligenciáveis.
+ 
+\end_layout
+
+\begin_layout Section
+Simulação Computacional
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Simulação Computacional"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Será feita uma simulação computacional com o intuito de se obter a validação
+ do desenvolvimento analítico realizado, que calcula a solução do sistema
+ de equações derivadas por S.
+ Pride, consistindo nas equações de movimento acopladas de Biot e nas equações
+ de Maxwell para um meio elástico e condutivo com camadas homogêneas e estratifi
+cadas com a presença de fonte do tipo pontual vertical.
+ 
+\end_layout
+
+\begin_layout Standard
+Após apresentação dos resultados obtidos, será feita uma análise desses
+ resultados, baseando-se na teoria da propagação de ondas elástica e condutiva
+ em um meio poroso saturado para altas frequências.
+\end_layout
+
+\begin_layout Subsection
+Equipamento
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Equipamento
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Equipamento"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Siatema operacional: Windows 8.1 64 bits (6.3, compilação 9600); Fabricante
+ do sistema: Standard; Modelo do sistema: AHV; Processador: Intel (R) Core
+ (TM); 3-2310M CPU @ 2.10GHz (4 CPUs), ~2.1GHz; Memória: 4096 MB RAM; Versão
+ do Directx: Directx 11.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Como um trabalho científico precisa ser repetido e modelos diferentes de
+ equipamentos podem fazer as coisas de forma diferente; é fundamental informar
+ com clareza os dados dos equipamentos utilizados.
+ Viabiliza-se desta forma a repetitibilidade do experimento.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Software
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Software
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Software"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+MatLab.
+ Versao (R2020a).
+ 64-bit (win64).
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Como um trabalho científico precisa ser repetido e diferentes softwares
+ podem fazer as coisas de forma diferente; é fundamental informar com clareza
+ os dados dos softwares utilizados (incluindo versão).
+ Viabiliza-se desta forma a repetitibilidade das simulações.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
